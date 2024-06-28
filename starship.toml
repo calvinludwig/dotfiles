@@ -4,7 +4,7 @@ palette = "catppuccin_latte"
 add_newline = false
 
 format = """$directory$character"""
-right_format = """$status$git_branch$git_status$cmd_duration"""
+right_format = """$status$git_branch$git_state$git_status$cmd_duration"""
 
 [character]
 success_symbol = "[](sapphire)"
@@ -13,7 +13,7 @@ error_symbol = "[](maroon)"
 [directory]
 truncation_length = 4
 style = "bold yellow"
-fish_style_pwd_dir_length = 1
+fish_style_pwd_dir_length = 3
 read_only = " 󰌾"
 
 [status]
@@ -59,6 +59,10 @@ symbol = " "
 [git_branch]
 format = '[$symbol $branch]($style) '
 symbol = ""
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "teal"
 
 [git_status]
 format = '$all_status$ahead_behind '
