@@ -10,3 +10,9 @@ size = 16.0
 
 normal.family = "JetBrains Mono"
 normal.style = "Medium"
+
+[keyboard]
+bindings = [
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
+  { key = "F11", action = "ToggleFullscreen" },
+]
