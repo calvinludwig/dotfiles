@@ -1,15 +1,27 @@
 # Sets user-defined palette
 palette = "catppuccin_latte"
 
+add_newline = false
+
+format = """$directory$character"""
+right_format = """$status$git_branch$git_status$cmd_duration"""
+
 [character]
-success_symbol = "[❯](sapphire)"
-error_symbol = "[❯](maroon)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[](sapphire)"
+error_symbol = "[](maroon)"
 
 [directory]
 truncation_length = 4
-style = "bold lavender"
+style = "bold yellow"
+fish_style_pwd_dir_length = 1
 read_only = " 󰌾"
+
+[status]
+disabled = false
+symbol = "[ ](peach)"
+
+[cmd_duration]
+format = '[$duration]($style) '
 
 [aws]
 symbol = "  "
@@ -45,7 +57,22 @@ symbol = " "
 symbol = " "
 
 [git_branch]
-symbol = " "
+format = '[$symbol $branch]($style) '
+symbol = ""
+
+[git_status]
+format = '$all_status$ahead_behind '
+ahead = '[⬆](bold purple) '
+behind = '[⬇](bold purple) '
+staged = '[✚](green) '
+deleted = '[✖](red) '
+renamed = '[➜](purple) '
+stashed = '[✭](cyan) '
+untracked = '[◼](rosewater) '
+modified = '[✱](peach) '
+conflicted = '[═](maroon) '
+diverged = '⇕ '
+up_to_date = ''
 
 [golang]
 symbol = " "
@@ -142,6 +169,7 @@ Windows = "󰍲 "
 
 [package]
 symbol = "󰏗 "
+disabled = true
 
 [perl]
 symbol = " "
