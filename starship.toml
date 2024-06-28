@@ -4,7 +4,7 @@ palette = "catppuccin_latte"
 add_newline = true
 
 format = """$directory$character"""
-right_format = """$status$git_branch$git_state$git_status$cmd_duration$time"""
+right_format = """$status$git_branch$git_state$git_status$time"""
 
 [character]
 success_symbol = "[ ](sapphire)"
