@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/catppuccin_latte.toml"]
+import = ["~/.config/alacritty/catppuccin-latte.toml"]
 
 [window]
 padding.x = 10
