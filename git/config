@@ -5,6 +5,12 @@
 	name = Calvin Ludwig
 	email = bludwig.calvin@gmail.com
 
+[fetch]
+    prune = true
+
+[pull]
+	rebase = true
+
 [init]
 	defaultBranch = main
 
@@ -27,5 +33,9 @@
 
 [diff]
     colorMoved = default
-[pull]
-	rebase = true
+
+
+
+[alias]
+    cm = commit
+    lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
