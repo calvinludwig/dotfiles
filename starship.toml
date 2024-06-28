@@ -62,8 +62,8 @@ symbol = ""
 
 [git_status]
 format = '$all_status$ahead_behind '
-ahead = '[⬆](bold purple) '
-behind = '[⬇](bold purple) '
+ahead = '[⬆](bold lavender) '
+behind = '[⬇](bold flamingo) '
 staged = '[✚](green) '
 deleted = '[✖](red) '
 renamed = '[➜](purple) '
@@ -72,7 +72,7 @@ untracked = '[◼](rosewater) '
 modified = '[✱](peach) '
 conflicted = '[═](maroon) '
 diverged = '⇕ '
-up_to_date = ''
+up_to_date = '[✔](teal)'
 
 [golang]
 symbol = " "
