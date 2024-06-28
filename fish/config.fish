@@ -5,7 +5,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     source ~/Code/gpssat/documents/aliases.sh
 
-    alias ls='exa -l --icons'
+
+    alias g='git'
+    alias ls='exa -l --icons --group-directories-first'
     alias pn='pnpm'
     alias vim='nvim -u NONE'
     alias get_idf='. $HOME/.esp/esp-idf/export.fish'
