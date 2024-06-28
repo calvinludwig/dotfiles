@@ -1,0 +1,28 @@
+[include]
+    path = catppuccin.gitconfig
+
+[user]
+	name = Calvin Ludwig
+	email = bludwig.calvin@gmail.com
+
+[init]
+	defaultBranch = main
+
+[core]
+    pager = delta
+	editor = nvim
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    features = catppuccin-latte
+    navigate = true    # use n and N to move between diff sections
+    light = true
+    side-by-side = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
