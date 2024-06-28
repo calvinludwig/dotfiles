@@ -3,12 +3,12 @@ palette = "catppuccin_latte"
 
 add_newline = true
 
-format = """$os$directory$character"""
+format = """$directory$character"""
 right_format = """$status$git_branch$git_state$git_status$cmd_duration$time"""
 
 [character]
-success_symbol = "[](sapphire)"
-error_symbol = "[](maroon)"
+success_symbol = "[ ](sapphire)"
+error_symbol = "[ ](maroon)"
 
 [directory]
 truncation_length = 4
@@ -42,59 +42,10 @@ conflicted = '[═](maroon) '
 diverged = '⇕ '
 up_to_date = '[✔](teal)'
 
-[os]
-disabled = false
-style = "blue"
-
 [time]
 disabled = false
 style = "mauve"
 format = '[|  $time]($style)'
-
-[os.symbols]
-Alpaquita = " "
-Alpine = " "
-AlmaLinux = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "󰛓 "
-Gentoo = " "
-HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
-Kali = " "
-Linux = " "
-Mabox = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = "󰈺 "
-openSUSE = " "
-OracleLinux = "󰌷 "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-RockyLinux = " "
-Redox = "󰀘 "
-Solus = "󰠳 "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Void = " "
-Windows = "󰍲 "
 
 # palette tables should be last in the config ⚓️
 [palettes.catppuccin_macchiato]
