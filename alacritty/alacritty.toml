@@ -1,14 +1,15 @@
 import = ["~/.config/alacritty/catppuccin-latte.toml"]
 
 [window]
-padding.x = 10
-padding.y = 10
+padding.x = 0
+padding.y = 0
 opacity = 1
+decorations = "None"
 
 [font]
-size = 16.0
+size = 20.0
 
-normal.family = "JetBrains Mono"
+normal.family = "IBM Plex Mono"
 normal.style = "Medium"
 
 [keyboard]
