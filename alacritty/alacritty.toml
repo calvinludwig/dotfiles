@@ -4,10 +4,10 @@ import = ["~/.config/alacritty/catppuccin-latte.toml"]
 padding.x = 0
 padding.y = 0
 opacity = 1
-decorations = "None"
+# decorations = "None"
 
 [font]
-size = 20.0
+size = 16.0
 
 normal.family = "IBM Plex Mono"
 normal.style = "Medium"

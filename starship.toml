@@ -4,7 +4,7 @@ palette = "catppuccin_latte"
 add_newline = true
 
 format = """$directory$character"""
-right_format = """$status$git_branch$git_state$git_status$time"""
+right_format = """$git_branch$git_state$git_status"""
 
 [character]
 success_symbol = "[ ](sapphire)"
@@ -15,10 +15,6 @@ truncation_length = 4
 style = "bold yellow"
 fish_style_pwd_dir_length = 1
 read_only = " 󰌾"
-
-[status]
-disabled = false
-symbol = "[ ](peach)"
 
 [git_branch]
 format = '[$symbol $branch]($style) '
