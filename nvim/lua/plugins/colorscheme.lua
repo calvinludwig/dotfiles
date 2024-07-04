@@ -7,7 +7,7 @@ return {
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			require("catppuccin").setup({
-				flavour = "latte", -- latte, frappe, macchiato, mocha
+				flavour = "mocha", -- latte, frappe, macchiato, mocha
 				background = { -- :h background
 					light = "latte",
 					dark = "mocha",
