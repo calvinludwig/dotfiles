@@ -1,15 +1,7 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
-local function scheme_for_appearance(appearance)
-	if appearance:find "Dark" then
-		return "Catppuccin Mocha"
-	else
-		return "Catppuccin Latte"
-	end
-end
-
-config.color_scheme = scheme_for_appearance(wezterm.gui.get_appearance())
+config.color_scheme = "Catppuccin Mocha"
 
 config.font_size = 17
 config.font = wezterm.font_with_fallback {
