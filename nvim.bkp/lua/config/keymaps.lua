@@ -46,6 +46,8 @@ vim.keymap.set("v", ">", ">gv")
 
 vim.keymap.set("n", "x", '"_x')
 vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("v", "<leader>y", '"+y')
 

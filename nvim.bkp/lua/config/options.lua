@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vim.g.maplocalleader = " "
 
 vim.opt.autowrite = true -- Enable auto write
 -- vim.opt.clipboard = "unnamedplus"  -- Sync with system clipboard
@@ -12,8 +12,9 @@ vim.opt.grepformat = "%f:%l:%c:%m"
 vim.opt.grepprg = "rg --vimgrep"
 vim.opt.ignorecase = true -- Ignore case
 vim.opt.inccommand = "nosplit" -- preview incremental substitute
--- vim.opt.laststatus = 0
+vim.opt.laststatus = 0
 vim.opt.list = false -- Show some invisible characters (tabs...
+vim.opt.listchars = Icons.listchars
 vim.opt.mouse = "a" -- Enable mouse mode
 vim.opt.number = true -- Print line number
 vim.opt.pumblend = 10 -- Popup blend

@@ -1,2 +1,1 @@
-require("utils")
-require("config")
+require("config.lazy")
