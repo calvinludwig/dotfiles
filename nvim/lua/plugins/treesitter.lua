@@ -34,6 +34,12 @@ return {
 					"toml",
 					"dockerfile",
 					"xml",
+					-- git
+					"git_config",
+					"git_rebase",
+					"gitattributes",
+					"gitcommit",
+					"gitignore",
 					-- other
 					"markdown",
 					"vim",
@@ -45,6 +51,9 @@ return {
 				sync_install = false,
 				highlight = { enable = true },
 				indent = { enable = true },
+				auto_install = true,
+				modules = {},
+				ignore_install = {},
 			})
 		end,
 	},
