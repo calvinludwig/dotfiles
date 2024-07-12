@@ -13,31 +13,49 @@ return {
 			local configs = require("nvim-treesitter.configs")
 			configs.setup({
 				ensure_installed = {
+					-- vim
 					"lua",
+					"vim",
+					"vimdoc",
+
+					-- go
 					"go",
 					"gomod",
 					"gowork",
 					"gosum",
+
+					-- rust
 					"rust",
-					"sql",
+					"toml",
+
+					-- php
 					"php",
 					"phpdoc",
+					"php_only",
+
+					-- web
 					"html",
 					"css",
+					"scss",
+
+					-- js
 					"javascript",
 					"typescript",
 					"tsx",
+					"vue",
+					"svelte",
+					"json",
+
+					-- c
 					"c",
 					"cpp",
 					"zig",
-					"gleam",
+
 					-- sh
 					"bash",
 					"fish",
 					-- config files
-					"json",
 					"yaml",
-					"toml",
 					"dockerfile",
 					"xml",
 					-- git
@@ -46,10 +64,10 @@ return {
 					"gitattributes",
 					"gitcommit",
 					"gitignore",
+
 					-- other
+					"sql",
 					"markdown",
-					"vim",
-					"vimdoc",
 					"query",
 					"comment",
 					"regex",
@@ -62,9 +80,9 @@ return {
 				ignore_install = {},
 			})
 
-			local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+			local parsers = require("nvim-treesitter.parsers").get_parser_configs()
 
-			parser_config.blade = {
+			parsers.blade = {
 				install_info = {
 					url = "https://github.com/EmranMR/tree-sitter-blade",
 					files = { "src/parser.c" },
