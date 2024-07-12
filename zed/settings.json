@@ -1,0 +1,33 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "ui_font_size": 20,
+  "buffer_font_size": 22,
+  "buffer_line_height": "standard",
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
+  },
+  "buffer_font_family": "IBM Plex Mono",
+  "ui_font_family": "IBM Plex Sans",
+  "vim_mode": true,
+  "indent_guides": {
+    "enabled": false
+  },
+  "current_line_highlight": "gutter",
+  "terminal": {
+    "font_family": "IBM Plex Mono",
+    "font_size": 18
+  },
+  "format_on_save": "off",
+  "features": {
+    "inline_completion_provider": "supermaven"
+  }
+}
