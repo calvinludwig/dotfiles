@@ -5,10 +5,10 @@ config.color_scheme = 'Catppuccin Mocha'
 
 config.font_size = 17
 config.font = wezterm.font_with_fallback {
-	{ family = 'Ibm Plex Mono', weight = 'Regular' },
-	{ family = 'JetBrains Mono', weight = 'Regular' },
+	{ family = 'Maple Mono',        weight = 'Regular' },
+	{ family = 'JetBrains Mono',    weight = 'Regular' },
 	{ family = 'Symbols Nerd Font', scale = 0.8 },
-	{ family = 'Noto Color Emoji', scale = 0.8 },
+	{ family = 'Noto Color Emoji',  scale = 0.8 },
 }
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false

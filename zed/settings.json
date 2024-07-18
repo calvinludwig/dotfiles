@@ -7,26 +7,26 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "ui_font_size": 20,
-  "buffer_font_size": 22,
-  "buffer_line_height": "standard",
+  "ui_font_size": 16,
+  "buffer_font_size": 20,
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
+    "dark": "Rosé Pine Moon"
   },
-  "buffer_font_family": "IBM Plex Mono",
-  "ui_font_family": "IBM Plex Sans",
+  "buffer_font_family": "Maple Mono",
+  "ui_font_family": "Maple Mono",
   "vim_mode": true,
   "indent_guides": {
     "enabled": false
   },
-  "current_line_highlight": "gutter",
   "terminal": {
-    "font_family": "IBM Plex Mono",
+    "font_family": "Maple Mono NF",
     "font_size": 18
   },
   "format_on_save": "off",
+  "hard_tabs": true,
+  "tab_size": 4,
   "features": {
     "inline_completion_provider": "supermaven"
   }
