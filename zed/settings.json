@@ -12,10 +12,10 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Rosé Pine Moon"
+    "dark": "Catppuccin Mocha"
   },
   "buffer_font_family": "Maple Mono",
-  "ui_font_family": "Maple Mono",
+  "ui_font_family": "Inter",
   "vim_mode": true,
   "indent_guides": {
     "enabled": false

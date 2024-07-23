@@ -15,6 +15,7 @@ if status is-interactive
     alias fzf="fzf --preview 'bat --color=always {}' --preview-window '~3'"
 	alias inv='nvim $(fzf)'
 	alias zj="zellij"
+	alias sail="./vendor/bin/sail"
 
     alias cat="bat -p"
 
