@@ -7,7 +7,7 @@ if status is-interactive
 
     alias g='git'
 	alias ls='exa'
-    alias ll='exa --oneline --long --group --icons --git --header --group-directories-first'
+    alias ll='exa --oneline --long --group --icons --git --group-directories-first'
     alias pn='pnpm'
     alias vim='nvim -u NONE'
     alias get_idf='. $HOME/.esp/esp-idf/export.fish'

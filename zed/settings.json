@@ -7,27 +7,27 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "ui_font_size": 16,
-  "buffer_font_size": 20,
-  "theme": {
-    "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
-  },
-  "buffer_font_family": "Maple Mono",
-  "ui_font_family": "Inter",
-  "vim_mode": true,
-  "indent_guides": {
-    "enabled": false
-  },
-  "terminal": {
-    "font_family": "Maple Mono NF",
-    "font_size": 18
-  },
-  "format_on_save": "off",
-  "hard_tabs": true,
-  "tab_size": 4,
-  "features": {
-    "inline_completion_provider": "supermaven"
-  }
+	"ui_font_size": 18,
+	"buffer_font_size": 20,
+	"theme": {
+		"mode": "system",
+		"light": "Catppuccin Latte",
+		"dark": "Catppuccin Macchiato"
+	},
+	"buffer_font_family": "JetBrains Mono",
+	"vim_mode": true,
+	"indent_guides": {
+		"enabled": false
+	},
+	"terminal": {
+		"font_family": "JetBrainsMono Nerd Font",
+		"font_size": 18
+	},
+	"buffer_line_height": "standard",
+	"format_on_save": "off",
+	"hard_tabs": true,
+	"tab_size": 4,
+	"features": {
+		"inline_completion_provider": "supermaven"
+	}
 }

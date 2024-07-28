@@ -10,6 +10,22 @@ return {
 
 			require("feline").setup({
 				components = ctp_feline.get(),
+				force_inactive = {
+					filetypes = {
+						'^neo-tree$',
+						'^NvimTree$',
+						'^packer$',
+						'^startify$',
+						'^fugitive$',
+						'^fugitiveblame$',
+						'^qf$',
+						'^help$'
+					},
+					buftypes = {
+						'^terminal$'
+					},
+					bufnames = {}
+				},
 			})
 		end,
 	},

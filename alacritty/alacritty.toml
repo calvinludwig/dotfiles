@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/catppuccin-latte.toml"]
+import = ["~/.config/alacritty/catppuccin-macchiato.toml"]
 
 [window]
 padding.x = 0
@@ -9,7 +9,7 @@ opacity = 1
 [font]
 size = 16.0
 
-normal.family = "Maple Mono NF"
+normal.family = "JetBrains Mono"
 normal.style = "Regular"
 
 [keyboard]
