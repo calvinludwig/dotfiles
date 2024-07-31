@@ -8,17 +8,22 @@ require("lspconfig").gopls.setup({
 	cmd = { "gopls" },
 	settings = {
 		gopls = {
+			experimentalPostfixCompletions = true,
 			completeUnimported = true,
 			usePlaceholders = true,
 			analyses = {
-				unusedparams = true,
 				unusedvariables = true,
 				unusedwrite = true,
 				nilness = true,
 				useany = true,
+				unusedparams = true,
+				shadow = true,
 			},
 			staticcheck = true,
 			gofumpt = true,
 		},
 	},
+	init_options = {
+		usePlaceholders = true,
+	}
 })

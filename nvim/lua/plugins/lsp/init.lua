@@ -5,7 +5,7 @@ return {
 		dependencies = {
 			"williamboman/mason-lspconfig.nvim",
 			"williamboman/mason.nvim",
-			{ "folke/neodev.nvim", event = "BufEnter", ft = "lua" },
+			{ "folke/neodev.nvim",                   event = "BufEnter", ft = "lua" },
 			{ "antosha417/nvim-lsp-file-operations", config = true },
 			"simrat39/rust-tools.nvim",
 			{
@@ -105,19 +105,28 @@ return {
 					end,
 				},
 				mapping = cmp.mapping.preset.insert({
+					["<CR>"] = cmp.mapping({
+						i = function(fallback)
+							if cmp.visible() and cmp.get_active_entry() then
+								cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })
+							else
+								fallback()
+							end
+						end,
+						s = cmp.mapping.confirm({ select = true }),
+						c = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
+					}),
 					["<C-l>"] = cmp.mapping(function(fallback)
 						if cmp.visible() then
-							if luasnip.expandable() then
-								luasnip.expand()
-							else
-								cmp.confirm({
-									select = true,
-								})
+							local entry = cmp.get_selected_entry()
+							if not entry then
+								cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
 							end
+							cmp.confirm()
 						else
 							fallback()
 						end
-					end),
+					end, { "i", "s", "c", }),
 					["<C-j>"] = cmp.mapping(function(fallback)
 						if cmp.visible() then
 							cmp.select_next_item()
