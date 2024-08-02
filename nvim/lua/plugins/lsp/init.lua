@@ -39,6 +39,8 @@ return {
 				"bashls",
 				"dockerls",
 				"docker_compose_language_service",
+				"html",
+				"htmx",
 			}
 			require("mason").setup()
 			require("mason-lspconfig").setup({ ensure_installed = servers })
@@ -54,6 +56,8 @@ return {
 				"bash",
 				"docker",
 				"php",
+				"html",
+				"htmx",
 			}
 
 			for _, lang in ipairs(langs) do
@@ -166,6 +170,7 @@ return {
 					{ name = "nvim_lsp" },
 					{ name = "nvim_lsp_signature_help" },
 					{ name = "nvim_lsp_document_symbol" },
+					{ name = "supermaven" },
 					{ name = "luasnip" },
 				}, {
 					{ name = "buffer" },
@@ -175,6 +180,7 @@ return {
 					format = lspkind.cmp_format({
 						mode = "symbol_text",
 						max_width = 50,
+						symbol_map = { Supermaven = "" }
 					}),
 				},
 			}

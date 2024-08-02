@@ -1,5 +1,6 @@
 return {
 	{
+		enabled = false,
 		"freddiehaddad/feline.nvim",
 		event = "VeryLazy",
 		opts = {},
