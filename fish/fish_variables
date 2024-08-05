@@ -41,4 +41,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3d393552
 SETUVAR fish_pager_color_selected_completion:e0def4
 SETUVAR fish_pager_color_selected_description:e0def4
 SETUVAR fish_pager_color_selected_prefix:9ccfd8
-SETUVAR fish_user_paths:/home/ludwig/\x2elocal/bin\x1e/home/ludwig/\x2espicetify
+SETUVAR fish_user_paths:/home/ludwig/\x2ecomposer/vendor/bin\x1e/home/ludwig/\x2elocal/bin\x1e/home/ludwig/\x2espicetify

@@ -1,7 +1,15 @@
 local w = require 'wezterm'
 local M = {}
 
-local font_family = 'Monaspace Argon'
+local monaspace = {
+	'Neon',
+	'Argon',
+	'Xenon',
+	'Radon',
+	'Krypton',
+}
+
+local font_family = 'Monaspace ' .. monaspace[math.random(#monaspace)]
 
 M.setup = function(c)
 	c.line_height = 1.1
