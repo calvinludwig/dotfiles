@@ -9,10 +9,11 @@ local monaspace = {
 	'Krypton',
 }
 
-local font_family = 'Monaspace ' .. monaspace[math.random(#monaspace)]
+local font_family = 'Monaspace '
+	.. monaspace[1]
 
 M.setup = function(c)
-	c.line_height = 1.1
+	c.line_height = 1
 	c.font_size = 18
 	c.font = w.font_with_fallback {
 		{ family = font_family,         weight = 'Regular' },
