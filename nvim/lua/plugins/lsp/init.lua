@@ -5,7 +5,7 @@ return {
 		dependencies = {
 			"williamboman/mason-lspconfig.nvim",
 			"williamboman/mason.nvim",
-			{ "folke/neodev.nvim",                   event = "BufEnter", ft = "lua" },
+			{ "folke/neodev.nvim", event = "BufEnter", ft = "lua" },
 			{ "antosha417/nvim-lsp-file-operations", config = true },
 			"simrat39/rust-tools.nvim",
 			{
@@ -130,7 +130,7 @@ return {
 						else
 							fallback()
 						end
-					end, { "i", "s", "c", }),
+					end, { "i", "s", "c" }),
 					["<C-j>"] = cmp.mapping(function(fallback)
 						if cmp.visible() then
 							cmp.select_next_item()
@@ -180,7 +180,7 @@ return {
 					format = lspkind.cmp_format({
 						mode = "symbol_text",
 						max_width = 50,
-						symbol_map = { Supermaven = "" }
+						symbol_map = { Supermaven = "" },
 					}),
 				},
 			}

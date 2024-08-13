@@ -13,19 +13,19 @@ return {
 				components = ctp_feline.get(),
 				force_inactive = {
 					filetypes = {
-						'^neo-tree$',
-						'^NvimTree$',
-						'^packer$',
-						'^startify$',
-						'^fugitive$',
-						'^fugitiveblame$',
-						'^qf$',
-						'^help$'
+						"^neo-tree$",
+						"^NvimTree$",
+						"^packer$",
+						"^startify$",
+						"^fugitive$",
+						"^fugitiveblame$",
+						"^qf$",
+						"^help$",
 					},
 					buftypes = {
-						'^terminal$'
+						"^terminal$",
 					},
-					bufnames = {}
+					bufnames = {},
 				},
 			})
 		end,

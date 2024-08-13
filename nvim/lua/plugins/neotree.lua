@@ -8,7 +8,7 @@ return {
 		-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 	},
 	keys = {
-		{ "<C-e>",   "<cmd>Neotree toggle<cr>",         desc = "Neotree Explorer" },
+		{ "<C-e>", "<cmd>Neotree toggle<cr>", desc = "Neotree Explorer" },
 		{ "<C-S-e>", "<cmd>Neotree buffers toggle<cr>", desc = "Neotree Buffers" },
 	},
 	opts = function()
@@ -48,7 +48,7 @@ return {
 					},
 				},
 				follow_current_file = {
-					enabled = true
+					enabled = true,
 				},
 			},
 		}

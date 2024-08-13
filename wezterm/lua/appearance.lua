@@ -1,13 +1,13 @@
 local M = {}
-local rose_pine = require('lua/themes/rose-pine')
-local variant = 'moon' -- 'main' | 'moon' | 'dawn'
+
+local carbonfox = require("lua/themes/nightfox").CARBONFOX
 M.setup = function(c)
-	c.colors = rose_pine[variant].colors()
+	c.colors = carbonfox
 	c.window_padding = {
-		left = '1cell',
-		right = 0,
+		left = "1cell",
+		right = "1cell",
 		top = 0,
-		bottom = 0
+		bottom = 0,
 	}
 end
 return M

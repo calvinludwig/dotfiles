@@ -1,17 +1,17 @@
 local MAIN = {}
 
 MAIN.palette = {
-	base = '#191724',
-	overlay = '#26233a',
-	muted = '#6e6a86',
-	text = '#e0def4',
-	love = '#eb6f92',
-	gold = '#f6c177',
-	rose = '#ebbcba',
-	pine = '#31748f',
-	foam = '#9ccfd8',
-	iris = '#c4a7e7',
-	highlight_high = '#524f67',
+	base = "#191724",
+	overlay = "#26233a",
+	muted = "#6e6a86",
+	text = "#e0def4",
+	love = "#eb6f92",
+	gold = "#f6c177",
+	rose = "#ebbcba",
+	pine = "#31748f",
+	foam = "#9ccfd8",
+	iris = "#c4a7e7",
+	highlight_high = "#524f67",
 }
 
 local main_active_tab = {
@@ -31,7 +31,7 @@ function MAIN.colors()
 		cursor_bg = MAIN.palette.highlight_high,
 		cursor_border = MAIN.palette.highlight_high,
 		cursor_fg = MAIN.palette.text,
-		selection_bg = '#2a283e',
+		selection_bg = "#2a283e",
 		selection_fg = MAIN.palette.text,
 
 		ansi = {
@@ -71,16 +71,16 @@ end
 local MOON = {}
 
 MOON.palette = {
-	base = '#232136',
-	overlay = '#393552',
-	muted = '#6e6a86',
-	text = '#e0def4',
-	love = '#eb6f92',
-	gold = '#f6c177',
+	base = "#232136",
+	overlay = "#393552",
+	muted = "#6e6a86",
+	text = "#e0def4",
+	love = "#eb6f92",
+	gold = "#f6c177",
 	-- rose = '#ea9a97',
-	pine = '#3e8fb0',
-	foam = '#9ccfd8',
-	iris = '#c4a7e7',
+	pine = "#3e8fb0",
+	foam = "#9ccfd8",
+	iris = "#c4a7e7",
 	-- highlight_high = '#56526e',
 }
 
@@ -98,8 +98,8 @@ function MOON.colors()
 	return {
 		foreground = MOON.palette.text,
 		background = MOON.palette.base,
-		cursor_bg = '#59546d',
-		cursor_border = '#59546d',
+		cursor_bg = "#59546d",
+		cursor_border = "#59546d",
 		cursor_fg = MOON.palette.text,
 		selection_bg = MOON.palette.overlay,
 		selection_fg = MOON.palette.text,
@@ -111,18 +111,18 @@ function MOON.colors()
 			MOON.palette.gold,
 			MOON.palette.foam,
 			MOON.palette.iris,
-			'#ebbcba', -- replacement for rose,
+			"#ebbcba", -- replacement for rose,
 			MOON.palette.text,
 		},
 
 		brights = {
-			'#817c9c', -- replacement for muted,
+			"#817c9c", -- replacement for muted,
 			MOON.palette.love,
 			MOON.palette.pine,
 			MOON.palette.gold,
 			MOON.palette.foam,
 			MOON.palette.iris,
-			'#ebbcba', -- replacement for rose,
+			"#ebbcba", -- replacement for rose,
 			MOON.palette.text,
 		},
 
@@ -141,16 +141,16 @@ end
 local DAWN = {}
 
 DAWN.palette = {
-	base = '#faf4ed',
-	overlay = '#f2e9e1',
-	muted = '#9893a5',
-	text = '#575279',
-	love = '#b4637a',
-	gold = '#ea9d34',
-	rose = '#d7827e',
-	pine = '#286983',
-	foam = '#56949f',
-	iris = '#907aa9',
+	base = "#faf4ed",
+	overlay = "#f2e9e1",
+	muted = "#9893a5",
+	text = "#575279",
+	love = "#b4637a",
+	gold = "#ea9d34",
+	rose = "#d7827e",
+	pine = "#286983",
+	foam = "#56949f",
+	iris = "#907aa9",
 	-- highlight_high = '#cecacd',
 }
 
@@ -175,7 +175,7 @@ function DAWN.colors()
 		selection_fg = DAWN.palette.text,
 
 		ansi = {
-			'#f2e9de',
+			"#f2e9de",
 			DAWN.palette.love,
 			DAWN.palette.pine,
 			DAWN.palette.gold,
@@ -186,7 +186,7 @@ function DAWN.colors()
 		},
 
 		brights = {
-			'#6e6a86', -- muted from rose-pine palette
+			"#6e6a86", -- muted from rose-pine palette
 			DAWN.palette.love,
 			DAWN.palette.pine,
 			DAWN.palette.gold,

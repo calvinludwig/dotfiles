@@ -20,4 +20,4 @@ require("lspconfig").tsserver.setup({
 	},
 })
 
-require 'lspconfig'.biome.setup {}
+require("lspconfig").biome.setup({})

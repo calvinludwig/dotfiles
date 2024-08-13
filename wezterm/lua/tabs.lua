@@ -1,4 +1,4 @@
-local w = require 'wezterm'
+local w = require("wezterm")
 local M = {}
 local function tab_title(tab_info)
 	return tab_info.tab_index
@@ -9,13 +9,10 @@ M.setup = function(c)
 	c.use_fancy_tab_bar = false
 	c.hide_tab_bar_if_only_one_tab = true
 
-	w.on(
-		'format-tab-title',
-		function(tab, tabs, panes, config, hover, max_width)
-			local title = tab_title(tab)
-			return { { Text = '  ' .. title .. '  ' }, }
-		end
-	)
+	w.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+		local title = tab_title(tab)
+		return { { Text = "  " .. title .. "  " } }
+	end)
 end
 
 return M
