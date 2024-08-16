@@ -1,11 +1,12 @@
 local M = {}
 
-local carbonfox = require("lua/themes/nightfox").CARBONFOX
+local colors = require('lua/themes/github').COLORS
 M.setup = function(c)
-	c.colors = carbonfox
+	c.window_decorations = 'NONE'
+	c.colors = colors("dark_default")
 	c.window_padding = {
-		left = "1cell",
-		right = "1cell",
+		left = '1cell',
+		right = '1cell',
 		top = 0,
 		bottom = 0,
 	}

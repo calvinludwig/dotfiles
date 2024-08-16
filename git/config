@@ -30,8 +30,6 @@
 [diff]
     colorMoved = default
 
-
-
 [alias]
     cm = commit
     st = status --short

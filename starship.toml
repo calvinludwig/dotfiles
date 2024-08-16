@@ -24,7 +24,7 @@ symbol = " "
 style = "green"
 
 [git_status]
-style = "cyan"
+style = "yellow"
 
 [git_state]
 style = "yellow"
