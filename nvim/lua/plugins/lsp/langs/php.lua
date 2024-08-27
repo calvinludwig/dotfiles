@@ -8,3 +8,8 @@ require("lspconfig").phpactor.setup({
 	},
 	filetypes = { "php" },
 })
+require("lspconfig").intelephense.setup({
+	on_attach = common.on_attach,
+	capabilities = common.capabilities,
+	filetypes = { "php" },
+})

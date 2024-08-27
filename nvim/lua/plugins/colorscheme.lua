@@ -1,12 +1,13 @@
 return {
 	{
 		enabled = true,
-		"projekt0n/github-nvim-theme",
-		lazy = false,
+		"catppuccin/nvim",
+		name = "catppuccin",
 		priority = 1000,
+		lazy = false,
 		config = function()
-			require('github-theme').setup({})
-			vim.cmd.colorscheme("github_dark_default")
+			require("catppuccin").setup({})
+			vim.cmd.colorscheme("catppuccin-frappe")
 		end,
 	},
 }

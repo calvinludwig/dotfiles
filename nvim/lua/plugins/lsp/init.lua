@@ -29,6 +29,7 @@ return {
 			local servers = {
 				"lua_ls",
 				"phpactor",
+				"intelephense",
 				"tsserver",
 				"biome",
 				"jsonls",

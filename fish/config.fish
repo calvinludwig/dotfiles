@@ -25,6 +25,8 @@ if status is-interactive
 
     zoxide init fish | source
     starship init fish | source
+
+	source ~/.asdf/plugins/java/set-java-home.fish
 end
 
 # pnpm

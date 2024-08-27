@@ -1,9 +1,8 @@
 local M = {}
 
-local colors = require('lua/themes/github').COLORS
 M.setup = function(c)
 	c.window_decorations = 'NONE'
-	c.colors = colors("dark_default")
+	c.color_scheme = 'Catppuccin Frappe'
 	c.window_padding = {
 		left = '1cell',
 		right = '1cell',
