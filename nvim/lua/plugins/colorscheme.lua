@@ -7,7 +7,7 @@ return {
 		lazy = false,
 		config = function()
 			require("catppuccin").setup({})
-			vim.cmd.colorscheme("catppuccin-frappe")
+			vim.cmd.colorscheme("catppuccin-latte")
 		end,
 	},
 }

@@ -27,6 +27,7 @@ return {
 		},
 		config = function()
 			local servers = {
+				"elixirls",
 				"lua_ls",
 				"phpactor",
 				"intelephense",

@@ -22,7 +22,7 @@
     diffFilter = delta --color-only
 
 [delta]
-	features = catppuccin-frappe
+	features = catppuccin-latte
     navigate = true    # use n and N to move between diff sections
     light = false
     side-by-side = true
@@ -36,5 +36,6 @@
 
 [alias]
     cm = commit
+    ck = checkout
     st = status --short
     lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
