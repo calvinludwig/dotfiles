@@ -48,6 +48,7 @@ return {
 			require("mason-lspconfig").setup({ ensure_installed = servers })
 
 			local langs = {
+				"elixir",
 				"lua",
 				"typescript",
 				"json",

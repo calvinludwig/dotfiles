@@ -18,6 +18,10 @@ return {
 					"vim",
 					"vimdoc",
 
+					-- elixir
+					"elixir",
+					"erlang",
+
 					-- go
 					"go",
 					"gomod",

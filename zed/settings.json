@@ -7,14 +7,19 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"ui_font_size": 18,
-	"buffer_font_size": 20,
+	"ui_font_size": 24,
+	"ui_font_family": "JetBrains Mono",
+	"buffer_font_size": 28,
 	"theme": {
 		"mode": "system",
 		"light": "Catppuccin Latte",
 		"dark": "Atelier Cave Dark"
 	},
 	"buffer_font_family": "JetBrains Mono",
+	"buffer_font_weight": 500,
+	"buffer_font_features": {
+		"calt": true
+	},
 	"vim_mode": true,
 	"indent_guides": {
 		"enabled": false
@@ -24,10 +29,11 @@
 		"font_size": 18
 	},
 	"buffer_line_height": "standard",
-	"format_on_save": "off",
+	"format_on_save": "language_server",
 	"hard_tabs": true,
 	"tab_size": 4,
 	"features": {
 		"inline_completion_provider": "supermaven"
-	}
+	},
+	"relative_line_numbers": true
 }
