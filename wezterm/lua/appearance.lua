@@ -2,7 +2,7 @@ local M = {}
 
 M.setup = function(c)
 	c.window_decorations = 'NONE'
-	c.color_scheme = 'Catppuccin Latte'
+	c.color_scheme = 'Catppuccin Mocha'
 	c.window_padding = {
 		left = '1cell',
 		right = '1cell',

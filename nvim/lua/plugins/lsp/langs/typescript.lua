@@ -9,7 +9,7 @@ local function organize_imports()
 	vim.lsp.buf.execute_command(params)
 end
 
-require("lspconfig").tsserver.setup({
+require("lspconfig").ts_ls.setup({
 	on_attach = common.on_attach,
 	capabilities = common.capabilities,
 	commands = {

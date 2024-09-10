@@ -31,7 +31,7 @@ return {
 				"lua_ls",
 				"phpactor",
 				"intelephense",
-				"tsserver",
+				"ts_ls",
 				"biome",
 				"jsonls",
 				"rust_analyzer",
