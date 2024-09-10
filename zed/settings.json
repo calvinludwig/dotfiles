@@ -7,16 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"ui_font_size": 24,
-	"ui_font_family": "JetBrains Mono",
-	"buffer_font_size": 28,
+	"ui_font_size": 20,
+	"ui_font_family": "Inter",
+	"buffer_font_size": 24,
 	"theme": {
 		"mode": "system",
 		"light": "Catppuccin Latte",
-		"dark": "Atelier Cave Dark"
+		"dark": "Catppuccin Mocha"
 	},
-	"buffer_font_family": "JetBrains Mono",
-	"buffer_font_weight": 500,
+	"buffer_font_family": "Maple Mono",
+	"buffer_font_weight": 400,
 	"buffer_font_features": {
 		"calt": true
 	},
