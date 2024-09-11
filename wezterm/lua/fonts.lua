@@ -9,8 +9,8 @@ M.setup = function(c)
 	c.font = w.font_with_fallback {
 		{ family = font_family, weight = 'Regular' },
 		{ family = 'JetBrains Mono', weight = 'Regular' },
-		{ family = 'Symbols Nerd Font', scale = 0.8 },
-		{ family = 'Noto Color Emoji', scale = 0.8 },
+		{ family = 'Symbols Nerd Font', scale = 0.85 },
+		{ family = 'Noto Color Emoji', scale = 0.85 },
 	}
 end
 
