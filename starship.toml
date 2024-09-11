@@ -13,21 +13,21 @@ $git_status\
 """
 
 [directory]
-format = "[$path](bg:surface0 fg:yellow)"
+format = "[$path](bg:surface0 fg:lavender)"
 
 [character]
 format = "$symbol"
-success_symbol = "[](fg:lavender)[ ](bg:lavender fg:base)[](bg:lavender fg:surface0)"
+success_symbol = "[](fg:blue)[ ](bg:blue fg:base)[](bg:blue fg:surface0)"
 error_symbol = "[](fg:peach)[ ](bg:peach fg:base)[](bg:peach fg:surface0)"
 
 [git_branch]
 format = "[$symbol$branch]($style)"
 symbol = " "
-style = "bg:surface1 fg:green"
+style = "bg:surface1 fg:teal"
 
 [git_status]
 format = "[$all_status]($style)[$ahead_behind]($style)"
-style = "bg:surface2 fg:yellow"
+style = "bg:surface2 fg:flamingo"
 
 [git_state]
 style = "bg:yellow fg:base"
