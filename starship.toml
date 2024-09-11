@@ -3,30 +3,30 @@ palette = "catppuccin_oled"
 format = """
 $character\
 $directory\                              
-[ ](bg:surface1 fg:surface0)\
+[ ](bg:surface1 fg:surface0)\
 $git_branch\
-[ ](bg:surface2 fg:surface1)\
+[ ](bg:surface2 fg:surface1)\
 $git_commit\
 $git_state\
 $git_status\
-[ ](fg:surface2)\
+[ ](fg:surface2)\
 """
 
 [directory]
-format = "[$path](bg:surface0 fg:lavender)"
+format = "[ $path ](bg:surface0 fg:lavender)"
 
 [character]
 format = "$symbol"
-success_symbol = "[](fg:blue)[ ](bg:blue fg:base)[](bg:blue fg:surface0)"
-error_symbol = "[](fg:peach)[ ](bg:peach fg:base)[](bg:peach fg:surface0)"
+success_symbol = "[](fg:overlay2)[ ](bold bg:overlay2 fg:base)[](bg:overlay2 fg:surface0)"
+error_symbol = "[](fg:peach)[ ](bold bg:peach fg:base)[](bg:peach fg:surface0)"
 
 [git_branch]
-format = "[$symbol$branch]($style)"
+format = "[$symbol$branch ]($style)"
 symbol = " "
 style = "bg:surface1 fg:teal"
 
 [git_status]
-format = "[$all_status]($style)[$ahead_behind]($style)"
+format = "[$all_status]($style)[$ahead_behind ]($style)"
 style = "bg:surface2 fg:flamingo"
 
 [git_state]
