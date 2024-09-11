@@ -3,31 +3,30 @@ palette = "catppuccin_oled"
 format = """
 $character\
 $directory\                              
-[ ](bg:surface1 fg:surface0)\
+[ ](bg:mantle fg:crust)\
 $git_branch\
-[ ](bg:surface2 fg:surface1)\
 $git_commit\
 $git_state\
 $git_status\
-[ ](fg:surface2)\
+[ ](fg:mantle)\
 """
 
 [directory]
-format = "[ $path ](bg:surface0 fg:lavender)"
+format = "[ $path ](bg:crust fg:lavender)"
 
 [character]
 format = "$symbol"
-success_symbol = "[](fg:overlay2)[ ](bold bg:overlay2 fg:base)[](bg:overlay2 fg:surface0)"
-error_symbol = "[](fg:peach)[ ](bold bg:peach fg:base)[](bg:peach fg:surface0)"
+success_symbol = "[](fg:overlay2)[ ](bold bg:overlay2 fg:base)[](bg:overlay2 fg:crust)"
+error_symbol = "[](fg:peach)[ ](bold bg:peach fg:base)[](bg:peach fg:crust)"
 
 [git_branch]
 format = "[$symbol$branch ]($style)"
 symbol = " "
-style = "bg:surface1 fg:teal"
+style = "bg:mantle fg:teal"
 
 [git_status]
 format = "[$all_status]($style)[$ahead_behind ]($style)"
-style = "bg:surface2 fg:flamingo"
+style = "bg:mantle fg:flamingo"
 
 [git_state]
 style = "bg:yellow fg:base"
@@ -85,7 +84,7 @@ surface2 = "#333333"
 surface1 = "#292929"
 surface0 = "#1f1f1f"
 base = "#000000"
-mantle = "#0a0a0a"
+mantle = "#1f1f1f"
 crust = "#141414"
 
 [palettes.catppuccin_mocha]

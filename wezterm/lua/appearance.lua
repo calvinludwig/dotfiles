@@ -11,9 +11,6 @@ M.setup = function(c)
 		['OLEDppuccin'] = custom,
 	}
 	c.color_scheme = 'OLEDppuccin'
-	c.colors = {
-		background = '#000000',
-	}
 	c.window_padding = {
 		left = '1cell',
 		right = '1cell',
