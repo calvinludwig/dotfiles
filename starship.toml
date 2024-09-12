@@ -17,7 +17,7 @@ format = "[ $path ](bg:crust fg:lavender)"
 [character]
 format = "$symbol"
 success_symbol = "[](fg:overlay2)[ ](bold bg:overlay2 fg:base)[](bg:overlay2 fg:crust)"
-error_symbol = "[](fg:peach)[ ](bold bg:peach fg:base)[](bg:peach fg:crust)"
+error_symbol = "[](fg:maroon)[ ](bold bg:maroon fg:base)[](bg:maroon fg:crust)"
 
 [git_branch]
 format = "[$symbol$branch ]($style)"
