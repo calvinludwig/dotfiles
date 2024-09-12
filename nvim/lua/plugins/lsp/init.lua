@@ -16,6 +16,22 @@ return {
 					require("crates").setup()
 				end,
 			},
+			{
+				"SmiteshP/nvim-navbuddy",
+				dependencies = {
+					"SmiteshP/nvim-navic",
+					"MunifTanjim/nui.nvim",
+				},
+				opts = {
+					window = {
+						border = "solid",
+						size = {
+							width = "80%",
+							height = "70%",
+						},
+					},
+				},
+			},
 		},
 		opts = {
 			diagnostics = {

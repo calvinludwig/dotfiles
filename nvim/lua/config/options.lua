@@ -4,6 +4,7 @@ vim.g.maplocalleader = "\\"
 vim.opt.autowrite = true -- Enable auto write
 -- vim.opt.clipboard = "unnamedplus"  -- Sync with system clipboard
 vim.opt.completeopt = "menu,menuone,noselect"
+vim.opt.conceallevel = 2 -- Hide * markup for bold and italic, but not markers with substitutions
 vim.opt.confirm = true -- Confirm to save changes before exiting modified buffer
 vim.opt.cursorline = true -- Enable highlighting of the current line
 vim.opt.expandtab = false -- NOT Use spaces instead of tabs
@@ -45,7 +46,15 @@ vim.opt.wrap = false -- Disable line wrap
 vim.opt.splitkeep = "screen"
 vim.opt.shortmess:append({ C = true })
 vim.opt.virtualedit = "all"
-vim.wo.fillchars = "eob: "
+vim.opt.fillchars = {
+	foldopen = "",
+	foldclose = "",
+	fold = " ",
+	foldsep = " ",
+	diff = "╱",
+	eob = " ",
+}
+vim.opt.foldlevel = 99
 vim.opt.swapfile = false
 vim.opt.mouse = "" -- Disable mouse mode
 

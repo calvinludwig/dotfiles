@@ -6,7 +6,7 @@ custom.tab_bar.background = '#0a0a0a'
 custom.tab_bar.inactive_tab.bg_color = '#141414'
 
 M.setup = function(c)
-	c.window_decorations = 'NONE'
+	c.window_decorations = 'TITLE|RESIZE'
 	c.color_schemes = {
 		['OLEDppuccin'] = custom,
 	}

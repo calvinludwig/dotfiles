@@ -8,6 +8,7 @@ M.capabilities.textDocument.foldingRange = {
 
 local function keymaps(bufnr)
 	local telescope = require("telescope.builtin")
+	local navbuddy = require("nvim-navbuddy")
 	local nmap = function(keys, func, desc)
 		if desc then
 			desc = "LSP: " .. desc
@@ -35,10 +36,18 @@ local function keymaps(bufnr)
 	nmap("<leader>wl", function()
 		print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
 	end, "[W]orkspace [L]ist Folders")
+
+	nmap("<leader>o", function()
+		navbuddy.open()
+	end, "NavBuddy")
 end
 
 M.on_attach = function(client, bufnr)
 	keymaps(bufnr)
+	if client.server_capabilities.documentSymbolProvider then
+		require("nvim-navic").attach(client, bufnr)
+	end
+	require("nvim-navbuddy").attach(client, bufnr)
 end
 
 return M
