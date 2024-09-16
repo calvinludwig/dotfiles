@@ -8,7 +8,7 @@ return {
 			"<leader>F",
 			function()
 				require("conform").format({
-					timeout_ms = 500,
+					timeout_ms = 100,
 					lsp_fallback = true,
 				})
 			end,
@@ -24,7 +24,7 @@ return {
 			blade = { "blade-formatter" },
 		},
 		-- Set up format-on-save
-		format_on_save = { timeout_ms = 500, lsp_fallback = true },
+		-- format_on_save = { timeout_ms = 500, lsp_fallback = true },
 		-- Customize formatters
 		formatters = {
 			shfmt = {
@@ -33,6 +33,13 @@ return {
 		},
 	},
 	init = function()
+		vim.api.nvim_create_user_command("Format", function()
+			print("Formatting...")
+			require("conform").format({
+				timeout_ms = 100,
+				lsp_fallback = true,
+			})
+		end, {})
 		-- If you want the formatexpr, here is the place to set it
 		vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
 	end,

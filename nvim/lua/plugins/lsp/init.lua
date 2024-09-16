@@ -5,7 +5,6 @@ return {
 		dependencies = {
 			"williamboman/mason-lspconfig.nvim",
 			"williamboman/mason.nvim",
-			{ "folke/neodev.nvim", event = "BufEnter", ft = "lua" },
 			{ "antosha417/nvim-lsp-file-operations", config = true },
 			"simrat39/rust-tools.nvim",
 			{

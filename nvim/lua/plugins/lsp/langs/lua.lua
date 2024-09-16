@@ -1,5 +1,4 @@
 local common = require("plugins.lsp.common")
-require("neodev").setup({})
 require("lspconfig").lua_ls.setup({
 	on_attach = common.on_attach,
 	capabilities = common.capabilities,
@@ -11,7 +10,16 @@ require("lspconfig").lua_ls.setup({
 			completion = {
 				callSnippet = "Replace",
 			},
+			runtime = {
+				version = "LuaJIT",
+				special = { reload = "require" },
+			},
 			workspace = {
+				library = {
+					vim.fn.expand("$VIMRUNTIME/lua"),
+					vim.fn.expand("$VIMRUNTIME/lua/vim/lsp"),
+					vim.fn.stdpath("data") .. "/lazy/lazy.nvim/lua/lazy",
+				},
 				checkThirdParty = false,
 			},
 		},
