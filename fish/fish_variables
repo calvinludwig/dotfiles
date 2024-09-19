@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dbg\x2b\x3a\x23313244\x2cbg\x3a\x231e1e2e\x2cspinner\x3a\x23f5e0dc\x2chl\x3a\x23f38ba8\x20\x2d\x2dcolor\x3dfg\x3a\x23cdd6f4\x2cheader\x3a\x23f38ba8\x2cinfo\x3a\x23cba6f7\x2cpointer\x3a\x23f5e0dc\x20\x2d\x2dcolor\x3dmarker\x3a\x23b4befe\x2cfg\x2b\x3a\x23cdd6f4\x2cprompt\x3a\x23cba6f7\x2chl\x2b\x3a\x23f38ba8\x20\x2d\x2dcolor\x3dselected\x2dbg\x3a\x2345475a\x20\x2d\x2dmulti
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:6c7086
 SETUVAR fish_color_cancel:f38ba8
@@ -41,4 +42,4 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/ludwig/\x2ecache/rebar3/bin\x1e/home/ludwig/Documents/jetbrains/PhpStorm\x2d242\x2e20224\x2e175/bin\x1e/home/ludwig/\x2ecomposer/vendor/bin\x1e/home/ludwig/\x2elocal/bin\x1e/home/ludwig/\x2espicetify
+SETUVAR fish_user_paths:/home/ludwig/bin\x1e/home/ludwig/\x2ecache/rebar3/bin\x1e/home/ludwig/Documents/jetbrains/PhpStorm\x2d242\x2e20224\x2e175/bin\x1e/home/ludwig/\x2ecomposer/vendor/bin\x1e/home/ludwig/\x2elocal/bin\x1e/home/ludwig/\x2espicetify

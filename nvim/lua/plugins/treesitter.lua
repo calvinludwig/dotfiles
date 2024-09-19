@@ -21,6 +21,9 @@ return {
 					-- elixir
 					"elixir",
 					"erlang",
+					
+					-- ruby      
+					"ruby", 
 
 					-- go
 					"go",

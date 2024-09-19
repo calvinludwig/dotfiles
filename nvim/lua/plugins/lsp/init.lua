@@ -43,6 +43,7 @@ return {
 		config = function()
 			local servers = {
 				"elixirls",
+				"ruby_lsp",
 				"lua_ls",
 				"phpactor",
 				"intelephense",
@@ -64,6 +65,7 @@ return {
 
 			local langs = {
 				"elixir",
+				"ruby",
 				"lua",
 				"typescript",
 				"json",
