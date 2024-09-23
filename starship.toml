@@ -2,31 +2,31 @@ palette = "catppuccin_mocha"
 
 format = """
 $character\
-$directory\                              
-[ ](bg:mantle fg:crust)\
+$directory\
+[ ](bg:surface1 fg:surface0)\
 $git_branch\
 $git_commit\
 $git_state\
 $git_status\
-[ ](fg:mantle)\
+[ ](fg:surface1)\
 """
 
 [directory]
-format = "[ $path ](bg:crust fg:lavender)"
+format = "[ $path ](bg:surface0 fg:lavender)"
 
 [character]
 format = "$symbol"
-success_symbol = "[](fg:overlay2)[ ](bold bg:overlay2 fg:base)[](bg:overlay2 fg:crust)"
-error_symbol = "[](fg:maroon)[ ](bold bg:maroon fg:base)[](bg:maroon fg:crust)"
+success_symbol = "[](fg:overlay2)[ ](bold bg:overlay2 fg:base)[](bg:overlay2 fg:surface0)"
+error_symbol = "[](fg:maroon)[ ](bold bg:maroon fg:base)[](bg:maroon fg:surface0)"
 
 [git_branch]
 format = "[$symbol$branch ]($style)"
 symbol = " "
-style = "bg:mantle fg:teal"
+style = "bg:surface1 fg:teal"
 
 [git_status]
 format = "[$all_status]($style)[$ahead_behind ]($style)"
-style = "bg:mantle fg:flamingo"
+style = "bg:surface1 fg:flamingo"
 
 [git_state]
 style = "bg:yellow fg:base"
