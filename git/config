@@ -1,5 +1,5 @@
 [include]
-	path = ~/.config/git/catppuccin.gitconfig
+	# path = ~/.config/git/catppuccin.gitconfig
 
 [user]
 	name = Calvin Ludwig
@@ -22,11 +22,11 @@
     diffFilter = delta --color-only
 
 [delta]
-	features = catppuccin-mocha
-    navigate = true    # use n and N to move between diff sections
-    light = false
-    side-by-side = true
-    line-numbers = true
+	# features = catppuccin-mocha
+  navigate = true    # use n and N to move between diff sections
+  light = false
+  side-by-side = true
+  line-numbers = true
 
 [merge]
     conflictstyle = diff3

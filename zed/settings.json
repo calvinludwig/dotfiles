@@ -8,14 +8,14 @@
 // from the command palette or from `Zed` application menu.
 {
 	"ui_font_size": 20,
-	"ui_font_family": "Inter",
+	"ui_font_family": "IBM Plex Sans",
 	"buffer_font_size": 24,
 	"theme": {
 		"mode": "system",
-		"light": "Catppuccin Latte",
-		"dark": "Catppuccin Mocha"
+		"light": "Tokyo Night Light",
+		"dark": "Tokyo Night Storm"
 	},
-	"buffer_font_family": "Maple Mono",
+	"buffer_font_family": "IBM Plex Mono",
 	"buffer_font_weight": 400,
 	"buffer_font_features": {
 		"calt": true
