@@ -260,26 +260,43 @@ plugins {
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
-// themes {
-//     dracula {
-//         fg 248 248 242
-//         bg 40 42 54
-//         red 255 85 85
-//         green 80 250 123
-//         yellow 241 250 140
-//         blue 98 114 164
-//         magenta 255 121 198
-//         orange 255 184 108
-//         cyan 139 233 253
-//         black 0 0 0
-//         white 255 255 255
-//     }
-// }
+themes {
+  tokyonight_day {
+    fg "#3760bf"
+    bg "#c4c8da"
+    // Black should match the terminal background color
+    // This ensures the top and bottom bars are transparent
+    black "#e1e2e7"
+    red "#f52a65"
+    green "#587539"
+    yellow "#8c6c3e"
+    blue "#2e7de9"
+    magenta "#9854f1"
+    cyan "#007197"
+    white "#6172b0"
+    orange "#b15c00"
+  }
+  tokyonight_storm {
+    fg "#c0caf5"
+    bg "#292e42"
+    // Black should match the terminal background color
+    // This ensures the top and bottom bars are transparent
+    black "#24283b"
+    red "#f7768e"
+    green "#9ece6a"
+    yellow "#e0af68"
+    blue "#7aa2f7"
+    magenta "#bb9af7"
+    cyan "#7dcfff"
+    white "#a9b1d6"
+    orange "#ff9e64"
+  }
+}
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "catppuccin-mocha"
+theme "tokyonight_storm"
 
 // The name of the default layout to load on startup
 // Default: "default"
