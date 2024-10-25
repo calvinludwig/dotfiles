@@ -1,0 +1,26 @@
+    # Adwaita
+
+    # Syntax Highlighting Colors
+    fish_color_normal 62a0ea
+    fish_color_command 3584e4
+    fish_color_keyword 9141ac
+    fish_color_quote ffa348
+    fish_color_redirection 62a0ea
+    fish_color_end 986a44
+    fish_color_option 9141ac
+    fish_color_error e01b24
+    fish_color_param c061cb
+    fish_color_comment 5e5c64
+    fish_color_selection --background=3d3846
+    fish_color_search_match --background=3d3846
+    fish_color_operator 33d17a
+    fish_color_escape 9141ac
+    fish_color_autosuggestion 5e5c64
+
+    # Completion Pager Colors
+    fish_pager_color_progress 5e5c64
+    fish_pager_color_prefix 3584e4
+    fish_pager_color_completion 62a0ea
+    fish_pager_color_description 5e5c64
+    fish_pager_color_selected_background --background=3d3846
+  
