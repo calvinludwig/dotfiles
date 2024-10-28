@@ -16,6 +16,7 @@ if status is-interactive
     alias inv='nvim $(fzf)'
     alias zj="zellij"
     alias sail="./vendor/bin/sail"
+    alias ff="fastfetch"
 
     alias cat="bat -p"
 
