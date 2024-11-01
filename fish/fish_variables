@@ -8,7 +8,7 @@ SETUVAR fish_color_comment:5e5c64
 SETUVAR fish_color_cwd:\x1d
 SETUVAR fish_color_cwd_root:red
 SETUVAR fish_color_end:986a44
-SETUVAR fish_color_error:e01b24
+SETUVAR fish_color_error:ed333b
 SETUVAR fish_color_escape:9141ac
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:\x1d
