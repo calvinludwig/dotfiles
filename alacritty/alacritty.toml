@@ -5,7 +5,8 @@ dynamic_padding = true
 [font]
 size = 16
 offset = { y = 1 }
-normal = { family = "IBM Plex Mono" }
+normal = { family = "JetBrains Mono" }
+bold = { family = "JetBrains Mono" }
 
 # Adwaita Alacritty Colors
 
