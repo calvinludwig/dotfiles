@@ -1,6 +1,22 @@
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "github_dark_default",
+    },
+  },
+  {
+    "projekt0n/github-nvim-theme",
+    name = "github-theme",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("github-theme").setup({})
+    end,
+  },
+  {
     "EdenEast/nightfox.nvim",
+    enabled = false,
     opts = {
       palettes = {
         carbonfox = {
@@ -24,12 +40,6 @@ return {
           orange = { base = "#ffa348", bright = "#ffbe6f", dim = "#ff7800" },
         },
       },
-    },
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "carbonfox",
     },
   },
   {
