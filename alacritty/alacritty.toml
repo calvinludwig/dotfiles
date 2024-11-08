@@ -8,31 +8,33 @@ offset = { y = 1 }
 normal = { family = "JetBrains Mono" }
 bold = { family = "JetBrains Mono" }
 
-# Adwaita Alacritty Colors
+# Github Dark Default Colors for Alacritty
 
-# Default colors
 [colors.primary]
-background = '#1e1e1e'
-foreground = '#ffffff'
+background = "#0d1117"
+foreground = "#e6edf3"
 
-# Normal colors
+# These will only be used when the `custom_cursor_colors` field is set to `true`.
+[colors.cursor]
+text = "#0d1117"
+cursor = "#e6edf3"
+
 [colors.normal]
-black = '#5e5c64'
-red = '#ed333b'
-green = '#33d17a'
-yellow = '#f8e45c'
-blue = '#3584e4'
-magenta = '#c061cb'
-cyan = '#ffa348'
-white = '#deddda'
+black = "#484f58"
+red = "#ff7b72"
+green = "#3fb950"
+yellow = "#d29922"
+blue = "#58a6ff"
+magenta = "#bc8cff"
+cyan = "#39c5cf"
+white = "#b1bac4"
 
-# Bright colors
 [colors.bright]
-black = '#77767b'
-red = '#f66151'
-green = '#57e389'
-yellow = '#f9f06b'
-blue = '#62a0ea'
-magenta = '#dc8add'
-cyan = '#ffbe6f'
-white = '#f6f5f4'
+black = "#6e7681"
+red = "#ffa198"
+green = "#56d364"
+yellow = "#e3b341"
+blue = "#79c0ff"
+magenta = "#bc8cff"
+cyan = "#39c5cf"
+white = "#b1bac4"

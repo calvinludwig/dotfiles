@@ -1,0 +1,28 @@
+# Adwaita Alacritty Colors
+
+# Default colors
+[colors.primary]
+background = '#1e1e1e'
+foreground = '#ffffff'
+
+# Normal colors
+[colors.normal]
+black = '#5e5c64'
+red = '#ed333b'
+green = '#33d17a'
+yellow = '#f8e45c'
+blue = '#3584e4'
+magenta = '#c061cb'
+cyan = '#ffa348'
+white = '#deddda'
+
+# Bright colors
+[colors.bright]
+black = '#77767b'
+red = '#f66151'
+green = '#57e389'
+yellow = '#f9f06b'
+blue = '#62a0ea'
+magenta = '#dc8add'
+cyan = '#ffbe6f'
+white = '#f6f5f4'
