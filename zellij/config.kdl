@@ -306,12 +306,27 @@ themes {
     white "#deddda"
     orange "#ffa348"
   }
+  github_dark_default {
+    fg "#e6edf3"
+    bg "#0d1117"
+    // Black should match the terminal background color
+    // This ensures the top and bottom bars are transparent
+    black "#010409"
+    red "#ff7b72"
+    cyan "#39c5cf"
+    yellow "#d29922"
+    blue "#58a6ff"
+    magenta "#bc8cff"
+    green "#3fb950"
+    white "#b1bac4"
+    orange "#f0883e"
+  }
 }
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "adwaita"
+theme "github_dark_default"
 
 // The name of the default layout to load on startup
 // Default: "default"
