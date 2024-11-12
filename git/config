@@ -1,22 +1,22 @@
 [include]
-	path = ~/.config/git/catppuccin.gitconfig
+  path = ~/.config/git/catppuccin.gitconfig
 
 [user]
-	name = Calvin Ludwig
-	email = bludwig.calvin@gmail.com
+  name = Calvin Ludwig
+  email = bludwig.calvin@gmail.com
 
 [fetch]
-    prune = true
+  prune = true
 
 [pull]
-	rebase = true
+  rebase = true
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
 
 [core]
-    pager = delta
-	editor = nvim
+  pager = delta
+  editor = nvim
 
 [interactive]
     diffFilter = delta --color-only
@@ -40,14 +40,16 @@
   line-numbers-zero-style       = "#3b4261"
 
 [merge]
-    conflictstyle = diff3
+  conflictstyle = diff3
 
 [diff]
-    colorMoved = default
+  colorMoved = default
 
 [alias]
-    cm = commit
-    ck = checkout
-    st = status --short
-	df = diff -w
-    lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  cm = commit
+  ck = checkout
+  st = status --short
+  df = diff -w
+  lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[advice]
+	addEmptyPathspec = false

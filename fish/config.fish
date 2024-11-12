@@ -24,7 +24,7 @@ if status is-interactive
 
     export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-    eval (zellij setup --generate-auto-start fish | string collect)
+    # eval (zellij setup --generate-auto-start fish | string collect)
     zoxide init fish | source
     starship init fish | source
 
