@@ -1,9 +1,24 @@
-# Dotfiles symlinked on my machine
+# Dotfiles
+
+This is my personal dotfiles repository.
 
 ## Installation
 
-Just run the following command:
+### Requirements
+
+- [stow](https://github.com/aspiers/stow)
+
+### Clone this repository
+
+```bash
+git clone https://github.com/calvinludwig/dotfiles
+```
+
+### Symlink the dotfiles
 
 ```bash
 stow --target $HOME/.dotfiles .
 ```
+
+Stow will symlink all directories and files in this directory to
+the `$HOME/.config` directory.
