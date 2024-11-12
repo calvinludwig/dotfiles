@@ -17,7 +17,7 @@ if status is-interactive
     alias zj="zellij"
     alias sail="./vendor/bin/sail"
     alias ff="fastfetch"
-
+    alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
     alias cat="bat -p"
 
     fzf --fish | source
