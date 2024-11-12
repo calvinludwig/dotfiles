@@ -1,6 +1,9 @@
 # Dotfiles symlinked on my machine
 
-### Install with stow:
+## Installation
+
+Just run the following command:
+
 ```bash
 stow --target $HOME/.dotfiles .
 ```
