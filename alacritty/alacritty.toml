@@ -1,5 +1,3 @@
-general.import = ["~/.config/alacritty/catppuccin-macchiato.toml"]
-
 [window]
 decorations = "None"
 dynamic_padding = true
