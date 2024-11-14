@@ -7,33 +7,33 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "ui_font_size": 20,
-  "ui_font_family": "Iosevka Etoile",
-  "theme": {
-    "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Frappe"
-  },
-  "buffer_font_size": 24,
-  "buffer_font_family": "Iosevka Slab",
-  "buffer_font_weight": 400,
-  "buffer_font_features": {
-    "calt": true
-  },
-  "vim_mode": true,
-  "indent_guides": {
-    "enabled": false
-  },
-  "terminal": {
-    "font_family": "Iosevka Slab",
-    "font_size": 18
-  },
-  "buffer_line_height": "standard",
-  "format_on_save": "language_server",
-  "hard_tabs": true,
-  "tab_size": 4,
-  "features": {
-    "inline_completion_provider": "supermaven"
-  },
-  "relative_line_numbers": true
+	"ui_font_size": 20,
+	"ui_font_family": "Iosevka Etoile",
+	"theme": {
+		"mode": "system",
+		"light": "Catppuccin Latte",
+		"dark": "Catppuccin Frappé"
+	},
+	"buffer_font_size": 24,
+	"buffer_font_family": "Iosevka Slab",
+	"buffer_font_weight": 400,
+	"buffer_font_features": {
+		"calt": true
+	},
+	"vim_mode": true,
+	"indent_guides": {
+		"enabled": false
+	},
+	"terminal": {
+		"font_family": "Iosevka Slab",
+		"font_size": 18
+	},
+	"buffer_line_height": "standard",
+	"format_on_save": "language_server",
+	"hard_tabs": true,
+	"tab_size": 4,
+	"features": {
+		"inline_completion_provider": "supermaven"
+	},
+	"relative_line_numbers": true
 }
