@@ -8,7 +8,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     source ~/Code/gpssat/documents/aliases.sh
 
-    alias g='git'
     alias ls='exa'
     alias ll='exa --oneline --long --group --icons --git --group-directories-first'
     alias pn='pnpm'
