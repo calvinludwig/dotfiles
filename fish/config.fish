@@ -10,22 +10,22 @@ if status is-interactive
 
     alias ls='exa'
     alias ll='exa --oneline --long --group --icons --git --group-directories-first'
-    alias pn='pnpm'
-    alias vim='nvim -u NONE'
-    alias get_idf='. $HOME/.esp/esp-idf/export.fish'
-    alias nv='nvim'
-    alias fzf="fzf --preview 'bat --color=always {}' --preview-window '~3'"
-    alias inv='nvim $(fzf)'
+
     alias zj="zellij"
-    alias sail="./vendor/bin/sail"
     alias ff="fastfetch"
+    alias pn='pnpm'
+    alias nv='nvim'
+    alias vim='nvim -u NONE'
+
+    alias get_idf='. $HOME/.esp/esp-idf/export.fish'
+    alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
+
+    alias sail="./vendor/bin/sail"
     alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
     alias cat="bat -p"
-
-    fzf --fish | source
-
     export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+    fzf --fish | source
     # eval (zellij setup --generate-auto-start fish | string collect)
     zoxide init fish | source
     starship init fish | source
