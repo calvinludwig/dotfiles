@@ -8,25 +8,30 @@
 // from the command palette or from `Zed` application menu.
 {
 	"ui_font_size": 16,
-	"ui_font_family": "Geist",
+	"ui_font_family": "Inter",
 	"theme": {
 		"mode": "system",
 		"light": "Catppuccin Latte",
 		"dark": "Catppuccin Frappé"
 	},
-	"buffer_font_size": 18,
-	"buffer_font_family": "Geist Mono",
+	"buffer_font_size": 20,
+	"buffer_font_weight": 500,
+	"buffer_font_family": "Maple Mono",
 	"vim_mode": true,
+	"vim": {
+		"toggle_relative_line_numbers": true,
+		"use_system_clipboard": "always"
+	},
 	"indent_guides": {
 		"enabled": false
 	},
 	"project_panel": {
-		"indent_size": 40,
+		"indent_size": 20,
 		"auto_fold_dirs": false,
 		"indent_guides": false
 	},
 	"terminal": {
-		"font_family": "Geist Mono",
+		"font_family": "Maple Mono",
 		"font_size": 18,
 		"cursor_shape": "underline"
 	},
