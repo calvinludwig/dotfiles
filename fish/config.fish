@@ -32,8 +32,8 @@ if status is-interactive
 
 end
 
-set -x LS_COLORS $(vivid generate catppuccin-latte)
-set -x EZA_COLORS $(vivid generate catppuccin-latte)
+set -x LS_COLORS $(vivid generate catppuccin-mocha)
+set -x EZA_COLORS $(vivid generate catppuccin-mocha)
 
 source ~/.asdf/plugins/java/set-java-home.fish
 
@@ -43,5 +43,3 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
-
-fish_add_path /home/ludwig/.spicetify
