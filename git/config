@@ -3,7 +3,7 @@
 
 [user]
   name = Calvin Ludwig
-  email = bludwig.calvin@gmail.com
+  email = git@calvinludwig.xyz
 
 [fetch]
   prune = true
