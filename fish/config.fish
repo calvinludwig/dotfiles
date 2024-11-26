@@ -26,10 +26,11 @@ if status is-interactive
     export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
     fzf --fish | source
-    # eval (zellij setup --generate-auto-start fish | string collect)
     zoxide init fish | source
     starship init fish | source
-
+    if test "$TERM" = xterm-kitty
+        eval (zellij setup --generate-auto-start fish | string collect)
+    end
 end
 
 set -x LS_COLORS $(vivid generate catppuccin-mocha)
