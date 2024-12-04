@@ -8,6 +8,7 @@ sed -i 's/catppuccin-latte/catppuccin-mocha/' ./zellij/config.kdl
 sed -i 's/catppuccin-latte/catppuccin-mocha/' ./fish/config.fish
 sed -i 's/"catppuccin_latte"/"catppuccin_mocha"/' ./starship.toml
 sed -i 's/set variant latte/set variant mocha/' ./fish/conf.d/fzf.fish
+sed -i 's/Catppuccin Latte/Catppuccin Mocha/' ./bat/config
 
 cp ./yazi/catppuccin-mocha-yellow.toml ./yazi/theme.toml
 cp ./lazygit/mocha.yml ./lazygit/config.yml
