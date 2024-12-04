@@ -14,8 +14,8 @@ if status is-interactive
     alias zj="zellij"
     alias ff="fastfetch"
     alias pn='pnpm'
-    alias nv='nvim'
-    alias vim='nvim -u NONE'
+    alias nv='NVIM_APPNAME=lazyvim nvim'
+    alias vim='nvim'
 
     alias get_idf='. $HOME/.esp/esp-idf/export.fish'
     alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
