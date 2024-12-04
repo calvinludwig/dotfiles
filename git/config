@@ -9,17 +9,17 @@
   prune = true
 
 [pull]
-	rebase = true
+  rebase = true
 
 [init]
 	defaultBranch = main
 
 [core]
   pager = delta
-  editor = nvim
+  editor = NVIM_APPNAME=lazyvim nvim
 
 [interactive]
-    diffFilter = delta --color-only
+  diffFilter = delta --color-only
 
 [delta]
   features = catppuccin-mocha
