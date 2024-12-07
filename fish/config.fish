@@ -17,6 +17,10 @@ if status is-interactive
     alias nv='NVIM_APPNAME=lazyvim nvim'
     alias vim='nvim'
 
+    alias pint='./vendor/bin/pint'
+    alias stan='./vendor/bin/phpstan --memory-limit=4G'
+    alias agro_php='docker exec -it agrofleet-php'
+
     alias get_idf='. $HOME/.esp/esp-idf/export.fish'
     alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
 

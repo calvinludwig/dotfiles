@@ -3,7 +3,7 @@
 kitty +kitten themes --reload-in=all Catppuccin-Latte
 
 sed -i 's/catppuccin-mocha/catppuccin-latte/' ./git/config
-sed -i 's/catppuccin-mocha/catppuccin-latte/' ./nvim/lua/plugins/core.lua
+sed -i 's/catppuccin-mocha/catppuccin-latte/' ./lazyvim/lua/plugins/core.lua
 sed -i 's/catppuccin-mocha/catppuccin-latte/' ./zellij/config.kdl
 sed -i 's/catppuccin-mocha/catppuccin-latte/' ./fish/config.fish
 sed -i 's/"catppuccin_mocha"/"catppuccin_latte"/' ./starship.toml
