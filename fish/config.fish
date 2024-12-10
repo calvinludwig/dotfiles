@@ -19,12 +19,12 @@ if status is-interactive
 
     alias pint='./vendor/bin/pint'
     alias stan='./vendor/bin/phpstan --memory-limit=4G'
+    alias sail="sh $([ -f sail ] && echo sail || echo vendor/bin/sail)"
     alias agro_php='docker exec -it agrofleet-php'
 
     alias get_idf='. $HOME/.esp/esp-idf/export.fish'
     alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
 
-    alias sail="./vendor/bin/sail"
     alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
     alias cat="bat -p"
     export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -34,8 +34,8 @@ if status is-interactive
     starship init fish | source
 end
 
-set -x LS_COLORS $(vivid generate catppuccin-mocha)
-set -x EZA_COLORS $(vivid generate catppuccin-mocha)
+set -x LS_COLORS $(vivid generate catppuccin-latte)
+set -x EZA_COLORS $(vivid generate catppuccin-latte)
 
 source ~/.asdf/plugins/java/set-java-home.fish
 
