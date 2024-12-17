@@ -6,7 +6,7 @@ set -gx VISUAL /usr/bin/nvim
 if status is-interactive
 
     # Commands to run in interactive sessions can go here
-    source ~/Code/gpssat/documents/aliases.sh
+    source ~/gpssat/documents/aliases.sh
 
     alias ls='exa'
     alias ll='exa --oneline --long --group --icons --git --group-directories-first'
@@ -14,8 +14,8 @@ if status is-interactive
     alias zj="zellij"
     alias ff="fastfetch"
     alias pn='pnpm'
+    alias lazyvim='NVIM_APPNAME=lazyvim nvim'
     alias nv='NVIM_APPNAME=lazyvim nvim'
-    alias vim='nvim'
 
     alias pint='./vendor/bin/pint'
     alias stan='./vendor/bin/phpstan --memory-limit=4G'

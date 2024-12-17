@@ -1,6 +1,3 @@
-[include]
-  path = ~/.config/git/catppuccin.gitconfig
-
 [user]
   name = Calvin Ludwig
   email = git@calvinludwig.xyz
@@ -22,7 +19,6 @@
   diffFilter = delta --color-only
 
 [delta]
-  features = catppuccin-latte
   navigate = true    # use n and N to move between diff sections
   side-by-side = true
   line-numbers = true

@@ -7,42 +7,42 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "ui_font_size": 16,
-  "ui_font_family": "Inter",
-  "theme": {
-    "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
-  },
-  "buffer_font_size": 18,
-  "buffer_font_weight": 400,
-  "buffer_font_family": "JetBrains Mono",
-  "vim_mode": true,
-  "vim": {
-    "toggle_relative_line_numbers": true,
-    "use_system_clipboard": "always"
-  },
-  "indent_guides": {
-    "enabled": false
-  },
-  "project_panel": {
-    "indent_size": 20,
-    "auto_fold_dirs": false,
-    "indent_guides": {
-      "show": "never"
-    }
-  },
-  "terminal": {
-    "font_family": "JetBrains Mono",
-    "font_size": 18,
-    "cursor_shape": "underline"
-  },
-  "buffer_line_height": "comfortable",
-  "format_on_save": "language_server",
-  "hard_tabs": true,
-  "tab_size": 4,
-  "features": {
-    "inline_completion_provider": "copilot"
-  },
-  "relative_line_numbers": true
+	"ui_font_size": 16,
+	"ui_font_family": "Maple Mono",
+	"theme": {
+		"mode": "system",
+		"light": "Github Light",
+		"dark": "Catppuccin Mocha"
+	},
+	"buffer_font_size": 18,
+	"buffer_font_weight": 500,
+	"buffer_font_family": "Maple Mono",
+	"vim_mode": true,
+	"vim": {
+		"toggle_relative_line_numbers": true,
+		"use_system_clipboard": "always"
+	},
+	"indent_guides": {
+		"enabled": false
+	},
+	"project_panel": {
+		"indent_size": 20,
+		"auto_fold_dirs": false,
+		"indent_guides": {
+			"show": "never"
+		}
+	},
+	"terminal": {
+		"font_family": "Maple Mono",
+		"font_size": 18,
+		"cursor_shape": "underline"
+	},
+	"buffer_line_height": "comfortable",
+	"format_on_save": "language_server",
+	"hard_tabs": true,
+	"tab_size": 4,
+	"features": {
+		"inline_completion_provider": "copilot"
+	},
+	"relative_line_numbers": true
 }
