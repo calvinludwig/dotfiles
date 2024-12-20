@@ -18,6 +18,7 @@ if status is-interactive
     alias nv='NVIM_APPNAME=lazyvim nvim'
 
     alias pint='./vendor/bin/pint'
+    alias pest='./vendor/bin/pest'
     alias stan='./vendor/bin/phpstan --memory-limit=4G'
     alias sail="sh $([ -f sail ] && echo sail || echo vendor/bin/sail)"
     alias agro_php='docker exec -it agrofleet-php'
