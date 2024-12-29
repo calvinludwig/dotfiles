@@ -1,16 +1,18 @@
 font-size = 16
-font-family = Maple Mono
+font-family = JetBrains Mono
+font-family = Symbols Nerd Font Mono
+font-family = Noto Emoji
 
-theme = catppuccin-frappe
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 0.5
 
 shell-integration = fish
 shell-integration-features = sudo
 
-mouse-hide-while-typing = true
-mouse-scroll-multiplier = 0.5
-window-padding-x = 4
-window-padding-y = 0
-window-height = 36
-window-width = 120
-bold-is-bright = true
-cursor-style-blink = false
+theme = catppuccin-frappe
+
+keybind = alt+minus=new_split:right
+keybind = alt+equal=new_split:down
+
+keybind = alt+h=goto_split:left
+keybind = alt+l=goto_split:right
