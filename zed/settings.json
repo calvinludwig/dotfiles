@@ -11,11 +11,10 @@
 	"ui_font_family": "Maple Mono",
 	"theme": {
 		"mode": "system",
-		"light": "Github Light",
-		"dark": "Catppuccin Mocha"
+		"light": "Catppuccin Latte",
+		"dark": "Catppuccin Frappé"
 	},
 	"buffer_font_size": 18,
-	"buffer_font_weight": 500,
 	"buffer_font_family": "Maple Mono",
 	"vim_mode": true,
 	"vim": {
