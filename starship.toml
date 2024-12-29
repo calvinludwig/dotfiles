@@ -15,7 +15,7 @@ $git_state\
 """
 
 [character]
-success_symbol = "[\\$](lavender)"
+success_symbol = "[\\$](sapphire)"
 error_symbol = "[\\$](peach)"
 
 [git_branch]

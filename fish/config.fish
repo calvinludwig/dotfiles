@@ -14,8 +14,7 @@ if status is-interactive
     alias zj="zellij"
     alias ff="fastfetch"
     alias pn='pnpm'
-    alias lazyvim='NVIM_APPNAME=lazyvim nvim'
-    alias nv='NVIM_APPNAME=lazyvim nvim'
+    alias nv='nvim'
 
     alias pint='./vendor/bin/pint'
     alias pest='./vendor/bin/pest'
