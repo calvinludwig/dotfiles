@@ -35,9 +35,6 @@ if status is-interactive
     starship init fish | source
 end
 
-set -x LS_COLORS $(vivid generate catppuccin-latte)
-set -x EZA_COLORS $(vivid generate catppuccin-latte)
-
 source ~/.asdf/plugins/java/set-java-home.fish
 
 # pnpm

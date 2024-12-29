@@ -1,0 +1,16 @@
+font-size = 16
+font-family = Maple Mono
+
+theme = catppuccin-frappe
+
+shell-integration = fish
+shell-integration-features = sudo
+
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 0.5
+window-padding-x = 4
+window-padding-y = 0
+window-height = 36
+window-width = 120
+bold-is-bright = true
+cursor-style-blink = false
