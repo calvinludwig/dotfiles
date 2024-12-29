@@ -35,6 +35,16 @@ if status is-interactive
     starship init fish | source
 end
 
+set -x LS_COLORS $(vivid generate catppuccin-frappe)
+set -x EZA_COLORS $(vivid generate catppuccin-frappe)
+
+set -x FZF_DEFAULT_OPTS "\
+--color=bg+:#414559,bg:#303446,spinner:#f2d5cf,hl:#e78284 \
+--color=fg:#c6d0f5,header:#e78284,info:#ca9ee6,pointer:#f2d5cf \
+--color=marker:#babbf1,fg+:#c6d0f5,prompt:#ca9ee6,hl+:#e78284 \
+--color=selected-bg:#51576d \
+--multi"
+
 source ~/.asdf/plugins/java/set-java-home.fish
 
 # pnpm
