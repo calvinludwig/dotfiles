@@ -1,10 +1,15 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
+SETUVAR --export NIX_PROFILES:/home/ludwig/\x2enix\x2dprofile
+SETUVAR --export NIX_SSL_CERT_FILE:/etc/ssl/certs/ca\x2dcertificates\x2ecrt
 SETUVAR __fish_initialized:3400
+SETUVAR _fisher_adriaanzon_2F_fish_2D_artisan_2D_completion_files:\x7e/\x2econfig/fish/functions/artisan\x2efish\x1e\x7e/\x2econfig/fish/completions/artisan\x2efish\x1e\x7e/\x2econfig/fish/completions/php\x2efish
 SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\x20Frappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Latte\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Macchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Mocha\x2etheme
+SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ecatppuccin/fish
+SETUVAR _fisher_kidonng_2F_nix_2E_fish_files:\x7e/\x2econfig/fish/conf\x2ed/nix\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ecatppuccin/fish\x1eadriaanzon/fish\x2dartisan\x2dcompletion\x1ejorgebucaran/autopair\x2efish\x1ekidonng/nix\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:9ca0b0
 SETUVAR fish_color_cancel:d20f39

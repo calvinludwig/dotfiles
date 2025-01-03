@@ -10,7 +10,10 @@ return {
     name = "catppuccin",
     priority = 1000,
     opts = {
-      transparent_background = true,
+      background = {
+        light = "latte",
+        dark = "frappe",
+      },
     },
   },
   {

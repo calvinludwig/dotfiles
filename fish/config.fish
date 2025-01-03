@@ -1,8 +1,5 @@
 set fish_greeting
 
-set -gx EDITOR /usr/bin/nvim
-set -gx VISUAL /usr/bin/nvim
-
 if status is-interactive
 
     # Commands to run in interactive sessions can go here
@@ -43,8 +40,6 @@ set -x FZF_DEFAULT_OPTS "\
 --color=marker:#7287fd,fg+:#4c4f69,prompt:#8839ef,hl+:#d20f39 \
 --color=selected-bg:#bcc0cc \
 --multi"
-
-source ~/.asdf/plugins/java/set-java-home.fish
 
 # pnpm
 set -gx PNPM_HOME "/home/ludwig/.local/share/pnpm"
