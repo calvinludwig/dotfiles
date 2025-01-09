@@ -21,7 +21,7 @@
   diffFilter = delta --color-only
 
 [delta]
-  features = catppuccin-frappe
+  features = catppuccin-latte
   navigate = true    # use n and N to move between diff sections
   side-by-side = true
   line-numbers = true
