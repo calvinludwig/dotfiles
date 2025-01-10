@@ -15,7 +15,7 @@
 
 [core]
   pager = delta
-  editor = NVIM_APPNAME=lazyvim nvim
+  editor = nvim
 
 [interactive]
   diffFilter = delta --color-only
