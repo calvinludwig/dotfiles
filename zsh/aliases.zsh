@@ -7,6 +7,7 @@ alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --o
 alias cat="bat -p"
 
 alias phpstan="./vendor/bin/phpstan analyze"
+alias peck="./vendor/bin/peck"
 alias pint="./vendor/bin/pint"
 alias pest="./vendor/bin/pest"
 alias pestc="./vendor/bin/pest --coverage"

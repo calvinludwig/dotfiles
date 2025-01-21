@@ -42,3 +42,5 @@
 	addEmptyPathspec = false
 [commit]
 	gpgsign = false
+[push]
+	autoSetupRemote = true
