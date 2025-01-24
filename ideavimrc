@@ -1,0 +1,24 @@
+set number
+
+set hlsearch
+set ignorecase
+set smartcase
+set incsearch
+set wrapscan
+
+set gdefault
+set history=10000
+set scrolloff=5 sidescrolloff=10
+set clipboard=unnamedplus,unnamed,ideaput
+
+set multiple-cursors
+set commentary
+set surround
+set ideajoin
+set ideastatusicon=disabled
+
+let mapleader = " "
+
+map <leader>ff <Action>(SearchEverywhere)
+map <leader>sg <Action>(FindInPath)
+map <leader>rn <Action>(RenameElement)

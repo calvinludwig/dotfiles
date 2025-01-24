@@ -1,6 +1,7 @@
-theme = catppuccin-latte
+theme = catppuccin-mocha
 
-font-family = IBM Plex Mono
-font-size = 16
+font-family = Geist Mono
+font-size = 17
 window-padding-x = 12
 window-padding-balance = true
+bold-is-bright = true
