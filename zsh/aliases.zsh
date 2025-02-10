@@ -6,6 +6,9 @@ alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
 alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
 alias cat="bat -p"
 
+alias ..="z .."
+alias ...="z ../.."
+alias a="php artisan"
 alias phpstan="./vendor/bin/phpstan analyze"
 alias peck="./vendor/bin/peck"
 alias pint="./vendor/bin/pint"

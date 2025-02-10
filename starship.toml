@@ -1,6 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-palette = "catppuccin_mocha"
+palette = "catppuccin_latte"
 
 format = """
 $username\
@@ -16,18 +16,19 @@ $git_state\
 """
 
 [character]
-success_symbol = "[\\$](sapphire)"
-error_symbol = "[\\$](peach)"
+success_symbol = "[\\$](lavender)"
+error_symbol = "[\\$](rosewater)"
+vimcmd_symbol = "[\\$](peach)"
 
 [git_branch]
 style = "teal"
 
 [git_status]
-style = "maroon"
+style = "sapphire"
 
 [directory]
 truncation_length = 4
-style = "rosewater"
+style = "yellow"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

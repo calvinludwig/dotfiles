@@ -22,3 +22,4 @@ let mapleader = " "
 map <leader>ff <Action>(SearchEverywhere)
 map <leader>sg <Action>(FindInPath)
 map <leader>rn <Action>(RenameElement)
+map <leader>e <Action>(ActivateProjectToolWindow)

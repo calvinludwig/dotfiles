@@ -8,14 +8,14 @@
 // from the command palette or from `Zed` application menu.
 {
 	"ui_font_size": 16,
-	"ui_font_family": "Geist",
+	"ui_font_family": "SF Pro Display",
 	"theme": {
 		"mode": "system",
 		"light": "Catppuccin Latte",
-		"dark": "Catppuccin Mocha"
+		"dark": "Catppuccin Macchiato"
 	},
-	"buffer_font_size": 18,
-	"buffer_font_family": "Geist Mono",
+	"buffer_font_size": 19.0,
+	"buffer_font_family": "Maple Mono",
 	"vim_mode": true,
 	"vim": {
 		"toggle_relative_line_numbers": true,
@@ -32,7 +32,7 @@
 		}
 	},
 	"terminal": {
-		"font_family": "Geist Mono",
+		"font_family": "Maple Mono",
 		"font_size": 18,
 		"cursor_shape": "underline"
 	},
