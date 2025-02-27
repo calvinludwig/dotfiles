@@ -1,7 +1,7 @@
 [manager]
 cwd = { fg = "#179299" }
 
-hovered         = { fg = "#eff1f5", bg = "#df8e1d" }
+hovered         = { fg = "#eff1f5", bg = "#ea76cb" }
 preview_hovered = { fg = "#eff1f5", bg = "#4c4f69" }
 
 find_keyword  = { fg = "#df8e1d", italic = true }
@@ -10,7 +10,7 @@ find_position = { fg = "#ea76cb", bg = "reset", italic = true }
 marker_copied   = { fg = "#40a02b", bg = "#40a02b" }
 marker_cut      = { fg = "#d20f39", bg = "#d20f39" }
 marker_marked   = { fg = "#179299", bg = "#179299" }
-marker_selected = { fg = "#df8e1d", bg = "#df8e1d" }
+marker_selected = { fg = "#ea76cb", bg = "#ea76cb" }
 
 tab_active   = { fg = "#eff1f5", bg = "#4c4f69" }
 tab_inactive = { fg = "#4c4f69", bg = "#bcc0cc" }
@@ -18,7 +18,7 @@ tab_width    = 1
 
 count_copied   = { fg = "#eff1f5", bg = "#40a02b" }
 count_cut      = { fg = "#eff1f5", bg = "#d20f39" }
-count_selected = { fg = "#eff1f5", bg = "#df8e1d" }
+count_selected = { fg = "#eff1f5", bg = "#ea76cb" }
 
 border_symbol = "│"
 border_style  = { fg = "#8c8fa1" }
@@ -26,8 +26,8 @@ border_style  = { fg = "#8c8fa1" }
 syntect_theme = "~/.config/yazi/Catppuccin-latte.tmTheme"
 
 [mode]
-normal_main = { fg = "#eff1f5", bg = "#df8e1d", bold = true }
-normal_alt  = { fg = "#df8e1d", bg = "#ccd0da"}
+normal_main = { fg = "#eff1f5", bg = "#ea76cb", bold = true }
+normal_alt  = { fg = "#ea76cb", bg = "#ccd0da"}
 
 select_main = { fg = "#eff1f5", bg = "#40a02b", bold = true }
 select_alt  = { fg = "#40a02b", bg = "#ccd0da"}
@@ -50,29 +50,29 @@ perm_exec  = { fg = "#40a02b" }
 perm_sep   = { fg = "#8c8fa1" }
 
 [input]
-border   = { fg = "#df8e1d" }
+border   = { fg = "#ea76cb" }
 title    = {}
 value    = {}
 selected = { reversed = true }
 
 [pick]
-border   = { fg = "#df8e1d" }
+border   = { fg = "#ea76cb" }
 active   = { fg = "#ea76cb" }
 inactive = {}
 
 [confirm]
-border     = { fg = "#df8e1d" }
-title      = { fg = "#df8e1d" }
+border     = { fg = "#ea76cb" }
+title      = { fg = "#ea76cb" }
 content    = {}
 list       = {}
 btn_yes    = { reversed = true }
 btn_no     = {}
 
 [completion]
-border = { fg = "#df8e1d" }
+border = { fg = "#ea76cb" }
 
 [tasks]
-border  = { fg = "#df8e1d" }
+border  = { fg = "#ea76cb" }
 title   = {}
 hovered = { underline = true }
 
@@ -111,7 +111,7 @@ rules = [
 
 	# Fallback
 	{ name = "*", fg = "#4c4f69" },
-	{ name = "*/", fg = "#df8e1d" }
+	{ name = "*/", fg = "#ea76cb" }
 ]
 
 [icon]
