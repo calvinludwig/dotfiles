@@ -1,6 +1,8 @@
 theme = catppuccin-latte
 
-font-family = IBM Plex Mono
-font-size = 16
+font-family = Maple Mono
+font-style = Medium
+font-size = 22
 window-padding-x = 12
 window-padding-balance = true
+maximize = true
