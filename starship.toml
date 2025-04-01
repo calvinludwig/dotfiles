@@ -6,29 +6,30 @@ format = """
 $username\
 $hostname\
 $directory\
-$line_break\
-$character"""
-
-right_format = """
-$git_status\
 $git_branch\
 $git_state\
-"""
-
-[character]
-success_symbol = "[\\$](lavender)"
-error_symbol = "[\\$](rosewater)"
-vimcmd_symbol = "[\\$](peach)"
-
-[git_branch]
-style = "teal"
-
-[git_status]
-style = "sapphire"
+$git_status\
+$line_break\
+$character"""
 
 [directory]
 truncation_length = 4
 style = "yellow"
+
+[character]
+success_symbol = "[](mauve)"
+error_symbol = "[](rosewater)"
+vimcmd_symbol = "[](peach)"
+
+[git_branch]
+format = "[$branch]($style)"
+style = "green"
+
+[git_state]
+style = "red"
+
+[git_status]
+style = "peach"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
