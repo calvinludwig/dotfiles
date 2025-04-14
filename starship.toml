@@ -1,6 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-palette = "catppuccin_latte"
+palette = "catppuccin_frappe"
 
 format = """
 $username\
@@ -9,6 +9,7 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
+$docker_context\
 $line_break\
 $character"""
 
@@ -22,7 +23,6 @@ error_symbol = "[](rosewater)"
 vimcmd_symbol = "[](peach)"
 
 [git_branch]
-format = "[$branch]($style)"
 style = "green"
 
 [git_state]

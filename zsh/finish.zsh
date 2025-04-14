@@ -6,4 +6,6 @@ autoload -Uz compinit
 compinit
 zinit cdreplay -q
 
+bindkey -e
+
 eval "$(starship init zsh)"

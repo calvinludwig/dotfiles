@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-latte",
+      colorscheme = "catppuccin-frappe",
     },
   },
   {
@@ -12,9 +12,15 @@ return {
     opts = {
       background = {
         light = "latte",
-        dark = "mocha",
+        dark = "frappe",
       },
-      transparent_background = true,
+      color_overrides = {
+        frappe = {
+          base = "#1F1F1F",
+          mantle = "#1A1A1A",
+          crust = "#141414",
+        },
+      },
     },
   },
   {

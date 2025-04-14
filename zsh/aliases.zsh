@@ -14,3 +14,7 @@ alias peck="./vendor/bin/peck"
 alias pint="./vendor/bin/pint"
 alias pest="./vendor/bin/pest"
 alias pestc="./vendor/bin/pest --coverage"
+
+alias dk="docker"
+alias dkc="docker compose"
+alias dkps="docker ps --format '{{.ID}} ~ {{.Names}} ~ {{.Status}} ~ {{.Image}}'"

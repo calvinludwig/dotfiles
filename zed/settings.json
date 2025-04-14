@@ -15,12 +15,12 @@
     "version": "2"
   },
   "icon_theme": "Catppuccin Latte",
-  "ui_font_size": 20,
-  "ui_font_family": "Maple Mono",
+  "ui_font_size": 22,
+  "ui_font_family": "IBM Plex Sans",
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Frappe"
   },
   "scrollbar": {
     "axes": {
@@ -28,9 +28,8 @@
       "vertical": false
     }
   },
-  "buffer_font_size": 22.0,
-  "buffer_font_family": "Maple Mono",
-  "buffer_font_weight": 500,
+  "buffer_font_size": 24.0,
+  "buffer_font_family": "IBM Plex Mono",
   "vim_mode": true,
   "vim": {
     "toggle_relative_line_numbers": true,
@@ -47,7 +46,7 @@
     }
   },
   "terminal": {
-    "font_family": "Maple Mono",
+    "font_family": "IBM Plex Mono",
     "font_size": 22,
     "cursor_shape": "underline"
   },

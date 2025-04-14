@@ -36,6 +36,6 @@ export FZF_MOCHA=" \
   --color=selected-bg:#45475a \
   --multi"
 
-export FZF_DEFAULT_OPTS=$FZF_LATTE
+export FZF_DEFAULT_OPTS=$FZF_FRAPPE
 
 eval "$(fzf --zsh)"
