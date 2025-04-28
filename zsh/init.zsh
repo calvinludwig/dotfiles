@@ -2,6 +2,7 @@ source $HOME/.config/zsh/zinit.zsh
 source $HOME/.config/zsh/highlight.zsh
 source $HOME/.config/zsh/suggestions.zsh
 source $HOME/.config/zsh/completions.zsh
+source $HOME/.config/zsh/functions.zsh
 source $HOME/.config/zsh/fzf.zsh
 source $HOME/.config/zsh/aliases.zsh
 source $HOME/.config/zsh/eza.zsh

@@ -1,5 +1,6 @@
 [include]
   path = ~/.config/git/catppuccin.gitconfig
+
 [user]
   name = Calvin Ludwig
   email = git@calvinludwig.xyz
@@ -11,7 +12,7 @@
   rebase = true
 
 [init]
-	defaultBranch = main
+  efaultBranch = main
 
 [core]
   pager = delta
@@ -36,11 +37,14 @@
   cm = commit
   ck = checkout
   st = status --short
-  df = diff -w
-  lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  dif = diff --word-diff
+  lol = log --oneline --graph
+
 [advice]
-	addEmptyPathspec = false
+  addEmptyPathspec = false
+
 [commit]
-	gpgsign = false
+  gpgsign = false
+
 [push]
-	autoSetupRemote = true
+  autoSetupRemote = true

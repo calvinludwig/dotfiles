@@ -157,7 +157,7 @@
     "window.customTitleBarVisibility": "auto",
     "window.menuBarVisibility": "compact",
     "window.titleBarStyle": "custom",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 0.6,
     "workbench.editor.labelFormat": "short",
     "workbench.editor.showTabs": "multiple",
     "workbench.iconTheme": "catppuccin-frappe",

@@ -6,4 +6,4 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 FPATH="$HOME/.asdf/completions:$FPATH"
 FPATH="$HOME/.config/zsh/completions:$FPATH"
-
+FPATH="$HOME/.docker/completions:$FPATH"
