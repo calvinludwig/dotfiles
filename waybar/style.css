@@ -1,0 +1,141 @@
+@import "frappe.css";
+
+* {
+  font-family: "Iosevka", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  border: none;
+  border-radius: 0px;
+}
+
+window#waybar {
+  background-color: @base;
+}
+
+#workspaces button,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#bluetooth,
+#battery,
+#tray,
+#custom-exit,
+#clock {
+  margin: 4px 2px;
+  padding: 4px 16px;
+  border-radius: 4;
+  color: @text;
+  background-color: @crust;
+}
+
+/* -----------------------------------------------------
+ * Workspaces 
+ * ----------------------------------------------------- */
+
+#workspaces {
+  margin: 4px 0;
+}
+
+#workspaces button {
+  color: @overlay0;
+  margin: 0 2px;
+  padding: 2px 8px;
+  border-radius: 4;
+  border: 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+  color: @crust;
+  background: @surface2;
+  padding: 0 8;
+  min-width: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+  color: @blue;
+  background: @surface2;
+  border: 0px;
+}
+
+/* -----------------------------------------------------
+ * Tooltips
+ * ----------------------------------------------------- */
+
+tooltip {
+  border-radius: 12px;
+  background-color: @mantle;
+  padding: 16px;
+  margin:0px;
+}
+
+tooltip label {
+    color: @text;
+}
+
+/* -----------------------------------------------------
+ * Pulseaudio
+ * ----------------------------------------------------- */
+
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+    color: @peach;
+}
+/* -----------------------------------------------------
+ * Network
+ * ----------------------------------------------------- */
+
+#network {
+}
+
+#network.ethernet {
+    color: @blue;
+}
+
+#network.wifi {
+    color: @sapphire;
+}
+/* -----------------------------------------------------
+ * Battery
+ * ----------------------------------------------------- */
+
+#battery {
+    color: @yellow;
+}
+
+#battery.charging, #battery.plugged {
+    color: @teal;
+}
+
+@keyframes blink {
+    to {
+        background-color: @crust;
+        color: @red;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @red;
+    color: @crust;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* -----------------------------------------------------
+ * Custom Exit
+ * ----------------------------------------------------- */
+
+#custom-exit {
+  color: @red;
+  transition: all 0.3s ease-in-out;
+}
+
+#custom-exit:hover {
+  background-color: @rosewater;
+}
+

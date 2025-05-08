@@ -1,0 +1,24 @@
+{
+  "include": [
+    "~/.config/waybar/modules.jsonc"
+  ],
+  "layer": "top",
+  "position": "bottom",
+  "height": 34,
+  "spacing": 4,
+  "modules-left": [
+    "hyprland/workspaces",
+  ],
+  "modules-center": [],
+  "modules-right": [
+    "mpd",
+    "keyboard-state",
+    "pulseaudio",
+    "network",
+    "bluetooth",
+    "battery",
+    "clock",
+    "tray",
+    "custom/exit"
+  ]
+}

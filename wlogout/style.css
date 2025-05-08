@@ -1,0 +1,50 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: #141414;
+}
+
+button {
+	border-radius: 0;
+	border-color: #ef9f76;
+	text-decoration-color: #c6d0f5;
+	color: #c6d0f5;
+	background-color: #1F1F1F;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+	background-color: #414559;
+	outline-style: none;
+}
+
+#lock {
+    background-image: url("/home/ludwig/.config/wlogout/icons/lock.svg");
+}
+
+#logout {
+    background-image: url("/home/ludwig/.config/wlogout/icons/logout.svg");
+}
+
+#suspend {
+    background-image: url("/home/ludwig/.config/wlogout/icons/suspend.svg");
+}
+
+#hibernate {
+    background-image: url("/home/ludwig/.config/wlogout/icons/hibernate.svg");
+}
+
+#shutdown {
+    background-image: url("/home/ludwig/.config/wlogout/icons/shutdown.svg");
+}
+
+#reboot {
+    background-image: url("/home/ludwig/.config/wlogout/icons/reboot.svg");
+}

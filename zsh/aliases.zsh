@@ -1,5 +1,5 @@
 source "$HOME/gpssat/documents/aliases.sh"
-alias ff="fastfetch"
+alias ff="fastfetch -l small"
 alias nv='nvim'
 alias sail="sh $([ -f sail ] && echo sail || echo vendor/bin/sail)"
 alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
