@@ -1,7 +1,8 @@
 theme = catppuccin-frappe
-background = #1F1F1F
+background = #000000
 
-font-family = Iosevka SS07
+window-theme = "ghostty"
+font-family = JetBrains Mono
 font-style = Regular
 font-size = 14
 window-padding-x = 12

@@ -1,4 +1,3 @@
-source "$HOME/gpssat/documents/aliases.sh"
 alias ff="fastfetch -l small"
 alias nv='nvim'
 alias sail="sh $([ -f sail ] && echo sail || echo vendor/bin/sail)"

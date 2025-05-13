@@ -1,3 +1,6 @@
+autoload -Uz compinit
+compinit
+
 source $HOME/.config/zsh/zinit.zsh
 source $HOME/.config/zsh/highlight.zsh
 source $HOME/.config/zsh/suggestions.zsh

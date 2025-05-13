@@ -16,8 +16,8 @@ return {
       },
       color_overrides = {
         frappe = {
-          base = "#1F1F1F",
-          mantle = "#1A1A1A",
+          base = "#000000",
+          mantle = "#0A0A0A",
           crust = "#141414",
         },
       },

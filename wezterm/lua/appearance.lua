@@ -3,15 +3,16 @@ local wezterm = require 'wezterm'
 
 local function scheme_for_appearance(appearance)
 	if appearance:find 'Dark' then
-		return 'tokyonight_storm'
+		return 'Catppuccin Frappe'
 	else
-		return 'tokyonight_day'
+		return 'Catppuccin Latte'
 	end
 end
 
 M.setup = function(c)
 	c.window_decorations = 'TITLE|RESIZE'
 	c.color_scheme = scheme_for_appearance(wezterm.gui.get_appearance())
+	c.enable_wayland = true
 	c.window_padding = {
 		left = '1cell',
 		right = '1cell',

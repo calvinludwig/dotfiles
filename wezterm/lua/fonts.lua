@@ -1,7 +1,7 @@
 local w = require 'wezterm'
 local M = {}
 
-local font_family = 'IBM Plex Mono'
+local font_family = 'JetBrains Mono'
 
 M.setup = function(c)
 	c.line_height = 1.1
