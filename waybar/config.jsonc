@@ -17,8 +17,7 @@
     "network",
     "bluetooth",
     "battery",
-    "clock",
     "tray",
-    "custom/exit"
+    "clock",
   ]
 }
