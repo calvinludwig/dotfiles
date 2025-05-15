@@ -1,0 +1,20 @@
+font=JetBrains Mono 12
+sort=-time
+layer=overlay
+width=500
+height=200
+margin=5
+padding=0,5,10
+border-size=4
+border-radius=12
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=1
+
+background-color=#000000
+text-color=#c6d0f5
+border-color=#a6d189
+progress-color=over #414559
+
+[urgency=high]
+border-color=#ef9f76

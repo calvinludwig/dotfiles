@@ -1,7 +1,7 @@
 @import "frappe.css";
 
 * {
-  font-family: "Iosevka", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "JetBrains Mono", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   border: none;
   border-radius: 0px;
 }
@@ -46,7 +46,7 @@ window#waybar {
 
 #workspaces button.active {
   color: @crust;
-  background: @surface2;
+  background: @green;
   padding: 0 8;
   min-width: 40px;
   transition: all 0.3s ease-in-out;

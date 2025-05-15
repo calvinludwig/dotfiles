@@ -7,15 +7,16 @@
   "height": 34,
   "spacing": 4,
   "modules-left": [
+    "bluetooth",
+    "pulseaudio",
+    "network",
+  ],
+  "modules-center": [
     "hyprland/workspaces"
   ],
-  "modules-center": [],
   "modules-right": [
     "mpd",
     "keyboard-state",
-    "pulseaudio",
-    "network",
-    "bluetooth",
     "battery",
     "tray",
     "clock"
