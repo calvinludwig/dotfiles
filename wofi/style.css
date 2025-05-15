@@ -44,8 +44,8 @@
 @define-color	surface1-rgb  rgb(81, 87, 109);
 @define-color	surface0  #414559;
 @define-color	surface0-rgb  rgb(65, 69, 89);
-@define-color	base  #303446;
-@define-color	base-rgb  rgb(48, 52, 70);
+@define-color	base  #000000;
+@define-color	base-rgb  rgb(0, 0, 0);
 @define-color	mantle  #292c3c;
 @define-color	mantle-rgb  rgb(41, 44, 60);
 @define-color	crust  #232634;
