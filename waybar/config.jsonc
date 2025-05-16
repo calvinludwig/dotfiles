@@ -4,12 +4,12 @@
   ],
   "layer": "top",
   "position": "bottom",
-  "height": 34,
+  "height": 32,
   "spacing": 4,
   "modules-left": [
     "bluetooth",
     "pulseaudio",
-    "network",
+    "network"
   ],
   "modules-center": [
     "hyprland/workspaces"

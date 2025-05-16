@@ -53,7 +53,7 @@
     "editor.find.addExtraSpaceOnTop": false,
     "editor.folding": true,
     "editor.foldingImportsByDefault": true,
-    "editor.fontFamily": "Iosevka SS07, Symbols Nerd Font Mono, Noto Emoji",
+    "editor.fontFamily": "JetBrains Mono, Symbols Nerd Font Mono, Noto Emoji",
     "editor.fontLigatures": true,
     "editor.fontSize": 18,
     "editor.formatOnSave": false,
@@ -74,8 +74,8 @@
     },
     "catppuccin.colorOverrides": {
         "frappe": {
-          "base": "#1f1f1f",
-          "mantle": "#1A1A1A",
+          "base": "#000000",
+          "mantle": "#0A0A0A",
           "crust": "#141414"
         }
     },

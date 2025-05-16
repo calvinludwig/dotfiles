@@ -11,6 +11,7 @@
     <prefer>
       <family>JetBrains Mono</family>
       <family>Symbols Nerd Font</family>
+      <family>FontAwesome</family>
       <family>Noto Color Emoji</family>
     </prefer>
   </alias>
