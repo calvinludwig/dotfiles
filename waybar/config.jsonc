@@ -4,7 +4,7 @@
   ],
   "layer": "top",
   "position": "bottom",
-  "height": 32,
+  "height": 28,
   "spacing": 4,
   "modules-left": [
     "bluetooth",

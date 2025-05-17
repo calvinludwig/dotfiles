@@ -1,14 +1,15 @@
-@import "frappe.css";
+@import "latte.css";
 
 * {
-  font-family: "JetBrains Mono", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-family: "Monaspace Neon", "JetBrains Mono", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
   border: none;
   border-radius: 0px;
 }
 
 window#waybar {
-  background-color: @base;
+  background-color: @surface0;
+  border-top: 1px solid @green;
 }
 
 #workspaces button,
@@ -21,8 +22,8 @@ window#waybar {
 #tray,
 #custom-exit,
 #clock {
-  margin: 0px 2px;
-  padding: 2px 16px;
+  margin: 1px 2px 0px 2px;
+  padding: 0px 16px;
   border-radius: 0px;
   color: @text;
   background-color: @crust;
@@ -33,13 +34,13 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #workspaces {
-  margin: 0px 0;
+  margin: 1px 0px 0px 0px;
 }
 
 #workspaces button {
-  color: @overlay0;
+  color: @text;
   margin: 0 2px;
-  padding: 2px 8px;
+  padding: 0px 8px;
   border-radius: 0px;
   border: 0px;
   transition: all 0.3s ease-in-out;
@@ -52,6 +53,11 @@ window#waybar {
   padding: 0 8;
   min-width: 40px;
   transition: all 0.3s ease-in-out;
+}
+
+
+#workspaces button.empty {
+  color: @overlay0;
 }
 
 #workspaces button:hover {

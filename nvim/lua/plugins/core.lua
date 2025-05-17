@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-frappe",
+      colorscheme = "catppuccin-latte",
     },
   },
   {
@@ -17,8 +17,8 @@ return {
       color_overrides = {
         frappe = {
           base = "#000000",
-          mantle = "#0A0A0A",
-          crust = "#141414",
+          mantle = "#141414",
+          crust = "#1f1f1f",
         },
       },
     },

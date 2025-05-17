@@ -12,9 +12,6 @@ end
 M.setup = function(c)
   c.window_decorations = 'TITLE|RESIZE'
   c.color_scheme = scheme_for_appearance(wezterm.gui.get_appearance())
-  c.colors = {
-    background = '#000000',
-  }
   c.enable_wayland = true
   c.window_padding = {
     left = '1cell',
