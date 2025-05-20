@@ -3,8 +3,8 @@
 -- Add any additional autocmds here
 
 -- Disable autoformat for lua files
-vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "sql" },
+vim.api.nvim_create_autocmd({ 'FileType' }, {
+  pattern = { 'sql' },
   callback = function()
     vim.b.autoformat = false
   end,

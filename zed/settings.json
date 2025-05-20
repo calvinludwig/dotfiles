@@ -12,8 +12,9 @@
   },
   "ui_font_size": 18,
   "ui_font_family": "Adwaita Sans",
-  "buffer_font_size": 20,
-  "buffer_font_family": "Monaspace Argon",
+  "buffer_font_size": 21,
+  "buffer_line_height": "comfortable",
+  "buffer_font_family": "Monaspace Krypton",
   "terminal": {
     "font_family": "Monaspace Krypton",
     "font_size": 18,

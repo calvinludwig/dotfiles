@@ -5,16 +5,17 @@ width=500
 height=200
 margin=5
 padding=0,5,10
-border-size=4
-border-radius=12
+border-size=2
+border-radius=0
 max-icon-size=64
 default-timeout=5000
 ignore-timeout=1
 
-background-color=#000000
-text-color=#c6d0f5
-border-color=#a6d189
-progress-color=over #414559
+# Colors
+background-color=#eff1f5
+text-color=#4c4f69
+border-color=#179299
+progress-color=over #ccd0da
 
 [urgency=high]
-border-color=#ef9f76
+border-color=#fe640b

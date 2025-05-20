@@ -1,17 +1,11 @@
 local M = {}
-local wezterm = require 'wezterm'
-
-local function scheme_for_appearance(appearance)
-  if appearance:find 'Dark' then
-    return 'Catppuccin Frappe'
-  else
-    return 'Catppuccin Latte'
-  end
-end
 
 M.setup = function(c)
   c.window_decorations = 'TITLE|RESIZE'
-  c.color_scheme = scheme_for_appearance(wezterm.gui.get_appearance())
+  c.color_schemes = {
+    ['Latte'] = M.latte(),
+  }
+  c.color_scheme = 'Latte'
   c.enable_wayland = true
   c.window_padding = {
     left = '1cell',
@@ -19,6 +13,13 @@ M.setup = function(c)
     top = 0,
     bottom = 0,
   }
+end
+
+M.latte = function()
+  local wezterm = require 'wezterm'
+  local latte = wezterm.color.get_builtin_schemes()['Catppuccin Latte']
+  latte.tab_bar.active_tab.bg_color = '#179299'
+  return latte
 end
 
 return M

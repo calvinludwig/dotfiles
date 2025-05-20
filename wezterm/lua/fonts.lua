@@ -1,12 +1,12 @@
-local w = require 'wezterm'
+local wezterm = require 'wezterm'
 local M = {}
 
-local font_family = 'Monaspace Argon'
+local font_family = 'Monaspace Neon'
 
 M.setup = function(c)
-  c.line_height = 1.2
-  c.font_size = 16
-  c.font = w.font_with_fallback {
+  c.line_height = 1
+  c.font_size = 19
+  c.font = wezterm.font_with_fallback {
     { family = font_family, weight = 'Regular' },
     { family = 'JetBrains Mono' },
     { family = 'Symbols Nerd Font' },
