@@ -4,14 +4,14 @@ local M = {}
 local font_family = 'Monaspace Argon'
 
 M.setup = function(c)
-  c.line_height = 1
+  c.line_height = 1.2
   c.font_size = 16
   c.font = w.font_with_fallback {
     { family = font_family, weight = 'Regular' },
     { family = 'JetBrains Mono' },
-    { family = 'Symbols Nerd Font', scale = 0.85 },
-    { family = 'FontAwesome', scale = 0.85 },
-    { family = 'Noto Color Emoji', scale = 0.85 },
+    { family = 'Symbols Nerd Font' },
+    { family = 'FontAwesome' },
+    { family = 'Noto Color Emoji' },
   }
 end
 
