@@ -56,7 +56,7 @@
     "editor.fontFamily": "Monaspace Argon, Symbols Nerd Font Mono, Noto Emoji",
     "editor.fontLigatures": true,
     "editor.fontSize": 18,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.guides.indentation": false,
     "editor.indentSize": 2,
     "editor.inlayHints.enabled": "off",

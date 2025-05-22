@@ -2,6 +2,7 @@
   "include": [
     "~/.config/waybar/modules.jsonc"
   ],
+  "output": "eDP-1",
   "layer": "top",
   "position": "bottom",
   "height": 32,

@@ -12,7 +12,7 @@
   rebase = true
 
 [init]
-  efaultBranch = main
+  defaultBranch = main
 
 [core]
   pager = delta
