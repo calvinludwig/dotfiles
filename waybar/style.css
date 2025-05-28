@@ -1,15 +1,15 @@
-@import "latte.css";
+@import "rose-pine-dawn.css";
 
 * {
-  font-family: "Monaspace Xenon", "JetBrains Mono", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Monaspace Krypton", "JetBrains Mono", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   font-size: 18px;
   border: none;
   border-radius: 0px;
 }
 
 window#waybar {
-  background-color: @surface0;
-  border-top: 1px solid @teal;
+  background-color: @surface;
+  border-top: 2px solid @pine;
 }
 
 #workspaces button,
@@ -18,15 +18,16 @@ window#waybar {
 #cpu,
 #memory,
 #bluetooth,
+#mpris,
 #battery,
 #tray,
 #custom-exit,
 #clock {
-  margin: 1px 2px 0px 2px;
+  margin: 2px 2px 0px 2px;
   padding: 0px 16px;
   border-radius: 0px;
   color: @text;
-  background-color: @crust;
+  background-color: @overlay;
 }
 
 /* -----------------------------------------------------
@@ -34,7 +35,7 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #workspaces {
-  margin: 1px 0px 0px 0px;
+  margin: 2px 0px 0px 0px;
 }
 
 #workspaces button {
@@ -47,9 +48,9 @@ window#waybar {
 }
 
 #workspaces button.active {
-  color: @crust;
+  color: @surface;
   font-weight: bold;
-  background: @teal;
+  background: @pine;
   padding: 0 8;
   min-width: 40px;
   transition: all 0.3s ease-in-out;
@@ -57,12 +58,12 @@ window#waybar {
 
 
 #workspaces button.empty {
-  color: @overlay0;
+  color: @muted
 }
 
 #workspaces button:hover {
-  color: @blue;
-  background: @surface2;
+  color: @surface;
+  background: @foam;
   border: 0px;
 }
 
@@ -72,7 +73,7 @@ window#waybar {
 
 tooltip {
   border-radius: 0px;
-  background-color: @mantle;
+  background-color: @base;
   padding: 16px;
   margin:0px;
 }
@@ -89,7 +90,7 @@ tooltip label {
 }
 
 #pulseaudio.muted {
-    color: @peach;
+    color: @love;
 }
 /* -----------------------------------------------------
  * Network
@@ -99,34 +100,55 @@ tooltip label {
 }
 
 #network.ethernet {
-    color: @blue;
+    color: @iris;
 }
 
 #network.wifi {
-    color: @sapphire;
+    color: @foam;
 }
+
+/* -----------------------------------------------------
+ * MPRIS
+ * ----------------------------------------------------- */
+
+#mpris.paused {
+  color: @love;
+}
+#mpris.playing {
+  color: @pine;
+}
+#mpris.mpd {
+  color: @text;
+}
+#mpris.mpv {
+  color: @text;
+}
+#mpris.brave {
+  color: @gold;
+}
+
 /* -----------------------------------------------------
  * Battery
  * ----------------------------------------------------- */
 
 #battery {
-    color: @yellow;
+    color: @text;
 }
 
 #battery.charging, #battery.plugged {
-    color: @teal;
+    color: @text;
 }
 
 @keyframes blink {
     to {
-        background-color: @crust;
-        color: @red;
+        background-color: @base;
+        color: @love;
     }
 }
 
 #battery.critical:not(.charging) {
-    background-color: @red;
-    color: @crust;
+    background-color: @rose;
+    color: @text;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;

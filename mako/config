@@ -1,9 +1,9 @@
-font=JetBrains Mono 12
+font=Monaspace Krypton 12
 sort=-time
 layer=overlay
 width=500
 height=200
-margin=5
+margin=0
 padding=0,5,10
 border-size=2
 border-radius=0
@@ -12,10 +12,10 @@ default-timeout=5000
 ignore-timeout=1
 
 # Colors
-background-color=#eff1f5
-text-color=#4c4f69
-border-color=#179299
-progress-color=over #ccd0da
+background-color=#f2e9e1
+text-color=#575279
+border-color=#286983
+progress-color=over #ea9d34
 
 [urgency=high]
-border-color=#fe640b
+border-color=#b4637a

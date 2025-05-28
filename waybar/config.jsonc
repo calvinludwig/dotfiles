@@ -17,6 +17,7 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
+    "mpris",
     "keyboard-state",
     "battery",
     "tray",

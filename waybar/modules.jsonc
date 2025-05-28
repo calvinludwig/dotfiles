@@ -67,6 +67,27 @@
     "on-click": "blueman-manager",
     "format-no-controller": ""
   },
+  "mpris": {
+    "format": " {status_icon}{player_icon}",
+    "format-paused": " {status_icon}{player_icon}",
+    "tooltip-format": "{dynamic}",
+    "player-icons": {
+      "default": " ",
+      "brave": " ",
+      "spotify": " "
+    },
+    "status-icons": {
+      "paused": " ",
+      "playing": " "
+    },
+    "dynamic-order": [
+      "title",
+      "artist",
+      "position",
+      "length"
+    ],
+    "interval": 1
+  },
   // Battery
   "battery": {
     "states": {

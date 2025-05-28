@@ -22,13 +22,8 @@
   },
   "theme": {
     "mode": "light",
-    "light": "Catppuccin Latte (green)",
-    "dark": "Catppuccin Frappé (green)"
-  },
-  "icon_theme": {
-    "mode": "light",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Frappé"
+    "light": "Rosé Pine Dawn",
+    "dark": "Rosé Pine"
   },
   "indent_guides": {
     "enabled": false

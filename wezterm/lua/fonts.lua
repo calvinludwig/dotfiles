@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 local M = {}
 
-local font_family = 'Monaspace Argon'
+local font_family = 'Monaspace Krypton'
 
 M.setup = function(c)
   c.line_height = 1

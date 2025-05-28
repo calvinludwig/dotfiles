@@ -1,11 +1,10 @@
 local M = {}
 
 M.setup = function(c)
+  local wezterm = require 'wezterm'
+  local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').dawn
+  c.colors = theme.colors()
   c.window_decorations = 'TITLE|RESIZE'
-  c.color_schemes = {
-    ['Latte'] = M.latte(),
-  }
-  c.color_scheme = 'Latte'
   c.enable_wayland = true
   c.window_padding = {
     left = '1cell',
@@ -13,13 +12,6 @@ M.setup = function(c)
     top = 0,
     bottom = 0,
   }
-end
-
-M.latte = function()
-  local wezterm = require 'wezterm'
-  local latte = wezterm.color.get_builtin_schemes()['Catppuccin Latte']
-  latte.tab_bar.active_tab.bg_color = '#179299'
-  return latte
 end
 
 return M

@@ -1,176 +1,165 @@
 {
-    "[css]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    "[dockercompose]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    "[lua]": {
-        "editor.defaultFormatter": "sumneko.lua"
-    },
-    "[tailwindcss]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "biomejs.biome",
-        "editor.formatOnSave": false
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    "[vue]": {
-        "editor.defaultFormatter": "biomejs.biome"
-    },
-    "catppuccin-icons.hidesExplorerArrows": false,
-    "cmake.pinnedCommands": [
-        "workbench.action.tasks.configureTaskRunner",
-        "workbench.action.tasks.runTask"
-    ],
-    "database-client.autoSync": true,
-    "editor.bracketPairColorization.enabled": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": "never",
-        "source.fixAll.sortJSON": "never"
-    },
-    "editor.codeLens": false,
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.cursorSurroundingLines": 2,
-    "editor.cursorSurroundingLinesStyle": "default",
-    "editor.cursorWidth": 2,
-    "editor.find.addExtraSpaceOnTop": false,
-    "editor.folding": true,
-    "editor.foldingImportsByDefault": true,
-    "editor.fontFamily": "Monaspace Argon, Symbols Nerd Font Mono, Noto Emoji",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 18,
-    "editor.formatOnSave": true,
-    "editor.guides.indentation": false,
-    "editor.indentSize": 2,
-    "editor.inlayHints.enabled": "off",
-    "editor.insertSpaces": true,
-    "editor.lightbulb.enabled": "off",
-    "editor.linkedEditing": true,
-    "editor.matchBrackets": "near",
-    "editor.minimap.enabled": false,
-    "editor.mouseWheelZoom": true,
-    "editor.parameterHints.enabled": false,
-    "editor.quickSuggestions": {
-        "comments": false,
-        "other": false,
-        "strings": false
-    },
-    "catppuccin.colorOverrides": {
-        "frappe": {
-          "base": "#000000",
-          "mantle": "#0A0A0A",
-          "crust": "#141414"
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "database-client.autoSync": true,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.sortJSON": "never"
+  },
+  "editor.codeLens": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorSurroundingLines": 2,
+  "editor.cursorSurroundingLinesStyle": "default",
+  "editor.cursorWidth": 2,
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.folding": true,
+  "editor.foldingImportsByDefault": true,
+  "editor.fontFamily": "Monaspace Argon, Symbols Nerd Font Mono, Noto Emoji",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.formatOnSave": true,
+  "editor.guides.indentation": false,
+  "editor.indentSize": 2,
+  "editor.inlayHints.enabled": "off",
+  "editor.insertSpaces": true,
+  "editor.lightbulb.enabled": "off",
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "near",
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.parameterHints.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": false,
+    "other": false,
+    "strings": false
+  },
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "selection",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.smoothScrolling": true,
+  "editor.snippetSuggestions": "top",
+  "editor.stickyScroll.enabled": false,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 4,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
         }
-    },
-    "editor.renderLineHighlight": "none",
-    "editor.renderWhitespace": "selection",
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.semanticHighlighting.enabled": true,
-    "editor.smoothScrolling": true,
-    "editor.snippetSuggestions": "top",
-    "editor.stickyScroll.enabled": false,
-    "editor.tabCompletion": "on",
-    "editor.tabSize": 4,
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": "comment",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            }
-        ]
-    },
-    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
-    "elixirLS.suggestSpecs": false,
-    "emmet.includeLanguages": {
-        "postcss": "css"
-    },
-    "emmet.triggerExpansionOnTab": true,
-    "explorer.compactFolders": false,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.excludeGitIgnore": false,
-    "explorer.fileNesting.enabled": true,
-    "explorer.fileNesting.patterns": {
-        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-        "*.jsx": "${capture}.js",
-        "*.sln": "Directory.Build.props",
-        "*.ts": "${capture}.js",
-        "*.tsx": "${capture}.ts",
-        "*Test.cs": "${capture}TestFixture.cs, ${capture}TestDataGenerator.cs, ${capture}RequestValidatorTest.cs",
-        "appsettings.json": "appsettings.*.json",
-        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb, turbo.json",
-        "tsconfig.json": "tsconfig.*.json"
-    },
-    "files.associations": {
-        "*.embeddedhtml": "html",
-        ".env*": "dotenv",
-        "tailwind.css": "tailwindcss"
-    },
-    "files.encoding": "utf8",
-    "files.eol": "\n",
-    "files.exclude": {
-        "**/.DS_Store": true,
-        "**/.git": true,
-        "**/.hg": true,
-        "**/.svn": true,
-        "**/CVS": true,
-        "**/Thumbs.db": true,
-        ".idea": true,
-        ".vscode": true
-    },
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "git.autofetch": true,
-    "laravel-pint.enable": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "terminal.external.linuxExec": "ghostty",
-    "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.integrated.fontFamily": "Iosevka SS07, Symbols Nerd Font Mono, Noto Emoji",
-    "terminal.integrated.fontSize": 18,
-    "terminal.integrated.minimumContrastRatio": 0,
-    "terminal.integrated.shellIntegration.enabled": true,
-    "terminal.integrated.showExitAlert": false,
-    "typescript.preferences.preferTypeOnlyAutoImports": true,
-    "window.autoDetectColorScheme": true,
-    "window.commandCenter": true,
-    "window.customTitleBarVisibility": "auto",
-    "window.menuBarVisibility": "compact",
-    "window.titleBarStyle": "custom",
-    "window.zoomLevel": 0.6,
-    "workbench.editor.labelFormat": "short",
-    "workbench.editor.showTabs": "multiple",
-    "workbench.iconTheme": "catppuccin-latte",
-    "workbench.list.smoothScrolling": true,
-    "workbench.navigationControl.enabled": false,
-    "workbench.preferredDarkColorTheme": "Catppuccin Frappé",
-    "workbench.preferredLightColorTheme": "Catppuccin Latte",
-    "workbench.settings.editor": "json",
-    "workbench.startupEditor": "none",
-    "workbench.tips.enabled": false,
-    "workbench.tree.enableStickyScroll": true,
-    "workbench.tree.renderIndentGuides": "none",
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    }
+      }
+    ]
+  },
+  "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "elixirLS.suggestSpecs": false,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.excludeGitIgnore": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.sln": "Directory.Build.props",
+    "*.ts": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "*Test.cs": "${capture}TestFixture.cs, ${capture}TestDataGenerator.cs, ${capture}RequestValidatorTest.cs",
+    "appsettings.json": "appsettings.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb, turbo.json",
+    "tsconfig.json": "tsconfig.*.json"
+  },
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    ".env*": "dotenv",
+    "tailwind.css": "tailwindcss"
+  },
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/Thumbs.db": true,
+    ".idea": true,
+    ".vscode": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "laravel-pint.enable": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.external.linuxExec": "ghostty",
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "Iosevka SS07, Symbols Nerd Font Mono, Noto Emoji",
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.minimumContrastRatio": 0,
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.showExitAlert": false,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": true,
+  "window.customTitleBarVisibility": "auto",
+  "window.menuBarVisibility": "compact",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0.6,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.list.smoothScrolling": true,
+  "workbench.navigationControl.enabled": false,
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.tree.renderIndentGuides": "none",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }
