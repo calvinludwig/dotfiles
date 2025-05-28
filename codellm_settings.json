@@ -52,7 +52,7 @@
   "editor.find.addExtraSpaceOnTop": false,
   "editor.folding": true,
   "editor.foldingImportsByDefault": true,
-  "editor.fontFamily": "Monaspace Argon, Symbols Nerd Font Mono, Noto Emoji",
+  "editor.fontFamily": "IBM Plex Mono, Symbols Nerd Font Mono, Noto Emoji",
   "editor.fontLigatures": true,
   "editor.fontSize": 18,
   "editor.formatOnSave": true,

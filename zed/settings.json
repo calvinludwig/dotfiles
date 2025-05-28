@@ -11,12 +11,12 @@
     }
   },
   "ui_font_size": 18,
-  "ui_font_family": "Monaspace Argon",
-  "buffer_font_size": 21,
+  "ui_font_family": "IBM Plex Sans",
+  "buffer_font_size": 22,
   "buffer_line_height": "comfortable",
-  "buffer_font_family": "Monaspace Argon",
+  "buffer_font_family": "IBM Plex Mono",
   "terminal": {
-    "font_family": "Monaspace Krypton",
+    "font_family": "IBM Plex Mono",
     "font_size": 18,
     "cursor_shape": "underline"
   },
