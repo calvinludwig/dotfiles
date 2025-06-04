@@ -13,6 +13,7 @@
   prune = true
 
 [pull]
+  default = current
   rebase = true
 
 [rebase]
