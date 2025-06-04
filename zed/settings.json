@@ -21,9 +21,9 @@
     "cursor_shape": "underline"
   },
   "theme": {
-    "mode": "light",
+    "mode": "system",
     "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine"
+    "dark": "Rosé Pine Moon"
   },
   "indent_guides": {
     "enabled": false

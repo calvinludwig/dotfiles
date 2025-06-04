@@ -1,4 +1,4 @@
-@import "rose-pine-dawn.css";
+@import "rose-pine-moon.css";
 
 * {
   font-family: "IBM Plex Mono", "JetBrains Mono", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -14,6 +14,7 @@ window#waybar {
 
 #workspaces button,
 #pulseaudio,
+#bluetooth,
 #network,
 #cpu,
 #memory,
@@ -21,13 +22,15 @@ window#waybar {
 #mpris,
 #battery,
 #tray,
-#custom-exit,
 #clock {
-  margin: 2px 2px 0px 2px;
-  padding: 0px 16px;
-  border-radius: 0px;
+  margin-top: 2px;
+  padding: 0px 8px;
+  border-radius: 0px 0px 4px 4px;
   color: @text;
-  background-color: @overlay;
+}
+
+#clock {
+  color: @rose;
 }
 
 /* -----------------------------------------------------
@@ -35,14 +38,13 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #workspaces {
-  margin: 2px 0px 0px 0px;
 }
 
 #workspaces button {
+  margin: 2px;
   color: @text;
-  margin: 0 2px;
+  background-color: @highlightHigh;
   padding: 0px 8px;
-  border-radius: 0px;
   border: 0px;
   transition: all 0.3s ease-in-out;
 }
@@ -52,7 +54,6 @@ window#waybar {
   font-weight: bold;
   background: @pine;
   padding: 0 8;
-  min-width: 40px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -82,16 +83,42 @@ tooltip label {
     color: @text;
 }
 
+#bluetooth.disabled {
+  color: @love;
+}
+
+#bluetooth.off {
+  color: @love;
+}
+
+#bluetooth.on {
+  color: @gold;
+}
+
+#bluetooth.connected {
+  color: @pine;
+}
+
 /* -----------------------------------------------------
  * Pulseaudio
  * ----------------------------------------------------- */
 
 #pulseaudio {
+    color: @iris;
 }
 
 #pulseaudio.muted {
     color: @love;
 }
+
+#pulseaudio.microphone {
+  color: @foam;
+}
+
+#pulseaudio.microphone.source-muted {
+  color: @love;
+}
+
 /* -----------------------------------------------------
  * Network
  * ----------------------------------------------------- */

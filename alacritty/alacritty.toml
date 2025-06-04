@@ -1,5 +1,5 @@
 [font]
-normal = { family = "JetBrains Mono", style = "Regular" }
+normal = { family = "IBM Plex Mono", style = "Regular" }
 size = 18
 
 [window]

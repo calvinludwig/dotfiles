@@ -26,25 +26,36 @@
   },
   // Pulseaudio
   "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
-    "format": "{icon}{volume}% {format_source}",
-    "format-bluetooth": "{icon} {volume}% {format_source}",
-    "format-bluetooth-muted": "󰖁 {icon} {format_source}",
-    "format-muted": "󰖁 {format_source}",
-    "format-source": " {volume}%",
-    "format-source-muted": " ",
+    "format": "{icon} {volume}%",
+    "tooltip": true,
+    "format-muted": " 󰖁 ",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-",
+    "scroll-step": 5,
     "format-icons": {
-      "headphone": "󰋋 ",
-      "headset": "󰋎 ",
-      "phone": " ",
-      "portable": " ",
-      "car": " ",
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
       "default": [
+        "",
         "",
         ""
       ]
-    },
-    "on-click": "pavucontrol"
+    }
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "  {volume}% ",
+    "format-source-muted": "   ",
+    "on-click": "pamixer --default-source -t",
+    "on-scroll-up": "pamixer --default-source -i 5",
+    "on-scroll-down": "pamixer --default-source -d 5",
+    "scroll-step": 5
   },
   // Network
   "network": {
@@ -61,8 +72,11 @@
   },
   // Bluetooth
   "bluetooth": {
-    "format-disabled": "",
-    "format-off": "",
+    "format": "format-connected",
+    "format-disabled": " 󰂲 ",
+    "format-off": " 󰂲 ",
+    "format-on": " 󰂳 ",
+    "format-connected": " 󰂱 ",
     "interval": 30,
     "on-click": "blueman-manager",
     "format-no-controller": ""
@@ -115,8 +129,9 @@
   },
   // Clock
   "clock": {
-    "timezone": "America/Sao_Paulo",
+    "format": "{:%I:%M %p | %a, %b %e}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%d/%m - %H:%M}"
+    "interval": 60,
+    "timezone": "America/Sao_Paulo"
   }
 }

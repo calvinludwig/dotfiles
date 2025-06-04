@@ -3,7 +3,6 @@ if status is-interactive
     alias nv='nvim'
     alias sail="sh $([ -f sail ] && echo sail || echo vendor/bin/sail)"
     alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
-    alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
     alias cat="bat -p"
     alias paru="yay"
 
@@ -26,3 +25,5 @@ if status is-interactive
     zoxide init fish | source
     starship init fish | source
 end
+
+mise activate fish | source

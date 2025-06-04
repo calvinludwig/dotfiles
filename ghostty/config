@@ -1,10 +1,9 @@
-theme = rose-pine-dawn
-background = #000000
+theme = rose-pine-moon
+
+font-family = Monaspace Argon
+font-size = 18
 
 window-theme = "ghostty"
-font-family = JetBrains Mono
-font-style = Regular
-font-size = 14
 window-padding-x = 12
 window-padding-balance = true
 

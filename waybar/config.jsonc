@@ -5,22 +5,22 @@
   "output": "eDP-1",
   "layer": "top",
   "position": "bottom",
-  "height": 32,
-  "spacing": 4,
+  "height": 36,
+  "spacing": 2,
   "modules-left": [
-    "bluetooth",
-    "pulseaudio",
-    "mpd",
-    "network"
+    "hyprland/workspaces",
+    "mpd"
   ],
   "modules-center": [
-    "hyprland/workspaces"
+    "clock"
   ],
   "modules-right": [
-    "mpris",
-    "keyboard-state",
-    "battery",
+    "bluetooth",
+    "network",
     "tray",
-    "clock"
+    "mpris",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "battery"
   ]
 }

@@ -1,6 +1,13 @@
 [user]
-  name = Calvin Ludwig
   email = git@calvinludwig.xyz
+  name = Calvin Ludwig
+
+[core]
+  compression = 9
+  editor = nvim
+  pager = delta
+  preloadindex = true
+  whitespace = error
 
 [fetch]
   prune = true
@@ -11,17 +18,18 @@
 [init]
   defaultBranch = main
 
-[core]
-  pager = delta
-  editor = nvim
+[status]
+  branch = true
+  showStash = true
+  showUntrackedFiles = all
 
 [interactive]
   diffFilter = delta --color-only
 
 [delta]
+  line-numbers = true
   navigate = true    # use n and N to move between diff sections
   side-by-side = true
-  line-numbers = true
 
 [merge]
   conflictstyle = diff3
@@ -39,6 +47,8 @@
 
 [advice]
   addEmptyPathspec = false
+  pushNonFastForward = false
+  statusHints = false
 
 [commit]
   gpgsign = false
