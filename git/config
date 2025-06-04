@@ -5,15 +5,18 @@
 [core]
   compression = 9
   editor = nvim
-  pager = delta
   preloadindex = true
   whitespace = error
+  pager = diff-so-fancy | less --tabs=4 -RF
 
 [fetch]
   prune = true
 
 [pull]
   rebase = true
+
+[rebase]
+  autostash = true
 
 [init]
   defaultBranch = main
@@ -23,19 +26,40 @@
   showStash = true
   showUntrackedFiles = all
 
-[interactive]
-  diffFilter = delta --color-only
-
-[delta]
-  line-numbers = true
-  navigate = true    # use n and N to move between diff sections
-  side-by-side = true
-
 [merge]
   conflictstyle = diff3
 
 [diff]
+  context = 3
+  renames = copies
+  interHunkContext = 10
   colorMoved = default
+
+[diff-so-fancy]
+  markEmptyLines = false
+
+[interactive]
+  diffFilter = diff-so-fancy --patch
+  singlekey = true
+
+[color]
+  ui = true
+
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+
+[color "diff"]
+  meta = 11
+  frag = magenta bold
+  func = 146 bold
+  commit = yellow bold
+  context = white
+  whitespace = red reverse
+  old = red bold
+  new = green bold
 
 [alias]
   cm = commit
@@ -52,6 +76,17 @@
 
 [commit]
   gpgsign = false
+  template = ~/.config/git/template
 
 [push]
   autoSetupRemote = true
+  default = current
+  followTags = true
+
+[log]
+  abbrevCommit = true  # short commits
+  graphColors = blue,yellow,cyan,magenta,green,red
+
+[blame]
+  coloring = highlightRecent
+  date = relative
