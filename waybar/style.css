@@ -15,7 +15,6 @@ window#waybar {
 #workspaces button,
 #pulseaudio,
 #bluetooth,
-#network,
 #cpu,
 #memory,
 #bluetooth,
@@ -117,21 +116,6 @@ tooltip label {
 
 #pulseaudio.microphone.source-muted {
   color: @love;
-}
-
-/* -----------------------------------------------------
- * Network
- * ----------------------------------------------------- */
-
-#network {
-}
-
-#network.ethernet {
-    color: @iris;
-}
-
-#network.wifi {
-    color: @foam;
 }
 
 /* -----------------------------------------------------

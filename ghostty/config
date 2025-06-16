@@ -1,6 +1,10 @@
 theme = rose-pine-moon
 
-font-family = Monaspace Argon
+font-family = Monaspace Neon
+font-family-bold = Monaspace Xenon
+font-family-italic = Monaspace Radon
+font-family-bold-italic = Monaspace Radon
+
 font-size = 18
 
 window-theme = "ghostty"

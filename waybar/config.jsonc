@@ -16,7 +16,6 @@
   ],
   "modules-right": [
     "bluetooth",
-    "network",
     "tray",
     "mpris",
     "pulseaudio",

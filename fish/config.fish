@@ -1,3 +1,5 @@
+export EDITOR=nvim
+
 if status is-interactive
     alias ff="fastfetch"
     alias nv='nvim'
@@ -18,8 +20,6 @@ if status is-interactive
     alias dk="docker"
     alias dkc="docker compose"
     alias dkps="docker ps --format '{{.ID}} ~ {{.Names}} ~ {{.Status}} ~ {{.Image}}'"
-
-    export EDITOR=nvim
 
     fzf --fish | source
     zoxide init fish | source
