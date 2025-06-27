@@ -17,7 +17,6 @@
   "modules-right": [
     "bluetooth",
     "tray",
-    "mpris",
     "pulseaudio",
     "pulseaudio#microphone",
     "battery"

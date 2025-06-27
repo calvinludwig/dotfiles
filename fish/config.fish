@@ -26,4 +26,7 @@ if status is-interactive
     starship init fish | source
 end
 
+set -gx UID 1000
+set -gx GID 1000
+
 mise activate fish | source

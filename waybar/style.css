@@ -1,7 +1,7 @@
-@import "rose-pine-moon.css";
+@import "rose-pine.css";
 
 * {
-  font-family: "IBM Plex Mono", "JetBrains Mono", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Atkinson Hyperlegible Next", "JetBrains Mono", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   font-size: 18px;
   border: none;
   border-radius: 0px;
