@@ -1,5 +1,7 @@
+general.import = ["~/.config/alacritty/catppuccin-macchiato.toml"]
+
 [font]
-normal = { family = "Cascadia Code", style = "Regular" }
+normal = { family = "Monaspace Argon", style = "Regular" }
 size = 18
 
 [window]

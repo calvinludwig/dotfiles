@@ -27,13 +27,17 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  "icon_theme": "Base Charmed Icons",
+  "icon_theme": "Catppuccin Macchiato",
   "indent_guides": {
     "enabled": false
   },
   "languages": {
     "PHP": {
-      "language_servers": ["intelephense", "!phpactor", "..."]
+      "language_servers": [
+        "intelephense",
+        "!phpactor",
+        "..."
+      ]
     }
   },
   "project_panel": {
@@ -56,8 +60,8 @@
     "line_height": "standard"
   },
   "theme": {
-    "dark": "Rosé Pine",
-    "light": "Rosé Pine Dawn",
+    "dark": "Catppuccin Macchiato",
+    "light": "Catppuccin Latte",
     "mode": "system"
   },
   "ui_font_family": "Atkinson Hyperlegible Next",

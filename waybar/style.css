@@ -1,4 +1,4 @@
-@import "rose-pine.css";
+@import "macchiato.css";
 
 * {
   font-family: "Atkinson Hyperlegible Next", "JetBrains Mono", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -8,8 +8,8 @@
 }
 
 window#waybar {
-  background-color: @surface;
-  border-top: 2px solid @pine;
+  background-color: @crust;
+  border-top: 2px solid @peach;
 }
 
 #workspaces button,
@@ -25,11 +25,11 @@ window#waybar {
   margin-top: 2px;
   padding: 0px 8px;
   border-radius: 0px 0px 4px 4px;
-  color: @text;
+  color: @red;
 }
 
 #clock {
-  color: @rose;
+  color: @peach;
 }
 
 /* -----------------------------------------------------
@@ -42,28 +42,28 @@ window#waybar {
 #workspaces button {
   margin: 2px;
   color: @text;
-  background-color: @highlightHigh;
+  background-color: @base;
   padding: 0px 8px;
   border: 0px;
   transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-  color: @surface;
+  color: @crust;
   font-weight: bold;
-  background: @pine;
+  background: @peach;
   padding: 0 8;
   transition: all 0.3s ease-in-out;
 }
 
 
 #workspaces button.empty {
-  color: @muted
+  color: @subtext0
 }
 
 #workspaces button:hover {
-  color: @surface;
-  background: @foam;
+  color: @crust;
+  background: @flamingo;
   border: 0px;
 }
 
@@ -83,19 +83,19 @@ tooltip label {
 }
 
 #bluetooth.disabled {
-  color: @love;
+  color: @red;
 }
 
 #bluetooth.off {
-  color: @love;
+  color: @red;
 }
 
 #bluetooth.on {
-  color: @gold;
+  color: @lavender;
 }
 
 #bluetooth.connected {
-  color: @pine;
+  color: @blue;
 }
 
 /* -----------------------------------------------------
@@ -103,39 +103,19 @@ tooltip label {
  * ----------------------------------------------------- */
 
 #pulseaudio {
-    color: @iris;
+    color: @mauve;
 }
 
 #pulseaudio.muted {
-    color: @love;
+    color: @maroon;
 }
 
 #pulseaudio.microphone {
-  color: @foam;
+  color: @teal;
 }
 
 #pulseaudio.microphone.source-muted {
-  color: @love;
-}
-
-/* -----------------------------------------------------
- * MPRIS
- * ----------------------------------------------------- */
-
-#mpris.paused {
-  color: @love;
-}
-#mpris.playing {
-  color: @pine;
-}
-#mpris.mpd {
-  color: @text;
-}
-#mpris.mpv {
-  color: @text;
-}
-#mpris.brave {
-  color: @gold;
+  color: @maroon;
 }
 
 /* -----------------------------------------------------
@@ -147,22 +127,30 @@ tooltip label {
 }
 
 #battery.charging, #battery.plugged {
-    color: @text;
+    color: @green;
 }
 
 @keyframes blink {
     to {
         background-color: @base;
-        color: @love;
+        color: @red;
     }
 }
 
 #battery.critical:not(.charging) {
-    background-color: @rose;
+    background-color: @red;
     color: @text;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+#cpu {
+  color: @flamingo;
+}
+
+#memory {
+  color: @rosewater;
 }

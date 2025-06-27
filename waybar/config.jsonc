@@ -19,6 +19,8 @@
     "tray",
     "pulseaudio",
     "pulseaudio#microphone",
-    "battery"
+    "battery",
+    "cpu",
+    "memory"
   ]
 }
