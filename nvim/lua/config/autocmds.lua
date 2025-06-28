@@ -9,3 +9,9 @@ vim.api.nvim_create_autocmd({ 'FileType' }, {
     vim.b.autoformat = false
   end,
 })
+
+vim.api.nvim_create_autocmd('ExitPre', {
+  group = vim.api.nvim_create_augroup('Exit', { clear = true }),
+  command = 'set guicursor=a:hor20',
+  desc = 'Set cursor back to underline when leaving Neovim.',
+})
