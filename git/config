@@ -1,13 +1,16 @@
+[include]
+  path = ~/.config/git/catppuccin.gitconfig
+
 [user]
   email = git@calvinludwig.xyz
   name = Calvin Ludwig
 
 [core]
+  pager = delta
   compression = 9
   editor = nvim
   preloadindex = true
   whitespace = error
-  pager = diff-so-fancy | less --tabs=4 -RF
 
 [fetch]
   prune = true
@@ -27,40 +30,21 @@
   showStash = true
   showUntrackedFiles = all
 
-[merge]
-  conflictstyle = diff3
-
-[diff]
-  context = 3
-  renames = copies
-  interHunkContext = 10
-  colorMoved = default
-
-[diff-so-fancy]
-  markEmptyLines = false
-
 [interactive]
-  diffFilter = diff-so-fancy --patch
+  diffFilter = delta --color-only
   singlekey = true
+
+[delta]
+  side-by-side = true
+  line-numbers = true
+  features = catppuccin-macchiato
+  navigate = true
+
+[merge]
+  conflictstyle = zdiff3
 
 [color]
   ui = true
-
-[color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green bold
-  newHighlight = green bold 22
-
-[color "diff"]
-  meta = 11
-  frag = magenta bold
-  func = 146 bold
-  commit = yellow bold
-  context = white
-  whitespace = red reverse
-  old = red bold
-  new = green bold
 
 [alias]
   cm = commit

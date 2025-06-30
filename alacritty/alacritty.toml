@@ -1,7 +1,7 @@
 general.import = ["~/.config/alacritty/catppuccin-macchiato.toml"]
 
 [font]
-size = 22
+size = 18
 normal = { family = "Monaspace Neon", style = "Regular" }
 italic = { family = "Monaspace Radon", style = "Regular" }
 bold = { family = "Monaspace Xenon", style = "Bold" }
@@ -10,8 +10,6 @@ bold_italic = { family = "Monaspace Radon", style = "Bold" }
 [window]
 padding = { x = 8, y = 0 }
 dynamic_padding = true
-opacity = 0.8
-blur = true
 
 [cursor]
 style = { shape = "Underline", blinking = "Always" }
