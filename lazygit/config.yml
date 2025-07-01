@@ -1,28 +1,27 @@
 git:
   paging:
     colorArg: always
-    pager: diff-so-fancy
 gui:
   theme:
     activeBorderColor:
-      - "#f5a97f"
+      - "#fe640b"
       - bold
     inactiveBorderColor:
-      - "#a5adcb"
+      - "#6c6f85"
     optionsTextColor:
-      - "#8aadf4"
+      - "#1e66f5"
     selectedLineBgColor:
-      - "#363a4f"
+      - "#ccd0da"
     cherryPickedCommitBgColor:
-      - "#494d64"
+      - "#bcc0cc"
     cherryPickedCommitFgColor:
-      - "#f5a97f"
+      - "#fe640b"
     unstagedChangesColor:
-      - "#ed8796"
+      - "#d20f39"
     defaultFgColor:
-      - "#cad3f5"
+      - "#4c4f69"
     searchingActiveBorderColor:
-      - "#eed49f"
+      - "#df8e1d"
 
   authorColors:
-    "*": "#b7bdf8"
+    "*": "#7287fd"

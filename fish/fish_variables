@@ -19,7 +19,7 @@ SETUVAR --export EZA_LO_OPTIONS:\x2d\x2doneline
 SETUVAR --export EZA_LT_OPTIONS:\x2d\x2dtree\x1e\x2d\x2dlevel
 SETUVAR --export EZA_L_OPTIONS:\x1d
 SETUVAR --export EZA_STANDARD_OPTIONS:\x2d\x2dgroup\x1e\x2d\x2dheader\x1e\x2d\x2dgroup\x2ddirectories\x2dfirst
-SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dbg\x2b\x3a\x23363A4F\x2cbg\x3a\x2324273A\x2cspinner\x3a\x23F4DBD6\x2chl\x3a\x23ED8796\x20\x2d\x2dcolor\x3dfg\x3a\x23CAD3F5\x2cheader\x3a\x23ED8796\x2cinfo\x3a\x23C6A0F6\x2cpointer\x3a\x23F4DBD6\x20\x2d\x2dcolor\x3dmarker\x3a\x23B7BDF8\x2cfg\x2b\x3a\x23CAD3F5\x2cprompt\x3a\x23C6A0F6\x2chl\x2b\x3a\x23ED8796\x20\x2d\x2dcolor\x3dselected\x2dbg\x3a\x23494D64\x20\x2d\x2dcolor\x3dborder\x3a\x23363A4F\x2clabel\x3a\x23CAD3F5
+SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dbg\x2b\x3a\x23CCD0DA\x2cbg\x3a\x23EFF1F5\x2cspinner\x3a\x23DC8A78\x2chl\x3a\x23D20F39\x20\x2d\x2dcolor\x3dfg\x3a\x234C4F69\x2cheader\x3a\x23D20F39\x2cinfo\x3a\x238839EF\x2cpointer\x3a\x23DC8A78\x20\x2d\x2dcolor\x3dmarker\x3a\x237287FD\x2cfg\x2b\x3a\x234C4F69\x2cprompt\x3a\x238839EF\x2chl\x2b\x3a\x23D20F39\x20\x2d\x2dcolor\x3dselected\x2dbg\x3a\x23BCC0CC\x20\x2d\x2dcolor\x3dborder\x3a\x23CCD0DA\x2clabel\x3a\x234C4F69
 SETUVAR --export --path GOPATH:/home/ludwig/\x2ego
 SETUVAR --export __FISH_EZA_ALIASES:l\x1ela\x1eld\x1eli\x1elid\x1elaa\x1elad\x1elai\x1elaid\x1elaad\x1elaai\x1elaaid\x1ell\x1ella\x1elld\x1elli\x1ellid\x1ellaa\x1ellad\x1ellai\x1ellaid\x1ellaad\x1ellaai\x1ellaaid\x1elg\x1elga\x1elgd\x1elgi\x1elgid\x1elgaa\x1elgad\x1elgai\x1elgaid\x1elgaad\x1elgaai\x1elgaaid\x1ele\x1elea\x1eled\x1elei\x1eleid\x1eleaa\x1elead\x1eleai\x1eleaid\x1eleaad\x1eleaai\x1eleaaid\x1elt\x1elta\x1eltd\x1elti\x1eltid\x1eltad\x1eltai\x1eltaid\x1eltaad\x1eltaai\x1eltaaid\x1elc\x1elca\x1elcd\x1elci\x1elcid\x1elcaa\x1elcad\x1elcai\x1elcaid\x1elcaad\x1elcaai\x1elcaaid\x1elo\x1eloa\x1elod\x1eloi\x1eloid\x1eloaa\x1eload\x1eloai\x1eloaid\x1eloaad\x1eloaai\x1eloaaid
 SETUVAR --export __FISH_EZA_BASE_ALIASES:l\x1ell\x1elg\x1ele\x1elt\x1elc\x1elo
@@ -39,35 +39,35 @@ SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR --export fifc_editor:nvim
 SETUVAR fifc_keybinding:\x09
 SETUVAR fifc_open_keybinding:ctrl\x2do
-SETUVAR fish_color_autosuggestion:6e738d
-SETUVAR fish_color_cancel:ed8796
-SETUVAR fish_color_command:8aadf4
-SETUVAR fish_color_comment:8087a2
-SETUVAR fish_color_cwd:eed49f
-SETUVAR fish_color_end:f5a97f
-SETUVAR fish_color_error:ed8796
-SETUVAR fish_color_escape:ee99a0
-SETUVAR fish_color_gray:6e738d
-SETUVAR fish_color_host:8aadf4
-SETUVAR fish_color_host_remote:a6da95
-SETUVAR fish_color_keyword:ed8796
-SETUVAR fish_color_normal:cad3f5
-SETUVAR fish_color_operator:f5bde6
-SETUVAR fish_color_option:a6da95
-SETUVAR fish_color_param:f0c6c6
-SETUVAR fish_color_quote:a6da95
-SETUVAR fish_color_redirection:f5bde6
-SETUVAR fish_color_search_match:\x2d\x2dbackground\x3d363a4f
-SETUVAR fish_color_selection:\x2d\x2dbackground\x3d363a4f
-SETUVAR fish_color_status:ed8796
-SETUVAR fish_color_user:8bd5ca
+SETUVAR fish_color_autosuggestion:9ca0b0
+SETUVAR fish_color_cancel:d20f39
+SETUVAR fish_color_command:1e66f5
+SETUVAR fish_color_comment:8c8fa1
+SETUVAR fish_color_cwd:df8e1d
+SETUVAR fish_color_end:fe640b
+SETUVAR fish_color_error:d20f39
+SETUVAR fish_color_escape:e64553
+SETUVAR fish_color_gray:9ca0b0
+SETUVAR fish_color_host:1e66f5
+SETUVAR fish_color_host_remote:40a02b
+SETUVAR fish_color_keyword:d20f39
+SETUVAR fish_color_normal:4c4f69
+SETUVAR fish_color_operator:ea76cb
+SETUVAR fish_color_option:40a02b
+SETUVAR fish_color_param:dd7878
+SETUVAR fish_color_quote:40a02b
+SETUVAR fish_color_redirection:ea76cb
+SETUVAR fish_color_search_match:\x2d\x2dbackground\x3dccd0da
+SETUVAR fish_color_selection:\x2d\x2dbackground\x3dccd0da
+SETUVAR fish_color_status:d20f39
+SETUVAR fish_color_user:179299
 SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_background:\x1d
-SETUVAR fish_pager_color_completion:cad3f5
-SETUVAR fish_pager_color_description:6e738d
-SETUVAR fish_pager_color_prefix:f5bde6
-SETUVAR fish_pager_color_progress:6e738d
+SETUVAR fish_pager_color_completion:4c4f69
+SETUVAR fish_pager_color_description:9ca0b0
+SETUVAR fish_pager_color_prefix:ea76cb
+SETUVAR fish_pager_color_progress:9ca0b0
 SETUVAR fish_pager_color_secondary_background:\x1d
 SETUVAR fish_pager_color_secondary_completion:\x1d
 SETUVAR fish_pager_color_secondary_description:\x1d
