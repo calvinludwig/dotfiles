@@ -22,6 +22,13 @@ return {
       },
     },
   },
+
+  {
+    'catppuccin/nvim',
+    opts = {
+      transparent_background = true,
+    },
+  },
   {
     'neovim/nvim-lspconfig',
     ---@class PluginLspOpts
