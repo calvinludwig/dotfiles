@@ -11,7 +11,7 @@
       "default": "",
     },
     "persistent-workspaces": {
-      "*": 6,
+      "*": 8,
     },
   },
   // Pulseaudio
