@@ -1,158 +1,78 @@
 #!/bin/bash
 
-# Enhanced Bing Picture of the Day Downloader
-# Author: Your Name
-# Description: Downloads Bing's daily wallpaper with comprehensive error handling
-
-set -euo pipefail # Exit on error, undefined vars, pipe failures
+# Bing Image of the Day Downloader
+# This script downloads Bing's daily image, stores it, and copies it to wallpaper.jpg
 
 # Configuration
-WALLPAPER_DIR="${HOME}/Pictures/wallpapers"
-BING_API="https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
-LOG_FILE="/tmp/bing_wallpaper_download.log"
+WALLPAPER_DIR="$HOME/Pictures/wallpapers"
+WALLPAPER_FILE="$HOME/Pictures/wallpapers/wallpaper.jpg"
 
-# Colors for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-NC='\033[0m' # No Color
+# Create wallpaper directory if it doesn't exist
+mkdir -p "$WALLPAPER_DIR"
 
-# Logging function
-log() {
-  echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" | tee -a "$LOG_FILE"
-}
+# Function to download Bing image
+download_bing_image() {
+  # Get Bing image metadata (JSON format)
+  local bing_url="https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
+  local json_response
 
-# Error handling function
-error_exit() {
-  echo -e "${RED}Error: $1${NC}" >&2
-  log "ERROR: $1"
-  exit 1
-}
+  # Download JSON metadata
+  json_response=$(curl -s "$bing_url")
 
-# Success message function
-success_msg() {
-  echo -e "${GREEN}$1${NC}"
-  log "SUCCESS: $1"
-}
-
-# Warning message function
-warning_msg() {
-  echo -e "${YELLOW}Warning: $1${NC}"
-  log "WARNING: $1"
-}
-
-# Check dependencies
-check_dependencies() {
-  local deps=("curl" "grep")
-  for dep in "${deps[@]}"; do
-    if ! command -v "$dep" &>/dev/null; then
-      error_exit "$dep is required but not installed"
-    fi
-  done
-}
-
-# Create necessary directories
-setup_directories() {
-  if ! mkdir -p "$WALLPAPER_DIR"; then
-    error_exit "Could not create directory: $WALLPAPER_DIR"
-  fi
-}
-
-# Get image URL from Bing API
-get_image_url() {
-  local api_response
-  api_response=$(curl -s --max-time 30 "$BING_API") || error_exit "Failed to fetch data from Bing API"
-
-  local image_url
-  image_url=$(echo "$api_response" | grep -Po '"url":"\K[^"]*' | head -1)
-
-  if [[ -z "$image_url" ]]; then
-    error_exit "Could not extract image URL from API response"
+  if [ $? -ne 0 ] || [ -z "$json_response" ]; then
+    echo "ERROR: Failed to fetch Bing image metadata"
+    return 1
   fi
 
-  echo "https://www.bing.com$image_url"
-}
+  # Extract image URL and date
+  local image_url=$(echo "$json_response" | grep -o '"url":"[^"]*"' | head -1 | sed 's/"url":"//;s/"//')
+  local start_date=$(echo "$json_response" | grep -o '"startdate":"[^"]*"' | head -1 | sed 's/"startdate":"//;s/"//')
 
-# Extract filename from URL
-get_filename_from_url() {
-  local url="$1"
-  local filename
-
-  # Extract filename from URL (everything after the last /)
-  filename=$(basename "$url" | cut -d'?' -f1)
-
-  # If no extension or invalid filename, use a default
-  if [[ ! "$filename" =~ \.(jpg|jpeg|png|webp)$ ]]; then
-    filename="bing_wallpaper_$(date +%Y%m%d).jpg"
+  if [ -z "$image_url" ]; then
+    echo "ERROR: Could not extract image URL from Bing response"
+    return 1
   fi
 
-  echo "$filename"
-}
+  # Complete the URL (Bing returns relative URLs)
+  if [[ "$image_url" == /* ]]; then
+    image_url="https://www.bing.com$image_url"
+  fi
 
-# Download the wallpaper
-download_wallpaper() {
-  local url="$1"
-  local filename
-  filename=$(get_filename_from_url "$url")
+  # Generate filename with date
+  local filename="${start_date}.jpg"
+  local full_path="$WALLPAPER_DIR/$filename"
 
-  local wallpaper_file="${WALLPAPER_DIR}/${filename}"
-  local temp_file="${wallpaper_file}.tmp"
+  # Check if image already exists
+  if [ -f "$full_path" ]; then
+    echo "Image already exists, copying to wallpaper.jpg"
+    cp "$full_path" "$WALLPAPER_FILE"
+    return 0
+  fi
 
-  log "Downloading from: $url"
-  log "Saving as: $filename"
+  # Download the image
+  if curl -L -o "$full_path" "$image_url"; then
+    echo "Successfully downloaded: $filename"
 
-  if curl -s --max-time 60 -o "$temp_file" "$url"; then
-    # Verify the download
-    if [[ -f "$temp_file" ]] && [[ -s "$temp_file" ]]; then
-      # Check if it's actually an image (basic check)
-      if file "$temp_file" | grep -q "image\|JPEG\|PNG"; then
-        cp "$temp_file" "$wallpaper_file"
-        rm -f "$temp_file"
-        success_msg "Wallpaper downloaded successfully: $wallpaper_file"
-        echo "$wallpaper_file" # Return the final file path
-      else
-        rm -f "$temp_file"
-        error_exit "Downloaded file is not a valid image"
-      fi
-    else
-      rm -f "$temp_file"
-      error_exit "Download failed or file is empty"
-    fi
+    # Copy to wallpaper.jpg
+    cp "$full_path" "$WALLPAPER_FILE"
+    echo "Copied to wallpaper.jpg"
+
+    return 0
   else
-    rm -f "$temp_file"
-    error_exit "Failed to download wallpaper"
+    echo "ERROR: Failed to download image"
+    return 1
   fi
 }
 
-# Display image information
-show_image_info() {
-  local wallpaper_file="$1"
-
-  if command -v identify &>/dev/null; then
-    echo -e "\n${GREEN}Image Information:${NC}"
-    identify "$wallpaper_file"
-  fi
-
-  echo -e "\n${GREEN}File Information:${NC}"
-  ls -lh "$wallpaper_file"
-}
-
-# Main function
+# Main execution
 main() {
-  log "Starting Bing wallpaper download"
-
-  check_dependencies
-  setup_directories
-
-  local image_url
-  image_url=$(get_image_url)
-
-  local downloaded_file
-  downloaded_file=$(download_wallpaper "$image_url")
-
-  show_image_info "$downloaded_file"
-
-  log "Wallpaper download completed successfully"
+  # Download the image
+  if download_bing_image; then
+    echo "SUCCESS: Wallpaper updated successfully"
+  else
+    echo "FAILED: Could not update wallpaper"
+    exit 1
+  fi
 }
 
 # Run the script

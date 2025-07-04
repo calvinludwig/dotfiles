@@ -2,9 +2,9 @@ general.import = ["~/.config/alacritty/latte.toml"]
 
 [font]
 size = 18
-normal = { family = "Monaspace Neon", style = "Regular" }
+normal = { family = "Monaspace Argon", style = "Regular" }
 italic = { family = "Monaspace Radon", style = "Regular" }
-bold = { family = "Monaspace Xenon", style = "Bold" }
+bold = { family = "Monaspace Krypton", style = "Bold" }
 bold_italic = { family = "Monaspace Radon", style = "Bold" }
 
 [window]

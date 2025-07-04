@@ -1,4 +1,5 @@
 theme = catppuccin-latte
+background = #ffffff
 
 font-family = Monaspace Argon Medium
 font-family-bold = Monaspace Xenon ExtraBold
