@@ -10,7 +10,20 @@ $git_state\
 $git_status\
 $git_metrics\
 $docker_context\
-"""
+$line_break\
+$character"""
+
+[line_break]
+disabled = false
+
+[docker_context]
+detect_files = [
+  'compose.yaml',
+  'compose.yml',
+  'docker-compose.yml',
+  'docker-compose.yaml',
+  'Dockerfile',
+]
 
 [directory]
 style = "peach"

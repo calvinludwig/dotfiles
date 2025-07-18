@@ -1,4 +1,6 @@
 export EDITOR=nvim
+export VISUAL=nvim
+export MICRO_TRUECOLOR=1
 
 if status is-interactive
     alias ff="fastfetch"
@@ -20,3 +22,5 @@ set -gx UID 1000
 set -gx GID 1000
 
 mise activate fish | source
+
+string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)

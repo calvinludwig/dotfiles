@@ -58,7 +58,7 @@ window#waybar {
 
 
 #workspaces button.empty {
-  color: @subtext0
+  color: @surface1;
 }
 
 #workspaces button:hover {
