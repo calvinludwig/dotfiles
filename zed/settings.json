@@ -26,6 +26,7 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
+  "format_on_save": "off",
   "icon_theme": "Catppuccin Latte",
   "indent_guides": {
     "enabled": false

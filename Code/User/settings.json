@@ -1,197 +1,201 @@
 {
-  "[css]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[elixir]": {
-    "editor.defaultFormatter": "JakeBecker.elixir-ls",
-    "editor.formatOnSave": true
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[lua]": {
-    "editor.defaultFormatter": "sumneko.lua"
-  },
-  "[phoenix-heex]": {
-    "editor.defaultFormatter": "JakeBecker.elixir-ls",
-    "editor.formatOnSave": true
-  },
-  "[tailwindcss]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome",
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "amazonQ.telemetry": false,
-  "breadcrumbs.enabled": false,
-  "cmake.pinnedCommands": [
-    "workbench.action.tasks.configureTaskRunner",
-    "workbench.action.tasks.runTask"
-  ],
-  "dart.flutterSdkPath": "C:\\Users\\Ludwig\\Code\\flutter",
-  "database-client.autoSync": true,
-  "editor.bracketPairColorization.enabled": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "never",
-    "source.fixAll.sortJSON": "never"
-  },
-  "editor.codeLens": false,
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorSurroundingLines": 2,
-  "editor.cursorSurroundingLinesStyle": "default",
-  "editor.cursorWidth": 2,
-  "editor.find.addExtraSpaceOnTop": false,
-  "editor.folding": true,
-  "editor.foldingImportsByDefault": true,
-  "editor.fontFamily": "Monaspace Argon, Symbols Nerd Font Mono, Noto Emoji",
-  "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
-  "editor.fontSize": 18,
-  "editor.formatOnSave": true,
-  "editor.guides.indentation": false,
-  "editor.indentSize": 2,
-  "editor.inlayHints.enabled": "off",
-  "editor.insertSpaces": true,
-  "editor.lightbulb.enabled": "off",
-  "editor.lineNumbers": "relative",
-  "editor.linkedEditing": true,
-  "editor.matchBrackets": "near",
-  "editor.minimap.enabled": false,
-  "editor.mouseWheelZoom": true,
-  "editor.parameterHints.enabled": false,
-  "editor.quickSuggestions": {
-    "comments": false,
-    "other": false,
-    "strings": false
-  },
-  "editor.renderLineHighlight": "none",
-  "editor.renderWhitespace": "selection",
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.semanticHighlighting.enabled": true,
-  "editor.smoothScrolling": true,
-  "editor.snippetSuggestions": "top",
-  "editor.stickyScroll.enabled": false,
-  "editor.tabCompletion": "on",
-  "editor.tabSize": 2,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": "comment",
-        "settings": {
-          "fontStyle": "italic"
-        }
-      }
-    ]
-  },
-  "editor.unicodeHighlight.nonBasicASCII": false,
-  "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
-  "elixirLS.signatureAfterComplete": false,
-  "elixirLS.suggestSpecs": false,
-  "emmet.includeLanguages": {
-    "elixir": "html",
-    "html-eex": "html",
-    "phoenix-heex": "html",
-    "postcss": "css"
-  },
-  "emmet.triggerExpansionOnTab": true,
-  "explorer.compactFolders": false,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.decorations.badges": false,
-  "explorer.excludeGitIgnore": false,
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.patterns": {
-    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-    "*.jsx": "${capture}.js",
-    "*.sln": "Directory.Build.props",
-    "*.ts": "${capture}.js",
-    "*.tsx": "${capture}.ts",
-    "*Test.cs": "${capture}TestFixture.cs, ${capture}TestDataGenerator.cs, ${capture}RequestValidatorTest.cs",
-    "appsettings.json": "appsettings.*.json",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb, turbo.json",
-    "tsconfig.json": "tsconfig.*.json"
-  },
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
-  "files.associations": {
-    ".env*": "dotenv",
-    "*.embeddedhtml": "html",
-    "*.heex": "phoenix-heex",
-    "tailwind.css": "tailwindcss"
-  },
-  "files.encoding": "utf8",
-  "files.eol": "\n",
-  "files.exclude": {
-    ".vscode": true,
-    "**/.DS_Store": true,
-    "**/.git": true,
-    "**/.hg": true,
-    "**/.svn": true,
-    "**/CVS": true,
-    "**/Thumbs.db": true
-  },
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "git.autofetch": true,
-  "keyboard.dispatch": "keyCode",
-  "laravel-pint.enable": true,
-  "php.suggest.basic": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "terminal.external.linuxExec": "ghostty",
-  "terminal.integrated.cursorStyle": "underline",
-  "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.env.linux": {},
-  "terminal.integrated.env.windows": {},
-  "terminal.integrated.fontFamily": "Monaspace Krypton, Symbols Nerd Font Mono, Noto Emoji",
-  "terminal.integrated.fontLigatures.enabled": true,
-  "terminal.integrated.fontLigatures.featureSettings": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.gpuAcceleration": "on",
-  "terminal.integrated.minimumContrastRatio": 0,
-  "terminal.integrated.shellIntegration.enabled": true,
-  "terminal.integrated.showExitAlert": false,
-  "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "vim.easymotion": true,
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false
-  },
-  "vim.hlsearch": true,
-  "vim.incsearch": true,
-  "vim.useCtrlKeys": true,
-  "vim.useSystemClipboard": true,
-  "window.autoDetectColorScheme": true,
-  "window.commandCenter": true,
-  "window.customTitleBarVisibility": "auto",
-  "window.menuBarVisibility": "toggle",
-  "window.titleBarStyle": "custom",
-  "window.zoomLevel": 1,
-  "workbench.activityBar.location": "bottom",
-  "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "catppuccin-latte",
-  "workbench.list.smoothScrolling": true,
-  "workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
-  "workbench.preferredLightColorTheme": "Catppuccin Latte",
-  "workbench.settings.editor": "json",
-  "workbench.startupEditor": "none",
-  "workbench.tips.enabled": false,
-  "workbench.tree.enableStickyScroll": true,
-  "workbench.tree.indent": 20,
-  "workbench.tree.renderIndentGuides": "none"
+	"[css]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[elixir]": {
+		"editor.defaultFormatter": "JakeBecker.elixir-ls",
+		"editor.formatOnSave": true
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[lua]": {
+		"editor.defaultFormatter": "sumneko.lua"
+	},
+	"[phoenix-heex]": {
+		"editor.defaultFormatter": "JakeBecker.elixir-ls",
+		"editor.formatOnSave": true
+	},
+	"[tailwindcss]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": false
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[vue]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"amazonQ.telemetry": false,
+	"breadcrumbs.enabled": false,
+	"cmake.pinnedCommands": [
+		"workbench.action.tasks.configureTaskRunner",
+		"workbench.action.tasks.runTask"
+	],
+	"dart.flutterSdkPath": "C:\\Users\\Ludwig\\Code\\flutter",
+	"database-client.autoSync": true,
+	"editor.bracketPairColorization.enabled": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "never",
+		"source.fixAll.sortJSON": "never"
+	},
+	"editor.codeLens": false,
+	"editor.cursorBlinking": "smooth",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorSurroundingLines": 2,
+	"editor.cursorSurroundingLinesStyle": "default",
+	"editor.cursorWidth": 2,
+	"editor.find.addExtraSpaceOnTop": false,
+	"editor.folding": true,
+	"editor.foldingImportsByDefault": true,
+	"editor.fontFamily": "Monaspace Argon, Symbols Nerd Font Mono, Noto Emoji",
+	"editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
+	"editor.fontSize": 18,
+	"editor.formatOnSave": true,
+	"editor.guides.indentation": false,
+	"editor.indentSize": 2,
+	"editor.inlayHints.enabled": "off",
+	"editor.insertSpaces": true,
+	"editor.lightbulb.enabled": "off",
+	"editor.lineNumbers": "relative",
+	"editor.linkedEditing": true,
+	"editor.matchBrackets": "near",
+	"editor.minimap.enabled": false,
+	"editor.mouseWheelZoom": true,
+	"editor.parameterHints.enabled": false,
+	"editor.quickSuggestions": {
+		"comments": false,
+		"other": false,
+		"strings": false
+	},
+	"editor.renderLineHighlight": "none",
+	"editor.renderWhitespace": "selection",
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.semanticHighlighting.enabled": true,
+	"editor.smoothScrolling": true,
+	"editor.snippetSuggestions": "top",
+	"editor.stickyScroll.enabled": false,
+	"editor.tabCompletion": "on",
+	"editor.tabSize": 2,
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": "comment",
+				"settings": {
+					"fontStyle": "italic"
+				}
+			}
+		]
+	},
+	"editor.unicodeHighlight.nonBasicASCII": false,
+	"editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+	"elixirLS.signatureAfterComplete": false,
+	"elixirLS.suggestSpecs": false,
+	"emmet.includeLanguages": {
+		"elixir": "html",
+		"html-eex": "html",
+		"phoenix-heex": "html",
+		"postcss": "css"
+	},
+	"emmet.triggerExpansionOnTab": true,
+	"explorer.compactFolders": false,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.decorations.badges": false,
+	"explorer.excludeGitIgnore": false,
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+		"*.jsx": "${capture}.js",
+		"*.sln": "Directory.Build.props",
+		"*.ts": "${capture}.js",
+		"*.tsx": "${capture}.ts",
+		"*Test.cs": "${capture}TestFixture.cs, ${capture}TestDataGenerator.cs, ${capture}RequestValidatorTest.cs",
+		"appsettings.json": "appsettings.*.json",
+		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb, turbo.json, biome.json",
+		"composer.json": "composer.lock, pint.json, rector.php, phpunit.xml, phpstan.neon, artisan, peck.json, .phpstorm.meta.php, _ide_helper_models.php, _ide_helper.php",
+		"dockerfile": ".dockerignore, compose.yaml, compose.yml, docker-compose.yaml, docker-compose.yml",
+		"tsconfig.json": "tsconfig.*.json",
+		".env": ".env.*"
+	},
+	"extensions.experimental.affinity": {
+		"vscodevim.vim": 1
+	},
+	"files.associations": {
+		".env*": "dotenv",
+		"*.embeddedhtml": "html",
+		"*.heex": "phoenix-heex",
+		"tailwind.css": "tailwindcss"
+	},
+	"files.encoding": "utf8",
+	"files.eol": "\n",
+	"files.exclude": {
+		".vscode": true,
+		"**/.DS_Store": true,
+		"**/.git": true,
+		"**/.hg": true,
+		"**/.svn": true,
+		"**/CVS": true,
+		"**/Thumbs.db": true
+	},
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"git.autofetch": true,
+	"keyboard.dispatch": "keyCode",
+	"laravel-pint.enable": true,
+	"php.suggest.basic": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	"terminal.external.linuxExec": "ghostty",
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.defaultProfile.linux": "fish",
+	"terminal.integrated.env.linux": {},
+	"terminal.integrated.env.windows": {},
+	"terminal.integrated.fontFamily": "Monaspace Krypton, Symbols Nerd Font Mono, Noto Emoji",
+	"terminal.integrated.fontLigatures.enabled": true,
+	"terminal.integrated.fontLigatures.featureSettings": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
+	"terminal.integrated.fontSize": 16,
+	"terminal.integrated.gpuAcceleration": "on",
+	"terminal.integrated.minimumContrastRatio": 0,
+	"terminal.integrated.shellIntegration.enabled": true,
+	"terminal.integrated.showExitAlert": false,
+	"typescript.preferences.preferTypeOnlyAutoImports": true,
+	"vim.easymotion": true,
+	"vim.handleKeys": {
+		"<C-a>": false,
+		"<C-f>": false
+	},
+	"vim.hlsearch": true,
+	"vim.incsearch": true,
+	"vim.useCtrlKeys": true,
+	"vim.useSystemClipboard": true,
+	"window.autoDetectColorScheme": true,
+	"window.commandCenter": true,
+	"window.customTitleBarVisibility": "auto",
+	"window.menuBarVisibility": "toggle",
+	"window.titleBarStyle": "custom",
+	"window.zoomLevel": 1,
+	"workbench.activityBar.location": "bottom",
+	"workbench.editor.editorActionsLocation": "hidden",
+	"workbench.editor.labelFormat": "short",
+	"workbench.iconTheme": "catppuccin-latte",
+	"workbench.list.smoothScrolling": true,
+	"workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
+	"workbench.preferredLightColorTheme": "Catppuccin Latte",
+	"workbench.settings.editor": "json",
+	"workbench.startupEditor": "none",
+	"workbench.tips.enabled": false,
+	"workbench.tree.enableStickyScroll": true,
+	"workbench.tree.indent": 20,
+	"workbench.tree.renderIndentGuides": "none",
+	"github.copilot.nextEditSuggestions.enabled": true
 }

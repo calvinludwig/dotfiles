@@ -1,5 +1,4 @@
 theme = catppuccin-latte
-background = #ffffff
 
 font-family = Monaspace Argon Medium
 font-family-bold = Monaspace Krypton ExtraBold
@@ -8,10 +7,6 @@ font-family-bold-italic = Monaspace Radon ExtraBold
 font-feature = "editor.fontLigatures": calt, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09, liga
 
 font-size = 19
-
-shell-integration-features = no-cursor
-cursor-style = underline
-cursor-style-blink = true
 
 gtk-titlebar = false
 gtk-tabs-location = left
@@ -29,3 +24,4 @@ keybind = ctrl+alt+shift+h=resize_split:left,10
 keybind = ctrl+alt+shift+l=resize_split:right,10
 keybind = ctrl+alt+shift+j=resize_split:down,10
 keybind = ctrl+alt+shift+k=resize_split:up,10
+keybind = shift+enter=text:\n
