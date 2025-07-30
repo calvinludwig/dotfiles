@@ -7,20 +7,7 @@
     }
   },
   "base_keymap": "VSCode",
-  "buffer_font_family": "Monaspace Argon",
-  "buffer_font_features": {
-    "calt": true,
-    "liga": true,
-    "ss01": true,
-    "ss02": true,
-    "ss03": true,
-    "ss04": true,
-    "ss05": true,
-    "ss06": true,
-    "ss07": true,
-    "ss08": true,
-    "ss09": true
-  },
+  "buffer_font_family": "Iosevka",
   "buffer_font_size": 22,
   "buffer_line_height": "standard",
   "features": {
@@ -33,7 +20,11 @@
   },
   "languages": {
     "PHP": {
-      "language_servers": ["intelephense", "!phpactor", "..."]
+      "language_servers": [
+        "intelephense",
+        "!phpactor",
+        "..."
+      ]
     }
   },
   "project_panel": {
@@ -51,7 +42,7 @@
   },
   "terminal": {
     "cursor_shape": "underline",
-    "font_family": "Monaspace Krypton",
+    "font_family": "Iosevka",
     "font_size": 22,
     "line_height": "standard"
   },
@@ -60,7 +51,7 @@
     "light": "Catppuccin Latte",
     "mode": "system"
   },
-  "ui_font_family": "Atkinson Hyperlegible Next",
+  "ui_font_family": "Iosevka Aile",
   "ui_font_size": 20,
   "vim": {
     "toggle_relative_line_numbers": true,

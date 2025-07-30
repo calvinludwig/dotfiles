@@ -55,7 +55,7 @@
     "format-on": " 󰂳 ",
     "format-connected": " 󰂱 ",
     "interval": 30,
-    "on-click": "blueman-manager",
+    "on-click": "blueberry",
     "format-no-controller": "",
   },
   // Battery
