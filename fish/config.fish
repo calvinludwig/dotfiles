@@ -5,6 +5,7 @@ export MICRO_TRUECOLOR=1
 if status is-interactive
     alias ff="fastfetch"
     alias nv='nvim'
+    alias lv='NVIM_APPNAME=lazyvim nvim'
     alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
     alias cat="bat -p"
 
