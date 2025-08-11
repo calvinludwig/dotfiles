@@ -61,7 +61,6 @@
 
 [commit]
   gpgsign = false
-  template = ~/.config/git/template
 
 [push]
   autoSetupRemote = true

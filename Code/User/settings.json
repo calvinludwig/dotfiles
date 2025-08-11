@@ -57,9 +57,9 @@
 	"editor.find.addExtraSpaceOnTop": false,
 	"editor.folding": true,
 	"editor.foldingImportsByDefault": true,
-	"editor.fontFamily": "Iosevka, Symbols Nerd Font Mono, Noto Emoji",
+	"editor.fontFamily": "Iosevka Slab, Symbols Nerd Font Mono, Noto Emoji",
 	"editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
-	"editor.fontSize": 18,
+	"editor.fontSize": 22,
 	"editor.formatOnSave": true,
 	"editor.guides.indentation": false,
 	"editor.indentSize": 2,
@@ -197,5 +197,6 @@
 	"workbench.tree.enableStickyScroll": true,
 	"workbench.tree.indent": 20,
 	"workbench.tree.renderIndentGuides": "none",
-	"github.copilot.nextEditSuggestions.enabled": true
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"Laravel.phpEnvironment": "local"
 }
