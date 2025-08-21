@@ -10,7 +10,7 @@
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[json]": {
-		"editor.defaultFormatter": "biomejs.biome"
+		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "biomejs.biome"
@@ -57,9 +57,9 @@
 	"editor.find.addExtraSpaceOnTop": false,
 	"editor.folding": true,
 	"editor.foldingImportsByDefault": true,
-	"editor.fontFamily": "Iosevka Slab, Symbols Nerd Font Mono, Noto Emoji",
+	"editor.fontFamily": "Maple Mono, JetBrains Mono, Symbols Nerd Font Mono, Noto Emoji",
 	"editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
-	"editor.fontSize": 22,
+	"editor.fontSize": 18,
 	"editor.formatOnSave": true,
 	"editor.guides.indentation": false,
 	"editor.indentSize": 2,
@@ -160,7 +160,7 @@
 	"terminal.integrated.defaultProfile.linux": "fish",
 	"terminal.integrated.env.linux": {},
 	"terminal.integrated.env.windows": {},
-	"terminal.integrated.fontFamily": "Iosevka, Symbols Nerd Font Mono, Noto Emoji",
+	"terminal.integrated.fontFamily": "Maple Mono, JetBrains Mono, Symbols Nerd Font Mono, Noto Emoji",
 	"terminal.integrated.fontLigatures.enabled": true,
 	"terminal.integrated.fontLigatures.featureSettings": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
 	"terminal.integrated.fontSize": 16,
@@ -198,5 +198,6 @@
 	"workbench.tree.indent": 20,
 	"workbench.tree.renderIndentGuides": "none",
 	"github.copilot.nextEditSuggestions.enabled": true,
-	"Laravel.phpEnvironment": "local"
+	"Laravel.phpEnvironment": "local",
+	"editor.wordWrap": "off"
 }

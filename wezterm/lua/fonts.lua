@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 local M = {}
 
-local font_family = 'Iosevka'
+local font_family = 'Maple Mono'
 
 M.setup = function(c)
   c.line_height = 1

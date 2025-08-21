@@ -1,7 +1,7 @@
 @import "latte.css";
 
 * {
-  font-family: "Iosevka Aile", "JetBrains Mono", "Symbols Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Maple Mono", "JetBrains Mono", "Symbols Nerd Font", "FontAwesome";
   font-size: 18px;
   border: none;
   border-radius: 0px;
@@ -33,7 +33,7 @@ window#waybar {
 }
 
 /* -----------------------------------------------------
- * Workspaces 
+ * Workspaces
  * ----------------------------------------------------- */
 
 #workspaces {

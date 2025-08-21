@@ -2,7 +2,7 @@ general.import = ["~/.config/alacritty/latte.toml"]
 
 [font]
 size = 18
-normal = { family = "Iosevka" }
+normal = { family = "Maple Mono" }
 
 [window]
 padding = { x = 8, y = 0 }
