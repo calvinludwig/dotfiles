@@ -54,4 +54,13 @@ return {
       },
     },
   },
+  {
+    'nvim-lualine/lualine.nvim',
+    opts = function(_, opts)
+      -- Override default options
+      opts.options.section_separators = { left = '█', right = '█' } -- Example section separators
+      opts.options.component_separators = { left = '|', right = '|' } -- Example component separators
+      return opts
+    end,
+  },
 }
