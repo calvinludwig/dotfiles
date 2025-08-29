@@ -14,7 +14,7 @@ $line_break\
 $character"""
 
 [line_break]
-disabled = false
+disabled = true
 
 [docker_context]
 detect_files = [

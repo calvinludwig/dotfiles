@@ -51,7 +51,7 @@
     "light": "Catppuccin Latte",
     "mode": "system"
   },
-  "ui_font_family": "Inter",
+  "ui_font_family": "Maple Mono",
   "ui_font_size": 20,
   "vim": {
     "toggle_relative_line_numbers": true,

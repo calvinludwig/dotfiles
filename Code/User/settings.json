@@ -157,7 +157,7 @@
 	"security.workspace.trust.untrustedFiles": "open",
 	"terminal.external.linuxExec": "ghostty",
 	"terminal.integrated.cursorStyle": "underline",
-	"terminal.integrated.defaultProfile.linux": "fish",
+	"terminal.integrated.defaultProfile.linux": "bash",
 	"terminal.integrated.env.linux": {},
 	"terminal.integrated.env.windows": {},
 	"terminal.integrated.fontFamily": "Maple Mono, JetBrains Mono, Symbols Nerd Font Mono, Noto Emoji",
