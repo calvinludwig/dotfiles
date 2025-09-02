@@ -2,7 +2,7 @@ return {
   {
     'LazyVim/LazyVim',
     opts = {
-      colorscheme = 'catppuccin-latte',
+      colorscheme = 'catppuccin-mocha',
     },
   },
   -- remove next when https://github.com/LazyVim/LazyVim/pull/6354 is merged

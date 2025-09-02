@@ -189,7 +189,7 @@
   "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "catppuccin-latte",
   "workbench.list.smoothScrolling": true,
-  "workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
