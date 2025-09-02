@@ -1,7 +1,7 @@
 @import "latte.css";
 
 * {
-  font-family: "Maple Mono", "JetBrains Mono", "Symbols Nerd Font", "FontAwesome";
+  font-family: "IBM Plex Sans Text", "JetBrains Mono", "Symbols Nerd Font", "FontAwesome";
   font-size: 18px;
   border: none;
   border-radius: 0px;

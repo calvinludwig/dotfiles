@@ -1,11 +1,11 @@
 local wezterm = require 'wezterm'
 local M = {}
 
-local font_family = 'Maple Mono'
+local font_family = 'IBM Plex Mono'
 
 M.setup = function(c)
   c.line_height = 1
-  c.font_size = 17
+  c.font_size = 20
   c.font = wezterm.font_with_fallback {
     { family = font_family, weight = 'Regular' },
     { family = 'JetBrains Mono' },

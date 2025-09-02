@@ -7,7 +7,7 @@
     }
   },
   "base_keymap": "VSCode",
-  "buffer_font_family": "Maple Mono",
+  "buffer_font_family": "IBM Plex Mono",
   "buffer_font_size": 22,
   "buffer_line_height": "standard",
   "features": {
@@ -42,7 +42,7 @@
   },
   "terminal": {
     "cursor_shape": "underline",
-    "font_family": "Maple Mono",
+    "font_family": "IBM Plex Mono",
     "font_size": 22,
     "line_height": "standard"
   },
@@ -51,7 +51,7 @@
     "light": "Catppuccin Latte",
     "mode": "system"
   },
-  "ui_font_family": "Maple Mono",
+  "ui_font_family": "IBM Plex Sans",
   "ui_font_size": 20,
   "vim": {
     "toggle_relative_line_numbers": true,
