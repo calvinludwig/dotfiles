@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import "latte.css";
 
 * {
   font-family: "IBM Plex Sans Text", "JetBrains Mono", "Symbols Nerd Font", "FontAwesome";
@@ -9,7 +9,6 @@
 
 window#waybar {
   background-color: @crust;
-  border-top: 2px solid @peach;
 }
 
 #workspaces button,
@@ -22,7 +21,6 @@ window#waybar {
 #battery,
 #tray,
 #clock {
-  margin-top: 2px;
   padding: 0px 8px;
   border-radius: 0px;
   color: @red;
@@ -40,7 +38,6 @@ window#waybar {
 }
 
 #workspaces button {
-  margin: 2px;
   color: @text;
   background-color: @base;
   padding: 0px 8px;
@@ -95,7 +92,6 @@ tooltip label {
 }
 
 #bluetooth.connected {
-  color: @blue;
 }
 
 /* -----------------------------------------------------

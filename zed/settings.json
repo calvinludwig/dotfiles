@@ -8,13 +8,13 @@
   },
   "base_keymap": "VSCode",
   "buffer_font_family": "IBM Plex Mono",
-  "buffer_font_size": 22,
+  "buffer_font_size": 20,
   "buffer_line_height": "standard",
   "features": {
     "edit_prediction_provider": "copilot"
   },
   "format_on_save": "off",
-  "icon_theme": "Catppuccin Latte",
+  "icon_theme": "Catppuccin Mocha",
   "indent_guides": {
     "enabled": false
   },
@@ -43,7 +43,7 @@
   "terminal": {
     "cursor_shape": "underline",
     "font_family": "IBM Plex Mono",
-    "font_size": 22,
+    "font_size": 20,
     "line_height": "standard"
   },
   "theme": {
