@@ -2,8 +2,9 @@
   path = ~/.config/git/catppuccin.gitconfig
 
 [user]
-  email = git@calvinludwig.xyz
+	email = 31071765+calvinludwig@users.noreply.github.com
   name = Calvin Ludwig
+	signingkey = D5D57E8D1BFBFE34
 
 [core]
   pager = delta
@@ -60,7 +61,7 @@
   statusHints = false
 
 [commit]
-  gpgsign = false
+	gpgsign = true
 
 [push]
   autoSetupRemote = true
