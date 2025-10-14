@@ -14,7 +14,7 @@
     "edit_prediction_provider": "copilot"
   },
   "format_on_save": "off",
-  "icon_theme": "Catppuccin Frappe",
+  "icon_theme": "Catppuccin Frappé",
   "indent_guides": {
     "enabled": false
   },
@@ -47,7 +47,7 @@
     "line_height": "standard"
   },
   "theme": {
-    "dark": "Catppuccin Frappe",
+    "dark": "Catppuccin Frappé",
     "light": "Catppuccin Latte",
     "mode": "system"
   },
