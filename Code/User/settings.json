@@ -22,6 +22,9 @@
     "editor.defaultFormatter": "JakeBecker.elixir-ls",
     "editor.formatOnSave": true
   },
+  "[php]": {
+    "editor.defaultFormatter": "open-southeners.laravel-pint"
+  },
   "[tailwindcss]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
@@ -97,6 +100,7 @@
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
   "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "editor.wordWrap": "off",
   "elixirLS.signatureAfterComplete": false,
   "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
@@ -113,6 +117,7 @@
   "explorer.excludeGitIgnore": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
+    ".env": ".env.*",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
     "*.jsx": "${capture}.js",
     "*.sln": "Directory.Build.props",
@@ -120,11 +125,10 @@
     "*.tsx": "${capture}.ts",
     "*Test.cs": "${capture}TestFixture.cs, ${capture}TestDataGenerator.cs, ${capture}RequestValidatorTest.cs",
     "appsettings.json": "appsettings.*.json",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb, turbo.json, biome.json",
     "composer.json": "composer.lock, pint.json, rector.php, phpunit.xml, phpstan.neon, artisan, peck.json, .phpstorm.meta.php, _ide_helper_models.php, _ide_helper.php",
     "dockerfile": ".dockerignore, compose.yaml, compose.yml, docker-compose.yaml, docker-compose.yml",
-    "tsconfig.json": "tsconfig.*.json",
-    ".env": ".env.*"
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, bun.lockb, turbo.json, biome.json",
+    "tsconfig.json": "tsconfig.*.json"
   },
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
@@ -150,8 +154,10 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
   "keyboard.dispatch": "keyCode",
   "laravel-pint.enable": true,
+  "Laravel.phpEnvironment": "local",
   "php.suggest.basic": false,
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.external.linuxExec": "ghostty",
@@ -185,20 +191,14 @@
   "workbench.activityBar.location": "bottom",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "catppuccin-latte",
+  "workbench.iconTheme": "symbols",
   "workbench.list.smoothScrolling": true,
-  "workbench.preferredDarkColorTheme": "Catppuccin Frappe",
-  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "workbench.tree.enableStickyScroll": true,
   "workbench.tree.indent": 20,
-  "workbench.tree.renderIndentGuides": "none",
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "Laravel.phpEnvironment": "local",
-  "editor.wordWrap": "off",
-  "[php]": {
-    "editor.defaultFormatter": "open-southeners.laravel-pint"
-  }
+  "workbench.tree.renderIndentGuides": "none"
 }
