@@ -1,8 +1,13 @@
 return {
   {
+    'Mofiqul/adwaita.nvim',
+    lazy = false,
+    priority = 1000,
+  },
+  {
     'LazyVim/LazyVim',
     opts = {
-      colorscheme = 'catppuccin-frappe',
+      colorscheme = 'adwaita',
     },
   },
   {
@@ -21,35 +26,5 @@ return {
         },
       },
     },
-  },
-
-  {
-    'catppuccin/nvim',
-    opts = {
-      transparent_background = false,
-    },
-  },
-  {
-    'neovim/nvim-lspconfig',
-    ---@class PluginLspOpts
-    opts = {
-      ---@type lspconfig.options
-      servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
-        pyright = {},
-        elixirls = {
-          cmd = { '/home/ludwig/.elixir-ls/language_server.sh' },
-        },
-      },
-    },
-  },
-  {
-    'nvim-lualine/lualine.nvim',
-    opts = function(_, opts)
-      -- Override default options
-      opts.options.section_separators = { left = '█', right = '█' } -- Example section separators
-      opts.options.component_separators = { left = '|', right = '|' } -- Example component separators
-      return opts
-    end,
   },
 }

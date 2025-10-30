@@ -57,8 +57,7 @@
   "editor.find.addExtraSpaceOnTop": false,
   "editor.folding": true,
   "editor.foldingImportsByDefault": true,
-  "editor.fontFamily": "IBM Plex Mono, JetBrains Mono, Symbols Nerd Font Mono, Noto Emoji",
-  "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
+  "editor.fontFamily": "JetBrains Mono, Symbols Nerd Font Mono, Noto Emoji",
   "editor.fontSize": 18,
   "editor.formatOnSave": false,
   "editor.guides.indentation": false,
@@ -160,9 +159,8 @@
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.env.linux": {},
   "terminal.integrated.env.windows": {},
-  "terminal.integrated.fontFamily": "IBM Plex Mono, JetBrains Mono, Symbols Nerd Font Mono, Noto Emoji",
+  "terminal.integrated.fontFamily": "JetBrains Mono, Symbols Nerd Font Mono, Noto Emoji",
   "terminal.integrated.fontLigatures.enabled": true,
-  "terminal.integrated.fontLigatures.featureSettings": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.minimumContrastRatio": 0,
@@ -187,7 +185,7 @@
   "workbench.activityBar.location": "bottom",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "catppuccin-frappe",
+  "workbench.iconTheme": "catppuccin-latte",
   "workbench.list.smoothScrolling": true,
   "workbench.preferredDarkColorTheme": "Catppuccin Frappe",
   "workbench.preferredLightColorTheme": "Catppuccin Latte",
@@ -199,5 +197,8 @@
   "workbench.tree.renderIndentGuides": "none",
   "github.copilot.nextEditSuggestions.enabled": true,
   "Laravel.phpEnvironment": "local",
-  "editor.wordWrap": "off"
+  "editor.wordWrap": "off",
+  "[php]": {
+    "editor.defaultFormatter": "open-southeners.laravel-pint"
+  }
 }

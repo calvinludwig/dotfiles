@@ -1,11 +1,7 @@
-theme = catppuccin-frappe
+theme = Adwaita Dark
 
-font-family = Lilex
-
-font-size = 20
-
-gtk-titlebar = false
-gtk-tabs-location = left
+font-family = JetBrains Mono Medium
+font-size = 18
 
 window-padding-x = 12
 window-padding-y = 0
