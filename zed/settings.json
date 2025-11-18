@@ -1,4 +1,6 @@
 {
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "disable_ai": true,
   "agent": {
     "model_parameters": [],
     "inline_assistant_model": {
@@ -9,7 +11,7 @@
   "base_keymap": "JetBrains",
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_weight": 500,
-  "buffer_font_size": 20,
+  "buffer_font_size": 22,
   "features": {
     "edit_prediction_provider": "copilot"
   },
@@ -45,11 +47,7 @@
     "font_size": 20,
     "line_height": "standard"
   },
-  "theme": {
-    "dark": "Adwaita Dark",
-    "light": "Adwaita Light",
-    "mode": "system"
-  },
+  "theme": "One Dark Pro",
   "ui_font_family": "Adwaita Sans",
   "ui_font_size": 20,
   "vim": {
