@@ -1,4 +1,4 @@
-theme = Adwaita Dark
+theme = light:Adwaita,dark:Adwaita Dark
 
 font-family = JetBrains Mono
 font-size = 18
