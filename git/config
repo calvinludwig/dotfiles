@@ -1,7 +1,6 @@
 [user]
-	email = 31071765+calvinludwig@users.noreply.github.com
+  email = 31071765+calvinludwig@users.noreply.github.com
   name = Calvin Ludwig
-	signingkey = D5D57E8D1BFBFE34
 
 [core]
   pager = delta
@@ -58,7 +57,7 @@
   statusHints = false
 
 [commit]
-	gpgsign = true
+  gpgsign = false
 
 [push]
   autoSetupRemote = true
@@ -78,6 +77,3 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-
-[coderabbit]
-	machineId = cli/5a0f78f7a9d5408d92d9ac9d4f4ac7aa
