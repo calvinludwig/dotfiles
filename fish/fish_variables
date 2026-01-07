@@ -7,6 +7,7 @@ SETUVAR __fish_initialized:4300
 SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\x20Frappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Macchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Mocha\x2etheme
 SETUVAR _fisher_plugins:catppuccin/fish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR fish_user_paths:/home/me/\x2elocal/share/bob/nvim\x2dbin
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
 SETUVAR pure_color_at_sign:pure_color_mute
