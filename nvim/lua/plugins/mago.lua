@@ -1,5 +1,5 @@
 return {
-  dir = '/home/me/code/calvinludwig/mago.nvim',
+  dir = '/home/me/code/personal/mago.nvim',
   -- 'calvinludwig/mago.nvim',
   ft = 'php',
   opts = {
