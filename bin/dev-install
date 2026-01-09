@@ -5,7 +5,7 @@ sudo pacman -S --noconfirm --needed base-devel git
 install-yay
 
 yay -S --needed --noconfirm --noredownload --noanswerdiff --noanswerclean --noanswerdiff --noansweredit --noanswerupgrade \
-  ghostty alacritty \
+  ghostty alacritty stow \
   vim neovim google-chrome \
   tmux zoxide fzf lazygit starship zed eza fd bat ripgrep \
   docker docker-compose docker-buildx lazydocker \
