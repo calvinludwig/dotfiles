@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+set -e
+
+if command -v yay &>/dev/null; then
+  echo "yay is already installed."
+  yay --version
+  exit 0
+fi
+
+echo "yay is not installed. Installing..."
+
+sudo pacman -S --needed --noconfirm base-devel git
+
+TEMP_DIR=$(mktemp -d)
+cd "$TEMP_DIR"
+
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si --noconfirm
+
+cd ~
+rm -rf "$TEMP_DIR"
+
+echo "yay installed successfully!"
+yay --version
