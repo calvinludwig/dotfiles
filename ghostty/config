@@ -5,7 +5,7 @@ window-decoration = false
 
 font-family = IBM Plex Mono
 font-style = Text
-font-size = 20
+font-size = 18
 
 window-padding-x = 12
 window-padding-y = 0
