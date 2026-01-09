@@ -1,6 +1,8 @@
 theme = dark:Rose Pine,light:Rose Pine Dawn
 window-theme = ghostty
 
+window-decoration = false
+
 font-family = IBM Plex Mono
 font-style = Text
 font-size = 20
