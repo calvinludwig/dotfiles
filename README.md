@@ -19,6 +19,8 @@ git clone https://github.com/calvinludwig/dotfiles
 ```bash
 cd dotfiles
 stow .
+fish_add_path $HOME/.config/bin
+dev-install
 ```
 
 ## Usage
