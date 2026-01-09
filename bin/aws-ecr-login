@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+# AWS ECR Login Script
+# Automatically retrieves the AWS account ID and logs into ECR
+
+set -e
+
+# Configuration
+REGION="${AWS_REGION:-us-east-1}"
+
+# Get AWS Account ID from current AWS CLI session
+echo "Retrieving AWS account ID..."
+ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+
+if [ -z "$ACCOUNT_ID" ]; then
+  echo "Error: Failed to retrieve AWS account ID. Make sure you're logged in to AWS CLI."
+  exit 1
+fi
+
+echo "Account ID: $ACCOUNT_ID"
+echo "Region: $REGION"
+echo "Logging into ECR..."
+
+# Login to ECR
+aws ecr get-login-password --region "$REGION" |
+  docker login --username AWS --password-stdin "$ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com"
+
+if [ $? -eq 0 ]; then
+  echo "Successfully logged into ECR: $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com"
+else
+  echo "Error: Failed to login to ECR"
+  exit 1
+fi
