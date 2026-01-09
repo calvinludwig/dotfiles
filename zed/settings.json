@@ -1,5 +1,4 @@
 {
-  "icon_theme": "Catppuccin Latte",
   "disable_ai": false,
   "agent": {
     "model_parameters": [],
@@ -37,7 +36,7 @@
     "font_size": 20,
     "line_height": "standard"
   },
-  "theme": "Catppuccin Latte",
+  "theme": "Rosé Pine Dawn",
   "ui_font_family": "IBM Plex Sans",
   "ui_font_size": 20,
   "vim": {

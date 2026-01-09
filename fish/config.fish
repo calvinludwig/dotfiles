@@ -9,10 +9,11 @@ set -gx GID 1000
 
 if status is-interactive
 
-    fish_config theme choose "Catppuccin Mocha"
+    fish_config theme choose "Rosé Pine Dawn"
 
     alias ff="fastfetch"
     alias nv='nvim'
+    alias zed='zeditor'
     alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
     alias cat="bat -p"
 

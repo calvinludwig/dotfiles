@@ -10,3 +10,6 @@ end)
 -- Increment/decrement
 vim.keymap.set('n', '+', '<C-a>')
 vim.keymap.set('n', '-', '<C-x>')
+
+vim.keymap.set('i', 'jk', '<Esc>')
+vim.keymap.set('i', 'kj', '<Esc>')

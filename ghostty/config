@@ -1,5 +1,5 @@
-theme = light:Catppuccin Latte,dark:Catppuccin Frappe
-background = #FFFFFF
+theme = dark:Rose Pine,light:Rose Pine Dawn
+window-theme = ghostty
 
 font-family = IBM Plex Mono
 font-style = Text
