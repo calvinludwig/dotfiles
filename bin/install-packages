@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+sudo pacman -S --noconfirm --needed base-devel git
+
+install-yay
+
+yay -S --needed --noconfirm --noredownload --noanswerdiff --noanswerclean --noanswerdiff --noansweredit --noanswerupgrade \
+  ghostty alacritty \
+  vim neovim google-chrome \
+  tmux zoxide fzf lazygit starship zed eza fd bat ripgrep \
+  docker docker-compose docker-buildx lazydocker \
+  otf-ibm-plex ttf-nerd-fonts-symbols noto-fonts-emoji \
+  opencode claude-code \
+  jetbrains-toolbox
