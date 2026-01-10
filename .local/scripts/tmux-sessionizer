@@ -247,7 +247,7 @@ find_dirs() {
       path="$entry"
     fi
 
-    [[ -d "$path" ]] && fd -td --min-depth 1 --max-depth "${depth:-${TS_MAX_DEPTH:-1}}" . "$path" | sed "s|^$HOME/||"
+    [[ -d "$path" ]] && fd -td --min-depth 1 --max-depth "${depth:-${TS_MAX_DEPTH:-1}}" . "$path"
   done
 }
 
