@@ -1,6 +1,8 @@
 theme = dark:Rose Pine,light:Rose Pine Dawn
 window-theme = ghostty
 
+maximize = true
+
 window-decoration = false
 
 font-family = Monaspace Argon

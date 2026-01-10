@@ -9,6 +9,14 @@ return {
     'folke/snacks.nvim',
     opts = {
       indent = { enabled = false },
+      picker = {
+        hidden = true,
+        sources = {
+          files = {
+            hidden = true,
+          },
+        },
+      },
     },
   },
   {
