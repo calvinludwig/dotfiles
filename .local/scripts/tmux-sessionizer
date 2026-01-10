@@ -247,7 +247,7 @@ find_dirs() {
       path="$entry"
     fi
 
-    [[ -d "$path" ]] && find "$path" -mindepth 1 -maxdepth "${depth:-${TS_MAX_DEPTH:-1}}" -path '*/.git' -prune -o -type d -print
+    [[ -d "$path" ]] && fd -td --min-depth 1 --max-depth "${depth:-${TS_MAX_DEPTH:-1}}" . "$path" | sed "s|^$HOME/||"
   done
 }
 
