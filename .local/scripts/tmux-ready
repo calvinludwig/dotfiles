@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
 if [[ -x ".ready-tmux" ]]; then
+  echo "1111"
+
   ./.ready-tmux
-
 elif [[ -x "$HOME/.ready-tmux" ]]; then
+  echo "2222"
   "$HOME"/.ready-tmux
+else
+  echo "3333"
 fi
-
-clear
