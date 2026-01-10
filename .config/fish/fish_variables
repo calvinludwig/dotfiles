@@ -7,7 +7,7 @@ SETUVAR __fish_initialized:4300
 SETUVAR _fisher_plugins:rose\x2dpine/fish
 SETUVAR _fisher_rose_2D_pine_2F_fish_files:\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x20Dawn\x2etheme\x1e\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x20Moon\x2etheme\x1e\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x2etheme
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_user_paths:/home/me/\x2econfig/bin\x1e/home/me/\x2elocal/share/bob/nvim\x2dbin
+SETUVAR fish_user_paths:/home/me/\x2elocal/scripts\x1e/home/me/\x2econfig/bin\x1e/home/me/\x2elocal/share/bob/nvim\x2dbin
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
 SETUVAR pure_color_at_sign:pure_color_mute
