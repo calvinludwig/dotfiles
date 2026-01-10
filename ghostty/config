@@ -3,11 +3,14 @@ window-theme = ghostty
 
 window-decoration = false
 
-font-family = IBM Plex Mono
-font-style = Text
+font-family = Monaspace Krypton
+font-family-bold = Monaspace Xenon
+font-family-italic = Monaspace Radon
+font-family-bold-italic = Monaspace Radon
+
 font-size = 18
 
-window-padding-x = 12
+window-padding-x = 0
 window-padding-y = 0
 window-padding-balance = true
 

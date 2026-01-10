@@ -9,7 +9,7 @@ yay -S --needed --noconfirm --noredownload --noanswerdiff --noanswerclean --noan
   vim neovim google-chrome \
   tmux zoxide fzf lazygit starship zed eza fd bat ripgrep \
   docker docker-compose docker-buildx lazydocker \
-  aws-cli-v2 aws-session-manager-plugin \
-  otf-ibm-plex ttf-nerd-fonts-symbols noto-fonts-emoji \
+  github-cli aws-cli-v2 aws-session-manager-plugin \
+  otf-monaspace otf-ibm-plex ttf-nerd-fonts-symbols noto-fonts-emoji \
   opencode claude-code \
   jetbrains-toolbox
