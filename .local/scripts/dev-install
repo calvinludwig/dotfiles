@@ -7,7 +7,7 @@ install-yay
 yay -S --needed --noconfirm --noredownload --noanswerdiff --noanswerclean --noanswerdiff --noansweredit --noanswerupgrade \
   ghostty alacritty stow \
   vim neovim google-chrome \
-  tmux zoxide fzf lazygit starship zed eza fd bat ripgrep \
+  tmux zoxide fzf lazygit starship zed eza fd bat ripgrep jq \
   docker docker-compose docker-buildx lazydocker \
   github-cli aws-cli-v2 aws-session-manager-plugin \
   otf-monaspace otf-ibm-plex ttf-nerd-fonts-symbols noto-fonts-emoji \
