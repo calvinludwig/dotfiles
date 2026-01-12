@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+DIRS=(
+  "$HOME"
+  "$HOME/Documents"
+  "$HOME/code/personal"
+  "$HOME/code/work"
+)
+dirs=$(fd . "${DIRS[@]}" --type=dir --max-depth=1 --full-path --base-directory "$HOME" | sed "s|^$HOME/||")
+
+if [[ -n "${TMUX}" ]]; then
+  current_session=$(tmux display-message -p '#S')
+  running_sessions=$(tmux list-sessions -F "[TMUX] #{session_name}" 2>/dev/null | grep -vFx "[TMUX] $current_session")
+else
+  running_sessions=$(tmux list-sessions -F "[TMUX] #{session_name}" 2>/dev/null)
+fi
+
+if [[ "$running_sessions" ]]; then
+  options=$(printf "%s\n%s" "$running_sessions" "$dirs")
+else
+  options="$dirs"
+fi
+
+selected=$(echo "$options" | fzf --layout reverse --style full)
+
+if [[ "$selected" =~ ^\[TMUX\]\ (.+)$ ]]; then
+  selected="${BASH_REMATCH[1]}"
+fi
+
+[[ ! $selected ]] && exit 0
+
+[[ $selected ]] && selected="$HOME/$selected"
+
+selected_name=$(basename "$selected" | tr ":,. " "____")
+
+switch_to() {
+  if [[ -z "$TMUX" ]]; then
+    tmux attach-session -t "$selected_name"
+  else
+    tmux switch-client -t "$selected_name"
+  fi
+}
+
+if tmux has-session -t="$selected_name" 2>/dev/null; then
+  switch_to
+  exit 0
+fi
+
+tmux new-session -ds "$selected_name" -c "$selected"
+switch_to
+
+tmux send-keys -t "$selected_name" "ready-tmux" Enter

@@ -22,6 +22,7 @@ if status is-interactive
     alias zed='zeditor'
     alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
     alias cat="bat -p"
+    alias tm="tmux new -s \"home\""
 
     alias ..="z .."
     alias ...="z ../.."
