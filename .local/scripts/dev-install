@@ -12,4 +12,9 @@ yay -S --needed --noconfirm --noredownload --noanswerdiff --noanswerclean --noan
   github-cli aws-cli-v2 aws-session-manager-plugin \
   otf-monaspace otf-ibm-plex ttf-nerd-fonts-symbols noto-fonts-emoji \
   opencode claude-code \
+nodejs go \
+tree-sitter tree-sitter-cli \
+taplo-cli yaml-language-server vscode-json-languageserver \
+tinymist lua-language-server typescript-language-server \
+bash-language-server fish-lsp\
   jetbrains-toolbox
