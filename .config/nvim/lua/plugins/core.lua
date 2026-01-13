@@ -5,6 +5,8 @@ return {
       colorscheme = 'rose-pine-dawn',
     },
   },
+  { 'mason-org/mason-lspconfig.nvim', enabled = false },
+  { 'mason-org/mason.nvim', enabled = false },
   {
     'folke/snacks.nvim',
     opts = {
