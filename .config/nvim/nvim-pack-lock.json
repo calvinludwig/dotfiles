@@ -1,0 +1,16 @@
+{
+  "plugins": {
+    "mago.nvim": {
+      "rev": "bc5ea83b827e7576d2c9ef19334f14947283ec7e",
+      "src": "https://github.com/calvinludwig/mago.nvim"
+    },
+    "nvim-treesitter": {
+      "rev": "15b3416cc1f557c4932468e512a0bd45871167bc",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "rose-pine": {
+      "rev": "cf2a288696b03d0934da713d66c6d71557b5c997",
+      "src": "https://github.com/rose-pine/neovim"
+    }
+  }
+}
