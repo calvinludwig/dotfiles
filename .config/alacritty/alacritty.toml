@@ -8,15 +8,15 @@ TERM = "xterm-256color"
 WINIT_X11_SCALE_FACTOR = "1"
 
 [font]
-size = 20
-normal = { family = "IBM Plex Mono", style = "Regular" }
-bold = { family = "IBM Plex Mono", style = "Bold" }
-italic = { family = "IBM Plex Mono", style = "Italic" }
-bold_italic = { family = "IBM Plex Mono", style = "Bold Italic" }
+size = 18
+normal = { family = "Monaspace Krypton", style = "Regular" }
+bold = { family = "Monaspace Xenon", style = "Bold" }
+italic = { family = "Monaspace Radon", style = "Italic" }
+bold_italic = { family = "Monaspace Radon", style = "Bold Italic" }
 
 [window]
 dynamic_padding = true
-decorations = "full"
+decorations = "none"
 title = "Alacritty@CachyOS"
 opacity = 1
 decorations_theme_variant = "Dark"
