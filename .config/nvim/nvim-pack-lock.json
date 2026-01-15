@@ -1,16 +1,53 @@
 {
   "plugins": {
+    "blink.cmp": {
+      "rev": "b19413d214068f316c78978b08264ed1c41830ec",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": ">=0.0.0"
+    },
     "mago.nvim": {
       "rev": "bc5ea83b827e7576d2c9ef19334f14947283ec7e",
       "src": "https://github.com/calvinludwig/mago.nvim"
+    },
+    "neovim": {
+      "rev": "cf2a288696b03d0934da713d66c6d71557b5c997",
+      "src": "https://github.com/rose-pine/neovim"
+    },
+    "nvim-lspconfig": {
+      "rev": "92ee7d42320edfbb81f3cad851314ab197fa324a",
+      "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
       "rev": "15b3416cc1f557c4932468e512a0bd45871167bc",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
+    "oil.nvim": {
+      "rev": "6b59a6cf623fa2245c7454ddb458df5bdb6615d3",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "plenary.nvim": {
+      "rev": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
     "rose-pine": {
       "rev": "cf2a288696b03d0934da713d66c6d71557b5c997",
       "src": "https://github.com/rose-pine/neovim"
+    },
+    "telescope-fzf-native.nvim": {
+      "rev": "6fea601bd2b694c6f2ae08a6c6fab14930c60e2c",
+      "src": "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+    },
+    "telescope-ui-select.nvim": {
+      "rev": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2",
+      "src": "https://github.com/nvim-telescope/telescope-ui-select.nvim"
+    },
+    "telescope.nvim": {
+      "rev": "a8c2223ea6b185701090ccb1ebc7f4e41c4c9784",
+      "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "typst-preview.nvim": {
+      "rev": "bf5d5eaf23bbfcca9f98a24ed29bd084abf89bf2",
+      "src": "https://github.com/chomosuke/typst-preview.nvim"
     }
   }
 }
