@@ -17,6 +17,7 @@ if status is-interactive
 
     fish_config theme choose "Rosé Pine Dawn"
 
+    alias tm="tmux-home"
     alias ff="fastfetch"
     alias lazyvim='NVIM_APPNAME=lazyvim nvim'
     alias lv='NVIM_APPNAME=lazyvim nvim'
@@ -24,7 +25,6 @@ if status is-interactive
     alias zed='zeditor'
     alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
     alias cat="bat -p"
-    alias tm="tmux new -s \"home\""
 
     alias ..="z .."
     alias ...="z ../.."
