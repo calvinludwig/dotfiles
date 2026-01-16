@@ -4,6 +4,7 @@ DIRS=(
   "$HOME"
   "$HOME/Documents"
   "$HOME/code/personal"
+  "$HOME/code/personal/dotfiles/.config"
   "$HOME/code/work"
 )
 dirs=$(fd . "${DIRS[@]}" --type=dir --max-depth=1 --full-path --base-directory "$HOME" | sed "s|^$HOME/||")
