@@ -18,6 +18,8 @@ italic = { family = "Monaspace Radon", style = "Italic" }
 bold_italic = { family = "Monaspace Radon", style = "Bold Italic" }
 
 [window]
+
+startup_mode = "Maximized"
 dynamic_padding = true
 decorations = "none"
 title = "Alacritty@CachyOS"
