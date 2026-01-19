@@ -5,13 +5,33 @@
       "src": "https://github.com/saghen/blink.cmp",
       "version": ">=0.0.0"
     },
+    "hardtime.nvim": {
+      "rev": "b4e431934af1fe224a3a801f632c008278cb7628",
+      "src": "https://github.com/m4xshen/hardtime.nvim"
+    },
+    "lualine.nvim": {
+      "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
     "mago.nvim": {
       "rev": "bc5ea83b827e7576d2c9ef19334f14947283ec7e",
       "src": "https://github.com/calvinludwig/mago.nvim"
     },
+    "mini.notify": {
+      "rev": "29ec27f60bf4b63e447c851d9061c434d80795a6",
+      "src": "https://github.com/nvim-mini/mini.notify"
+    },
+    "mini.nvim": {
+      "rev": "19973fa2c13399d68bf8d2cd98b0cb7367a8a72a",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
     "neovim": {
       "rev": "cf2a288696b03d0934da713d66c6d71557b5c997",
       "src": "https://github.com/rose-pine/neovim"
+    },
+    "nui.nvim": {
+      "rev": "de740991c12411b663994b2860f1a4fd0937c130",
+      "src": "https://github.com/MunifTanjim/nui.nvim"
     },
     "nvim-lspconfig": {
       "rev": "92ee7d42320edfbb81f3cad851314ab197fa324a",
@@ -28,6 +48,10 @@
     "plenary.nvim": {
       "rev": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",
       "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "precognition.nvim": {
+      "rev": "2aae2687207029b3611a0e19a289f9e1c7efbe16",
+      "src": "https://github.com/tris203/precognition.nvim"
     },
     "rose-pine": {
       "rev": "cf2a288696b03d0934da713d66c6d71557b5c997",

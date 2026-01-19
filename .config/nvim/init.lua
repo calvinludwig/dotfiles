@@ -117,8 +117,11 @@ vim.keymap.set('n', 'J', 'mzJ`z', { desc = 'Join lines and keep cursor position'
 
 -- Plugins
 vim.pack.add {
+  { src = 'https://github.com/MunifTanjim/nui.nvim' },
   { src = 'https://github.com/nvim-lua/plenary.nvim' },
   { src = 'https://github.com/rose-pine/neovim' },
+  { src = 'https://github.com/m4xshen/hardtime.nvim' },
+  { src = 'https://github.com/nvim-mini/mini.nvim' },
   { src = 'https://github.com/calvinludwig/mago.nvim' },
   { src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
   { src = 'https://github.com/neovim/nvim-lspconfig' },
@@ -135,7 +138,12 @@ vim.pack.add {
 
 vim.cmd 'colorscheme rose-pine-dawn'
 
-require('mago-nvim').setup()
+require('mini.notify').setup { window = { max_width_share = 0.6, }, }
+require('mini.statusline').setup {}
+require('mini.pairs').setup {}
+
+require('hardtime').setup {}
+require('mago-nvim').setup {}
 
 vim.lsp.enable {
   'copilot',
@@ -147,7 +155,7 @@ vim.lsp.enable {
   'rust_analyzer',
   'docker-language-server',
   'html',
-  'typst_lsp',
+  'tinymist',
   'taplo',
   'sqls',
 }

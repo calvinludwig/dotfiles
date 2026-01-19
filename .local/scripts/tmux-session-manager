@@ -7,13 +7,13 @@ DIRS=(
   "$HOME/code/personal/dotfiles/.config"
   "$HOME/code/work"
 )
-dirs=$(fd . "${DIRS[@]}" --type=dir --max-depth=1 --full-path --base-directory "$HOME" | sed "s|^$HOME/||")
+dirs=$(fd . "${DIRS[@]}" --type=dir --max-depth=1 --full-path --base-directory "$HOME" | sed "s|^$HOME/|  |")
 
 if [[ -n "${TMUX}" ]]; then
   current_session=$(tmux display-message -p '#S')
-  running_sessions=$(tmux list-sessions -F "[TMUX] #{session_name}" 2>/dev/null | grep -vFx "[TMUX] $current_session")
+  running_sessions=$(tmux list-sessions -F "  #{session_name}" 2>/dev/null | grep -vFx "  $current_session")
 else
-  running_sessions=$(tmux list-sessions -F "[TMUX] #{session_name}" 2>/dev/null)
+  running_sessions=$(tmux list-sessions -F "  #{session_name}" 2>/dev/null)
 fi
 
 if [[ "$running_sessions" ]]; then
@@ -22,11 +22,13 @@ else
   options="$dirs"
 fi
 
-selected=$(echo "$options" | fzf --layout reverse --style full)
+selected=$(echo "$options" | fzf --tiebreak=index --nth=2 --layout reverse --style full)
 
-if [[ "$selected" =~ ^\[TMUX\]\ (.+)$ ]]; then
-  selected="${BASH_REMATCH[1]}"
-fi
+selected="${selected:3}"
+
+# if [[ "$selected" =~ ^\[TMUX\]\ (.+)$ ]]; then
+#   selected="${BASH_REMATCH[1]}"
+# fi
 
 [[ ! $selected ]] && exit 0
 
