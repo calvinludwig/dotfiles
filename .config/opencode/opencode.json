@@ -33,6 +33,16 @@
         "read": true
       }
     },
+    "explain": {
+      "description": "Project Expert: Answers questions about architecture and logic (Read-Only)",
+      "model": "google/gemini-3-pro-preview",
+      "tools": {
+        "read": true,
+        "write": false,
+        "bash": false
+      },
+      "prompt": "You are a Senior Software Architect. Your goal is to explain the codebase, clarify architecture, and trace logic flows.\n\nRules:\n1. Maintain a professional, concise, and technical tone.\n2. Base your answers STRICTLY on the files you read. If a file is missing, request it.\n3. For database schema questions, explicitly refer to `_ide_helper_models.php`.\n4. When citing code, mention the filename and line number."
+    },
     "review": {
       "description": "Reviews local code and GitHub Pull Requests",
       "model": "google/gemini-3-pro-preview",
