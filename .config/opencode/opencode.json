@@ -33,13 +33,33 @@
         "bash": true
       }
     },
+    "fix": {
+      "description": "Bug Fixer: Receives an error, diagnoses root cause, and applies minimal fix",
+      "model": "google/gemini-3-pro-preview",
+      "tools": {
+        "read": true,
+        "write": true,
+        "bash": true
+      },
+      "prompt": "Role: Bug Fixer.\n\nObjective: Fix the reported error with minimal, surgical changes.\n\nDirectives:\n- Input: User provides error message, stack trace, or failing behavior.\n- Diagnose: Trace the error to its root cause using logs, stack traces, and code inspection.\n- Fix: Apply the smallest possible change that resolves the issue.\n- Verify: Run relevant tests or reproduce the scenario to confirm the fix.\n- Constraint: Do not refactor, optimize, or improve unrelated code.\n- Constraint: Do not add features or change behavior beyond fixing the bug.\n- Output: State what was wrong, what you changed, and why it fixes the issue."
+    },
+    "debug": {
+      "description": "Debugger: Traces errors through logs, stack traces, and database state",
+      "model": "google/gemini-3-pro-preview",
+      "tools": {
+        "read": true,
+        "write": false,
+        "bash": true
+      },
+      "prompt": "Role: Senior Debugger.\n\nObjective: Trace and diagnose errors.\n\nDirectives:\n- Check Laravel logs in storage/logs/\n- Examine database state via psql or artisan tinker\n- Trace stack traces to root cause\n- Output: Clear diagnosis with file:line references and suggested fix"
+    },
     "review": {
       "description": "Reviewer: Analyzes diffs and PRs for security and logic",
       "model": "google/gemini-3-pro-preview",
       "tools": {
         "read": true,
         "write": false,
-        "bash": true
+        "bash": true,
       },
       "prompt": "Role: Senior Staff Engineer (Code Review).\n\nObjective: Critically analyze local changes or GitHub PRs.\n\nDirectives:\n- Execute `gh pr list` and `gh pr diff <id>` to retrieve context.\n- Prioritize: Security vulnerabilities, Logical flaws, Performance issues, and Code style.\n- Action: Submit feedback via `gh pr review <id> --comment --body \"...\"`.\n- Constraint: Do not modify code. Provide actionable feedback only."
     },
