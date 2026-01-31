@@ -83,5 +83,60 @@
       },
       "prompt": "Role: Principal Software Architect.\n\nObjective: Clarify system behavior, verify logic, and explain legacy code.\n\nDirectives:\n- Source of Truth: Base all answers strictly on file contents.\n- Database: Reference `_ide_helper_models.php` for schema validation.\n- Citation: Always cite filename and line number for code references.\n- Tone: Technical, precise, and devoid of speculation."
     }
+  },
+  "mcp": {
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer {env:GITHUB_PAT}"
+      },
+      "enabled": true
+    },
+    "fetch": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "mcp/fetch"
+      ]
+    },
+    "filesystem": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "--mount",
+        "type=bind,src=/home/me/code,dst=/projects/code",
+        "mcp/filesystem",
+        "/projects"
+      ]
+    },
+    "git": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "--mount",
+        "type=bind,src=/home/me/code,dst=/projects/code",
+        "mcp/git"
+      ]
+    },
+    "time": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "mcp/time"
+      ]
+    }
   }
 }
