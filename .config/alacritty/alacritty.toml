@@ -11,8 +11,8 @@ TERM = "xterm-256color"
 WINIT_X11_SCALE_FACTOR = "1"
 
 [font]
-size = 18
-normal = { family = "Monaspace Krypton", style = "Regular" }
+size = 16
+normal = { family = "Monaspace Argon", style = "Regular" }
 bold = { family = "Monaspace Xenon", style = "Bold" }
 italic = { family = "Monaspace Radon", style = "Italic" }
 bold_italic = { family = "Monaspace Radon", style = "Bold Italic" }
