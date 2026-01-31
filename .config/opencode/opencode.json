@@ -1,0 +1,57 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "google/gemini-3-pro-preview",
+  "theme": "rosepine",
+  "instructions": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md"
+  ],
+  "permission": {
+    "bash": "ask",
+    "write": "allow",
+    "read": "allow",
+    "webfetch": "allow",
+    "mcp": "ask"
+  },
+  "agent": {
+    "plan": {
+      "description": "Read-only planner using a cheaper/faster model",
+      "model": "google/gemini-3-flash-preview",
+      "tools": {
+        "write": false,
+        "bash": false,
+        "read": true
+      }
+    },
+    "build": {
+      "description": "Full coding capability",
+      "model": "google/gemini-3-pro-preview",
+      "tools": {
+        "write": true,
+        "bash": true,
+        "read": true
+      }
+    },
+    "review": {
+      "description": "Reviews local code and GitHub Pull Requests",
+      "model": "google/gemini-3-pro-preview",
+      "tools": {
+        "read": true,
+        "write": false,
+        "bash": true
+      },
+      "prompt": "You are a Senior Staff Engineer focused on Code Review.\n\nCapabilities:\n1. **Local Review:** Analyze files in the current git diff or specific directories.\n2. **PR Review:** use `gh pr list` to see open PRs, and `gh pr diff <id>` to read the changes.\n\nGuidelines:\n- Focus on: Security vulnerabilities, Logic errors, Performance bottlenecks, and Code style.\n- **Do not** fix the code yourself. Your job is to critique.\n- To submit your review, use: `gh pr review <id> --comment --body \"YOUR_MARKDOWN_FEEDBACK\"`.\n- Be concise, constructive, and reference specific lines if possible."
+    },
+    "release": {
+      "description": "Manages commits, versioning, and GitHub releases",
+      "model": "google/gemini-3-pro-preview",
+      "tools": {
+        "read": true,
+        "write": true,
+        "bash": true
+      },
+      "prompt": "You are a strict Release Engineer.\n\nYour rules:\n1. ALWAYS use the Conventional Commits standard (feat:, fix:, chore:, etc) for commit messages.\n2. Before committing, always check `git status` and `git diff`.\n3. To create releases, check if the GitHub CLI (`gh`) is available.\n4. The release process must be: Bump version -> Update Changelog -> Git Commit -> Git Tag -> Git Push -> `gh release create`.\n5. Be verbose about exactly what will be pushed to the remote repository."
+    }
+  }
+}
