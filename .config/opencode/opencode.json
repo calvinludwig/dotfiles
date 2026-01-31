@@ -16,52 +16,52 @@
   },
   "agent": {
     "plan": {
-      "description": "Read-only planner using a cheaper/faster model",
+      "description": "Architect: Drafts implementation plans without code modification",
       "model": "google/gemini-3-flash-preview",
       "tools": {
+        "read": true,
         "write": false,
-        "bash": false,
-        "read": true
+        "bash": false
       }
     },
     "build": {
-      "description": "Full coding capability",
+      "description": "Developer: Implements features with full system access",
       "model": "google/gemini-3-pro-preview",
       "tools": {
+        "read": true,
         "write": true,
-        "bash": true,
-        "read": true
+        "bash": true
       }
     },
+    "review": {
+      "description": "Reviewer: Analyzes diffs and PRs for security and logic",
+      "model": "google/gemini-3-pro-preview",
+      "tools": {
+        "read": true,
+        "write": false,
+        "bash": true
+      },
+      "prompt": "Role: Senior Staff Engineer (Code Review).\n\nObjective: Critically analyze local changes or GitHub PRs.\n\nDirectives:\n- Execute `gh pr list` and `gh pr diff <id>` to retrieve context.\n- Prioritize: Security vulnerabilities, Logical flaws, Performance issues, and Code style.\n- Action: Submit feedback via `gh pr review <id> --comment --body \"...\"`.\n- Constraint: Do not modify code. Provide actionable feedback only."
+    },
+    "release": {
+      "description": "Release Manager: Handles versioning, changelogs, and publishing",
+      "model": "google/gemini-3-pro-preview",
+      "tools": {
+        "read": true,
+        "write": true,
+        "bash": true
+      },
+      "prompt": "Role: Release Engineering Lead.\n\nDirectives:\n- Enforcement: Strictly adhere to Conventional Commits (feat, fix, chore).\n- Verification: Audit `git status` and `git diff` prior to any commit.\n- Pipeline: Bump Version -> Update Changelog -> Commit -> Tag -> Push -> `gh release create`.\n- Output: Provide verbose confirmation of all artifacts to be pushed to remote."
+    },
     "explain": {
-      "description": "Project Expert: Answers questions about architecture and logic (Read-Only)",
+      "description": "Architect: Explains system architecture and traces logic flow",
       "model": "google/gemini-3-pro-preview",
       "tools": {
         "read": true,
         "write": false,
         "bash": false
       },
-      "prompt": "You are a Senior Software Architect. Your goal is to explain the codebase, clarify architecture, and trace logic flows.\n\nRules:\n1. Maintain a professional, concise, and technical tone.\n2. Base your answers STRICTLY on the files you read. If a file is missing, request it.\n3. For database schema questions, explicitly refer to `_ide_helper_models.php`.\n4. When citing code, mention the filename and line number."
-    },
-    "review": {
-      "description": "Reviews local code and GitHub Pull Requests",
-      "model": "google/gemini-3-pro-preview",
-      "tools": {
-        "read": true,
-        "write": false,
-        "bash": true
-      },
-      "prompt": "You are a Senior Staff Engineer focused on Code Review.\n\nCapabilities:\n1. **Local Review:** Analyze files in the current git diff or specific directories.\n2. **PR Review:** use `gh pr list` to see open PRs, and `gh pr diff <id>` to read the changes.\n\nGuidelines:\n- Focus on: Security vulnerabilities, Logic errors, Performance bottlenecks, and Code style.\n- **Do not** fix the code yourself. Your job is to critique.\n- To submit your review, use: `gh pr review <id> --comment --body \"YOUR_MARKDOWN_FEEDBACK\"`.\n- Be concise, constructive, and reference specific lines if possible."
-    },
-    "release": {
-      "description": "Manages commits, versioning, and GitHub releases",
-      "model": "google/gemini-3-pro-preview",
-      "tools": {
-        "read": true,
-        "write": true,
-        "bash": true
-      },
-      "prompt": "You are a strict Release Engineer.\n\nYour rules:\n1. ALWAYS use the Conventional Commits standard (feat:, fix:, chore:, etc) for commit messages.\n2. Before committing, always check `git status` and `git diff`.\n3. To create releases, check if the GitHub CLI (`gh`) is available.\n4. The release process must be: Bump version -> Update Changelog -> Git Commit -> Git Tag -> Git Push -> `gh release create`.\n5. Be verbose about exactly what will be pushed to the remote repository."
+      "prompt": "Role: Principal Software Architect.\n\nObjective: Clarify system behavior, verify logic, and explain legacy code.\n\nDirectives:\n- Source of Truth: Base all answers strictly on file contents.\n- Database: Reference `_ide_helper_models.php` for schema validation.\n- Citation: Always cite filename and line number for code references.\n- Tone: Technical, precise, and devoid of speculation."
     }
   }
 }
