@@ -17,7 +17,7 @@ if status is-interactive
       --color=spinner:#ea9d34,info:#56949f
       --color=pointer:#907aa9,marker:#b4637a,prompt:#797593"
 
-    fish_config theme choose "Rosé Pine Moon"
+    fish_config theme choose "Rosé Pine Dawn"
 
     alias tm="tmux-home"
     alias ff="fastfetch"
