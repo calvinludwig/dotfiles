@@ -11,13 +11,11 @@ set -gx GID 1000
 if status is-interactive
 
     set -Ux FZF_DEFAULT_OPTS "
-      --color=fg:#797593,bg:#faf4ed,hl:#d7827e
-      --color=fg+:#575279,bg+:#f2e9e1,hl+:#d7827e
-      --color=border:#dfdad9,header:#286983,gutter:#faf4ed
-      --color=spinner:#ea9d34,info:#56949f
-      --color=pointer:#907aa9,marker:#b4637a,prompt:#797593"
-
-    fish_config theme choose "Rosé Pine Dawn"
+      --color=fg:#988090,bg:#1c1b19,hl:#e08060
+      --color=fg+:#d8d0c0,bg+:#242320,hl+:#e08060
+      --color=border:#3a3733,header:#c8b468,gutter:#1c1b19
+      --color=spinner:#c09058,info:#80a090
+      --color=pointer:#e08060,marker:#b07878,prompt:#c8b468"
 
     alias tm="tmux-home"
     alias ff="fastfetch"
