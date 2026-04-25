@@ -14,10 +14,11 @@ vim.pack.add {
   { src = 'https://github.com/nvim-telescope/telescope-ui-select.nvim' },
   { src = 'https://github.com/stevearc/oil.nvim' },
   { src = 'https://github.com/chomosuke/typst-preview.nvim' },
+  { src = 'https://github.com/ember-theme/nvim' },
   { src = 'https://github.com/ThePrimeagen/harpoon', version = 'harpoon2' },
 }
 
-vim.cmd 'colorscheme rose-pine-dawn'
+vim.cmd 'colorscheme ember'
 
 require('mini.notify').setup { window = { max_width_share = 0.6 } }
 require('mini.statusline').setup {}
