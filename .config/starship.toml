@@ -32,7 +32,7 @@ detect_files = [
 style = "blue"
 
 [git_status]
-style = "yellow"
+style = "green"
 conflicted = '🏳'
 ahead = '🏎💨⬆️${count}'
 behind = '😰⬇️${count}'
@@ -41,15 +41,19 @@ up_to_date = '✅'
 untracked = '🤷'
 stashed = '📦'
 modified = '📝'
-staged = '[++\($count\)](green)'
+staged = '[➕➕\($count\)](green)'
 renamed = '👅'
 deleted = '🗑'
 
 [git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = '[🍒 PICKING](bold red)'
 style = "red"
 
 [git_branch]
 style = "green"
+symbol = '🌱 '
 
 [git_commit]
-tag_symbol = '🏷️'
+commit_hash_length = 7
+tag_symbol = '🔖 '
