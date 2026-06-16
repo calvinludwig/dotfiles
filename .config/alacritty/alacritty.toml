@@ -2,7 +2,7 @@
 program = "tmux-home"
 
 [general]
-import = ["~/.config/alacritty/themes/ember.toml"]
+import = ["~/.config/alacritty/themes/rose-pine-dawn.toml"]
 live_config_reload = true
 working_directory = "None"
 
@@ -12,7 +12,7 @@ WINIT_X11_SCALE_FACTOR = "1"
 
 [font]
 size = 17
-normal = { family = "Monaspace Argon", style = "Regular" }
+normal = { family = "Monaspace Krypton", style = "Regular" }
 bold = { family = "Monaspace Xenon", style = "Bold" }
 italic = { family = "Monaspace Radon", style = "Italic" }
 bold_italic = { family = "Monaspace Radon", style = "Bold Italic" }

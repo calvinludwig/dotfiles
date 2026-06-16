@@ -2,18 +2,8 @@ return {
   {
     'LazyVim/LazyVim',
     opts = {
-      colorscheme = 'ember', -- "ember" | "ember-soft" | "ember-light"
+      colorscheme = 'rose-pine-dawn',
     },
-  },
-  {
-    'ember-theme/nvim',
-    name = 'ember',
-    priority = 1000,
-    config = function()
-      require('ember').setup {
-        variant = 'ember', -- "ember" | "ember-soft" | "ember-light"
-      }
-    end,
   },
   { 'mason-org/mason-lspconfig.nvim', enabled = false },
   { 'mason-org/mason.nvim', enabled = false },
