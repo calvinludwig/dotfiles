@@ -1,5 +1,3 @@
-source /usr/share/cachyos-fish-config/cachyos-config.fish
-
 export EDITOR=nvim
 export VISUAL=nvim
 export SUDO_EDITOR=nvim
