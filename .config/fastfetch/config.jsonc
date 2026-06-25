@@ -15,9 +15,15 @@
     },
     {
       "type": "os",
-      "key": "  󰣇 OS",
-      "format": "{2}",
+      "key": "   OS",
+      "format": "{2} {3}",
       "keyColor": "red"
+    },
+    {
+      "type": "de",
+      "key": "   DE",
+      "format": "{2} {3}",
+      "keyColor": "yellow"
     },
     {
       "type": "kernel",
@@ -39,12 +45,6 @@
     {
       "type": "terminal",
       "key": "   Terminal",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "wm",
-      "key": "  󱗃 WM",
-      "format": "{2}",
       "keyColor": "yellow"
     },
     {
