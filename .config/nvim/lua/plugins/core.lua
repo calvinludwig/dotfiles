@@ -2,7 +2,7 @@ return {
   {
     'LazyVim/LazyVim',
     opts = {
-      colorscheme = 'rose-pine',
+      colorscheme = 'catppuccin-frappe',
     },
   },
   { 'mason-org/mason-lspconfig.nvim', enabled = false },

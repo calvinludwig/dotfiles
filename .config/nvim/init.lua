@@ -1,6 +1,2 @@
-require 'config.options'
-require 'config.plugins'
-require 'config.lsp'
-require 'config.keymaps'
-require 'config.autocommands'
-require 'config.harpoon'
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require 'config.lazy'
