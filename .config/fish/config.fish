@@ -15,7 +15,7 @@ if status is-interactive
       --color=selected-bg:#51576D \
       --color=border:#737994,label:#C6D0F5"
 
-    fish_config theme choose "Rosé Pine"
+    fish_config theme choose catppuccin-frappe
 
     alias tm="tmux-home"
     alias ff="fastfetch"
