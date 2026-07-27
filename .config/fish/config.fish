@@ -8,19 +8,17 @@ set -gx GID 1000
 
 if status is-interactive
 
-    set -Ux FZF_DEFAULT_OPTS "
-      --color=fg:#908caa,bg:#191724,hl:#ebbcba
-      --color=fg+:#e0def4,bg+:#26233a,hl+:#ebbcba
-      --color=border:#403d52,header:#31748f,gutter:#191724
-      --color=spinner:#f6c177,info:#9ccfd8
-      --color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
+    set -Ux FZF_DEFAULT_OPTS "\
+      --color=bg+:#414559,bg:#303446,spinner:#F2D5CF,hl:#E78284 \
+      --color=fg:#C6D0F5,header:#E78284,info:#CA9EE6,pointer:#F2D5CF \
+      --color=marker:#BABBF1,fg+:#C6D0F5,prompt:#CA9EE6,hl+:#E78284 \
+      --color=selected-bg:#51576D \
+      --color=border:#737994,label:#C6D0F5"
 
     fish_config theme choose "Rosé Pine"
 
     alias tm="tmux-home"
     alias ff="fastfetch"
-    alias lazyvim='NVIM_APPNAME=lazyvim nvim'
-    alias lv='NVIM_APPNAME=lazyvim nvim'
     alias nv='nvim'
     alias zed='zeditor'
     alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
