@@ -1,4 +1,4 @@
-theme = rose-pine-dawn
+theme = catppuccin-frappe.conf
 font-size = 15
 font-family = "IBM Plex Mono"
 window-decoration = false
