@@ -1,8 +1,8 @@
 {
+  "icon_theme": "Catppuccin Frappé",
   "agent_buffer_font_size": 24.0,
   "agent_ui_font_size": 20.0,
-  "buffer_font_family": "Monaspace Krypton",
-  "icon_theme": "Colored Zed Icons Theme Dark",
+  "buffer_font_family": "Maple Mono",
   "outline_panel": {
     "dock": "left"
   },
@@ -38,16 +38,16 @@
   },
   "terminal": {
     "cursor_shape": "underline",
-    "font_family": "Monaspace Krypton",
+    "font_family": "Maple Mono",
     "font_size": 20,
     "line_height": "standard"
   },
   "theme": {
     "mode": "system",
-    "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine"
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Frappé"
   },
-  "ui_font_family": "Monaspace Argon",
+  "ui_font_family": "Maple Mono",
   "ui_font_size": 20.0,
   "vim": {
     "toggle_relative_line_numbers": true,

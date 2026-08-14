@@ -10,7 +10,7 @@ SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/catppuccin\
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ecatppuccin/fish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_user_paths:/home/ludwig/\x2elocal/scripts\x1e/home/me/\x2ego/bin\x1e/home/me/\x2ecargo/bin\x1e/home/me/\x2econfig/composer/vendor/bin\x1e/home/me/\x2enpm\x2dglobal/bin\x1e/home/me/\x2elocal/go/bin\x1e/home/me/\x2elocal/scripts\x1e/home/me/\x2econfig/bin\x1e/home/me/\x2elocal/share/bob/nvim\x2dbin
+SETUVAR fish_user_paths:/home/ludwig/\x2ecargo/bin\x1e/home/ludwig/\x2enpm\x2dglobal/bin\x1e/home/ludwig/\x2elocal/scripts\x1e/home/me/\x2ego/bin\x1e/home/me/\x2ecargo/bin\x1e/home/me/\x2econfig/composer/vendor/bin\x1e/home/me/\x2enpm\x2dglobal/bin\x1e/home/me/\x2elocal/go/bin\x1e/home/me/\x2elocal/scripts\x1e/home/me/\x2econfig/bin\x1e/home/me/\x2elocal/share/bob/nvim\x2dbin
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
 SETUVAR pure_color_at_sign:pure_color_mute
