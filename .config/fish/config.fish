@@ -20,9 +20,11 @@ if status is-interactive
     alias tm="tmux-home"
     alias ff="fastfetch"
     alias nv='nvim'
-    alias zed='zeditor'
     alias inv='nvim $(fzf --preview "bat --color=always {}" --preview-window "~3")'
     alias cat="bat -p"
+    alias ls="eza"
+    alias ll="eza -l"
+    alias la="eza -la"
 
     alias ..="z .."
     alias ...="z ../.."

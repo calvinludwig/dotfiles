@@ -38,4 +38,13 @@ return {
       inlay_hints = { enabled = false },
     },
   },
+  {
+    "martindur/zdiff.nvim",
+    cmd = "Zdiff",
+    keys = {
+      { "<leader>zd", function() require("zdiff").open() end, desc = "Zdiff (uncommitted)" },
+      { "<leader>zD", function() require("zdiff").open("main") end, desc = "Zdiff (vs main)" },
+    },
+    opts = {},
+  },
 }

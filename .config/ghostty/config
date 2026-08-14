@@ -1,4 +1,5 @@
 theme = catppuccin-frappe.conf
-font-size = 15
-font-family = "IBM Plex Mono"
 window-decoration = false
+
+font-size = 18
+font-family = "Maple Mono"

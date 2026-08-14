@@ -1,3 +1,6 @@
+[include]
+  path = ~/dotfiles/.config/git/delta/catppuccin.gitconfig
+
 [user]
   email = 31071765+calvinludwig@users.noreply.github.com
   name = Calvin Ludwig
@@ -73,7 +76,12 @@
   date = relative
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
+[delta]
+  features = catppuccin-frappe
+  navigate = true
+  dark = true
