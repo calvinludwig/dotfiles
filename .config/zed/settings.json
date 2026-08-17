@@ -1,5 +1,10 @@
 {
-  "icon_theme": "Catppuccin Frappé",
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry"
+    }
+  },
+  "icon_theme": "Catppuccin Latte",
   "agent_buffer_font_size": 24.0,
   "agent_ui_font_size": 20.0,
   "buffer_font_family": "Maple Mono",

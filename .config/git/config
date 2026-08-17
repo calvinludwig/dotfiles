@@ -82,6 +82,5 @@
   required = true
 
 [delta]
-  features = catppuccin-frappe
+  features = catppuccin-latte
   navigate = true
-  dark = true

@@ -1,5 +1,6 @@
-theme = catppuccin-frappe.conf
+theme = catppuccin-latte.conf
 window-decoration = false
 
 font-size = 18
 font-family = "Maple Mono"
+bold-is-bright = true

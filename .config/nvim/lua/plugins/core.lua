@@ -2,7 +2,7 @@ return {
   {
     'LazyVim/LazyVim',
     opts = {
-      colorscheme = 'catppuccin-frappe',
+      colorscheme = 'catppuccin-latte',
     },
   },
   { 'mason-org/mason-lspconfig.nvim', enabled = false },
@@ -39,11 +39,23 @@ return {
     },
   },
   {
-    "martindur/zdiff.nvim",
-    cmd = "Zdiff",
+    'martindur/zdiff.nvim',
+    cmd = 'Zdiff',
     keys = {
-      { "<leader>zd", function() require("zdiff").open() end, desc = "Zdiff (uncommitted)" },
-      { "<leader>zD", function() require("zdiff").open("main") end, desc = "Zdiff (vs main)" },
+      {
+        '<leader>zd',
+        function()
+          require('zdiff').open()
+        end,
+        desc = 'Zdiff (uncommitted)',
+      },
+      {
+        '<leader>zD',
+        function()
+          require('zdiff').open 'main'
+        end,
+        desc = 'Zdiff (vs main)',
+      },
     },
     opts = {},
   },
