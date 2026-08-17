@@ -2,32 +2,34 @@ git:
   diffRenderers:
     - colorArg: always
       command: delta --dark --paging=never --line-numbers
+
 gui:
   theme:
     activeBorderColor:
-      - '#81c8be'
+      - '#179299'
       - bold
     inactiveBorderColor:
-      - '#a5adce'
+      - '#6c6f85'
     searchingActiveBorderColor:
-      - '#e5c890'
+      - '#df8e1d'
     optionsTextColor:
-      - '#8caaee'
+      - '#1e66f5'
     selectedLineBgColor:
-      - '#414559'
+      - '#ccd0da'
     inactiveViewSelectedLineBgColor:
-      - '#737994'
+      - '#9ca0b0'
     cherryPickedCommitFgColor:
-      - '#81c8be'
+      - '#179299'
     cherryPickedCommitBgColor:
-      - '#51576d'
+      - '#bcc0cc'
     markedBaseCommitFgColor:
-      - '#8caaee'
+      - '#1e66f5'
     markedBaseCommitBgColor:
-      - '#e5c890'
+      - '#df8e1d'
     unstagedChangesColor:
-      - '#e78284'
+      - '#d20f39'
     defaultFgColor:
-      - '#c6d0f5'
+      - '#4c4f69'
+
   authorColors:
-    '*': '#babbf1'
+    '*': '#7287fd'
