@@ -93,5 +93,11 @@
       "prompt": "Role: Commit Message Generator.\n\nObjective: Generate a Conventional Commit message for the currently staged changes.\n\nDirectives:\n- Input: Execute `git diff --cached` to analyze staged changes. If no changes are staged, inform the user.\n- Format: Strictly adhere to the Conventional Commits specification.\n  - Structure: `<type>[optional scope]: <description>`\n  - Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert.\n- Constraint: DO NOT execute `git commit` or any command that modifies the repository state.\n- Output: Provide ONLY the generated commit message."
     }
   },
-  "mcp": {}
+  "mcp": {
+    "clickup": {
+      "type": "remote",
+      "url": "https://mcp.clickup.com/mcp",
+      "enabled": true
+    }
+  }
 }
