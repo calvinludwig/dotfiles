@@ -7,11 +7,10 @@
     "README.md"
   ],
   "permission": {
-    "bash": "ask",
-    "write": "allow",
-    "read": "allow",
-    "webfetch": "allow",
-    "mcp": "ask"
+    "*": "allow",
+    "edit": "allow",
+    "bash": "allow",
+    "read": "allow"
   },
   "mcp": {
     "clickup": {
