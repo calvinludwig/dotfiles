@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orchestrate"
+  short_description: "Coordinate independent work across Codex subagents"
+  default_prompt: "Use $orchestrate to delegate useful independent work and integrate the results."
