@@ -18,5 +18,8 @@
       "url": "https://mcp.clickup.com/mcp",
       "enabled": true
     }
-  }
+  },
+  "plugin": [
+    "oh-my-openagent@beta"
+  ]
 }
