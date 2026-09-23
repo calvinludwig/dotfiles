@@ -1,6 +1,5 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "google/gemini-3-pro-preview",
   "instructions": [
     "AGENTS.md",
     "CLAUDE.md",
@@ -19,7 +18,5 @@
       "enabled": true
     }
   },
-  "plugin": [
-    "oh-my-openagent@beta"
-  ]
+  "plugin": []
 }
