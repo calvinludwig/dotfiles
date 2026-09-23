@@ -1,6 +1,3 @@
 {
-  "plugin": [
-    "oh-my-openagent@latest",
-    "oh-my-openagent@beta"
-  ]
+  "plugin": []
 }
