@@ -20,6 +20,6 @@
     }
   },
   "plugin": [
-    "oh-my-openagent@beta"
+    "oh-my-openagent@latest"
   ]
 }
