@@ -1,4 +1,5 @@
 {
+  "completion_detail_alignment": "left",
   "agent_servers": {
     "codex-acp": {
       "type": "registry"
@@ -16,6 +17,18 @@
   },
   "git_panel": {
     "dock": "left"
+  },
+  "languages": {
+    "PHP": {
+      "language_servers": ["php-lsp"]
+    }
+  },
+  "lsp": {
+    "php-lsp": {
+      "binary": {
+        "path": "php-lsp"
+      }
+    }
   },
   "disable_ai": false,
   "agent": {
