@@ -1,0 +1,3 @@
+interface:
+  display_name: "Accept Recommendations"
+  short_description: "Accept grilling recommendations without implementing"
