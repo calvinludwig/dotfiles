@@ -12,6 +12,11 @@
     "read": "allow"
   },
   "mcp": {
+    "sentry": {
+      "type": "remote",
+      "url": "https://mcp.sentry.dev/mcp",
+      "oauth": {}
+    },
     "clickup": {
       "type": "remote",
       "url": "https://mcp.clickup.com/mcp",

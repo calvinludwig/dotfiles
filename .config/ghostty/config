@@ -1,6 +1,6 @@
 theme = catppuccin-latte.conf
 window-decoration = false
 
-font-size = 15
-font-family = "Maple Mono"
+font-size = 18
+font-family = "IBM Plex Mono"
 bold-is-bright = true
