@@ -3,12 +3,9 @@ export VISUAL=nvim
 export SUDO_EDITOR=nvim
 export MICRO_TRUECOLOR=1
 
-set -gx UID 1000
-set -gx GID 1000
-
 if status is-interactive
 
-    set -Ux FZF_DEFAULT_OPTS "\
+    set -gx FZF_DEFAULT_OPTS "\
       --color=bg+:#CCD0DA,bg:#EFF1F5,spinner:#DC8A78,hl:#D20F39 \
       --color=fg:#4C4F69,header:#D20F39,info:#8839EF,pointer:#DC8A78 \
       --color=marker:#7287FD,fg+:#4C4F69,prompt:#8839EF,hl+:#D20F39 \
