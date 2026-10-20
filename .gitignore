@@ -7,3 +7,6 @@ tmux/plugins
 
 # OpenCode service credential — never commit
 .config/opencode/service.json
+
+# Orca installs and regenerates its own OpenCode plugins
+.config/opencode/plugins/
