@@ -1,5 +1,5 @@
 [include]
-  path = ~/dotfiles/.config/git/delta/catppuccin.gitconfig
+  path = delta/catppuccin.gitconfig
 
 [user]
   email = 31071765+calvinludwig@users.noreply.github.com
@@ -16,7 +16,6 @@
   prune = true
 
 [pull]
-  default = current
   rebase = true
 
 [rebase]
@@ -39,6 +38,7 @@
   line-numbers = true
   navigate = true
   dark = false
+  features = catppuccin-latte
 
 [merge]
   conflictstyle = zdiff3
@@ -80,7 +80,3 @@
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
-
-[delta]
-  features = catppuccin-latte
-  navigate = true
