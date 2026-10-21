@@ -1,5 +1,4 @@
 tmp/
-tmux/plugins
 **/node_modules
 
 # Fish universal variables — machine-specific state, regenerated automatically

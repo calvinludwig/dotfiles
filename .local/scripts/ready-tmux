@@ -1,9 +1,18 @@
 #!/usr/bin/env bash
 
+# A project's .ready-tmux runs only after you approve it; editing the file asks again.
+trusted="${XDG_STATE_HOME:-$HOME/.local/state}/ready-tmux/trusted"
+
 if [[ -x ".ready-tmux" ]]; then
+  entry=$(sha256sum "$PWD/.ready-tmux")
+  if ! grep -qxF "$entry" "$trusted" 2>/dev/null; then
+    cat .ready-tmux
+    read -rp "Run $PWD/.ready-tmux? [y/N] " answer
+    [[ $answer == [yY] ]] || exit 0
+    mkdir -p "$(dirname "$trusted")"
+    echo "$entry" >>"$trusted"
+  fi
   ./.ready-tmux
-elif [[ -x "$HOME/.ready-tmux" ]]; then
-  "$HOME"/.ready-tmux
 fi
 
 clear
