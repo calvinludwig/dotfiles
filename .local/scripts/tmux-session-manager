@@ -4,7 +4,7 @@ DIRS=(
   "$HOME"
   "$HOME/Documents"
   "$HOME/code/personal"
-  "$HOME/code/personal/dotfiles/.config"
+  "$HOME/dotfiles/.config"
   "$HOME/code/work"
   "$HOME/code/github"
 )

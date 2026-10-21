@@ -96,7 +96,7 @@ echo -e "${GREEN}Fetching instances from region: $REGION${NC}"
 INSTANCES=$($AWS_CMD \
   --query 'Reservations[*].Instances[*].[InstanceId,Tags[?Key==`Name`].Value|[0],State.Name,InstanceType,PrivateIpAddress,PublicIpAddress]' \
   --output text |
-  awk '{printf "%-20s | %-30s | %-10s | %-15s | %-15s | %-15s\n", $1, ($2 ? $2 : "N/A"), $3, $4, ($5 ? $5 : "N/A"), ($6 ? $6 : "N/A")}')
+  awk -F'\t' '{for (i = 1; i <= NF; i++) if ($i == "" || $i == "None") $i = "N/A"; printf "%-20s | %-30s | %-10s | %-15s | %-15s | %-15s\n", $1, $2, $3, $4, $5, $6}')
 
 # Check if any instances were found
 if [ -z "$INSTANCES" ]; then
@@ -121,7 +121,7 @@ fi
 
 # Extract instance ID (first field)
 INSTANCE_ID=$(echo "$SELECTED" | awk '{print $1}')
-INSTANCE_NAME=$(echo "$SELECTED" | awk '{print $3}')
+INSTANCE_NAME=$(echo "$SELECTED" | awk -F' *[|] *' '{print $2}')
 
 echo -e "${GREEN}Connecting to instance: $INSTANCE_ID${NC}"
 if [ "$INSTANCE_NAME" != "N/A" ]; then

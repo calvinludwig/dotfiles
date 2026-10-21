@@ -10,7 +10,6 @@
   compression = 9
   editor = nvim
   preloadindex = true
-  whitespace = error
 
 [fetch]
   prune = true
@@ -42,6 +41,16 @@
 
 [merge]
   conflictstyle = zdiff3
+
+[diff]
+  algorithm = histogram
+  colorMoved = default
+
+[rerere]
+  enabled = true
+
+[branch]
+  sort = -committerdate
 
 [color]
   ui = true

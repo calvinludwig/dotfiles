@@ -9,7 +9,5 @@ fish_add_path --global \
     $HOME/.cargo/bin \
     $HOME/.composer/vendor/bin \
     $HOME/.npm-global/bin \
-    $HOME/go/bin \
     $HOME/.local/go/bin \
-    $HOME/.config/bin \
     $HOME/.local/share/bob/nvim-bin

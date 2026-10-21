@@ -1,7 +1,7 @@
 git:
   diffRenderers:
     - colorArg: always
-      command: delta --dark --paging=never --line-numbers
+      command: delta --paging=never --line-numbers
 gui:
   theme:
     activeBorderColor:

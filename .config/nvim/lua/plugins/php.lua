@@ -1,6 +1,6 @@
 return {
-  -- 'calvinludwig/mago.nvim',
-  dir = '/home/ludwig/code/personal/mago.nvim',
+  'calvinludwig/mago.nvim',
+  dev = true, -- local checkout in ~/code/personal, cloned from GitHub when missing
   ft = 'php',
   opts = {},
 }
