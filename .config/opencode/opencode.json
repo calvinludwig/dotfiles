@@ -21,6 +21,10 @@
       "type": "remote",
       "url": "https://mcp.clickup.com/mcp",
       "enabled": true
+    },
+    "chrome-devtools": {
+      "type": "local",
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
     }
   },
   "plugin": []
