@@ -1,5 +1,6 @@
 {
   "plugin": [
     "file:///home/ludwig/.config/opencode/plugins/orca-opencode-status-tui/tui.js"
-  ]
+  ],
+  "theme": "system"
 }

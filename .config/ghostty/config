@@ -1,4 +1,4 @@
-theme = catppuccin-latte.conf
+theme = light:catppuccin-latte.conf,dark:catppuccin-frappe.conf
 window-decoration = false
 
 font-size = 18
