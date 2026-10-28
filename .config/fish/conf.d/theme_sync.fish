@@ -21,6 +21,12 @@ function __theme_sync --on-variable fish_terminal_color_theme
     end
     set -gx DELTA_FEATURES catppuccin-$CATPPUCCIN_FLAVOR
     set -gx LG_CONFIG_FILE "$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/$CATPPUCCIN_FLAVOR.yml"
+    # tmux popups (session manager, lazygit) inherit tmux's global env, not this shell's
+    if set -q TMUX
+        for var in CATPPUCCIN_FLAVOR FZF_DEFAULT_OPTS DELTA_FEATURES LG_CONFIG_FILE
+            tmux set-environment -g $var $$var
+        end
+    end
 end
 
 __theme_sync
