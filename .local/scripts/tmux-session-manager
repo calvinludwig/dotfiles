@@ -1,57 +1,120 @@
 #!/usr/bin/env bash
+# Usage: tmux-session-manager [dir]   (no dir: pick a session or dir with fzf)
 
 DIRS=(
   "$HOME"
   "$HOME/Documents"
   "$HOME/code/personal"
-  "$HOME/code/personal/dotfiles/.config"
   "$HOME/code/work"
-  "$HOME/code/github"
+  "$HOME/dotfiles/.config"
 )
-dirs=$(fd . "${DIRS[@]}" --type=dir --max-depth=1 --full-path --base-directory "$HOME" 2>/dev/null | sed "s|^$HOME/|  |")
+SESSION_ICON=$''
+DIR_ICON=$''
 
-if [[ -n "${TMUX}" ]]; then
-  current_session=$(tmux display-message -p '#S')
-  running_sessions=$(tmux list-sessions -F "  #{session_name}" 2>/dev/null | grep -vFx "  $current_session")
-else
-  running_sessions=$(tmux list-sessions -F "  #{session_name}" 2>/dev/null)
-fi
+SELF=$(realpath "$0")
 
-if [[ "$running_sessions" ]]; then
-  options=$(printf "%s\n%s" "$running_sessions" "$dirs")
-else
-  options="$dirs"
-fi
+list() {
+  local current sessions
+  [[ -n $TMUX ]] && current=$(tmux display-message -p '#S')
+  # most recently attached first
+  sessions=$(tmux list-sessions -F $'#{session_last_attached}\t#{session_name}\t#{session_path}' 2>/dev/null |
+    sort -rn | cut -f2-)
 
-selected=$(echo "$options" | fzf --tiebreak=index --nth=2 --layout reverse --style full)
+  while IFS=$'\t' read -r name _; do
+    [[ -n $name && $name != "$current" ]] && echo "$SESSION_ICON  $name"
+  done <<<"$sessions"
 
-selected="${selected:3}"
+  # zoxide (by frecency) then DIRS; hide dirs that already have a session, it's listed above
+  { echo "$HOME"; zoxide query -l 2>/dev/null; fd . "${DIRS[@]}" --type=dir --max-depth=1 2>/dev/null; } |
+    sed 's|/*$||' |
+    awk '!seen[$0]++' |
+    grep -vFxf <(cut -f2 <<<"$sessions" | sed 's|/*$||') |
+    sed -e "s|^$HOME\$|$DIR_ICON  ~|" -e "s|^$HOME/|$DIR_ICON  |" -e "s|^/|$DIR_ICON  /|"
+}
 
-# if [[ "$selected" =~ ^\[TMUX\]\ (.+)$ ]]; then
-#   selected="${BASH_REMATCH[1]}"
-# fi
+dir_of() {
+  case $1 in
+    "~") echo "$HOME" ;;
+    /*) echo "$1" ;;
+    *) echo "$HOME/$1" ;;
+  esac
+}
 
-[[ ! $selected ]] && exit 0
-
-[[ $selected ]] && selected="$HOME/$selected"
-
-selected_name=$(basename "$selected" | tr ":,. " "____")
-
-switch_to() {
-  if [[ -z "$TMUX" ]]; then
-    tmux attach-session -t "$selected_name"
+preview() {
+  local item=${1#*  } dir
+  if [[ $1 == "$SESSION_ICON"* ]]; then
+    tmux capture-pane -ep -t "=$item:"
   else
-    tmux switch-client -t "$selected_name"
+    dir=$(dir_of "$item")
+    git -C "$dir" -c color.status=always status -sb 2>/dev/null && echo
+    ls -A --color=always "$dir"
   fi
 }
 
-if tmux has-session -t="$selected_name" 2>/dev/null; then
-  switch_to
-  exit 0
+rename() {
+  [[ $1 == "$SESSION_ICON"* ]] || return
+  local old=${1#*  } new
+  read -rp "Rename $old to: " new </dev/tty
+  [[ -n $new ]] && tmux rename-session -t "=$old" "$(tr ':,. ' '____' <<<"$new")"
+}
+
+session_name_for() {
+  local name existing
+  [[ ${1%/} == "$HOME" ]] && echo home && return
+  name=$(basename "$1" | tr ':,. ' '____')
+  existing=$(tmux display-message -p -t "=$name:" '#{session_path}' 2>/dev/null)
+  # same basename in another folder: prefix the parent folder
+  # shortcut: assumes parent_name is unique, upgrade to the full path if that ever collides
+  if [[ -n $existing && ${existing%/} != "${1%/}" ]]; then
+    name="$(basename "$(dirname "$1")" | tr ':,. ' '____')_$name"
+  fi
+  echo "$name"
+}
+
+case $1 in
+  --list) list; exit ;;
+  --preview) preview "$2"; exit ;;
+  --rename) rename "$2"; exit ;;
+esac
+
+if [[ -n $1 ]]; then
+  dir=$(realpath -e "$1") || exit 1
+  name=$(session_name_for "$dir")
+else
+  selected=$(list | fzf --tiebreak=index --nth=2.. --layout reverse --style full \
+    --header 'enter on no match: new session · ctrl-x: kill · ctrl-r: rename' \
+    --preview "\"$SELF\" --preview {}" --preview-window right,50% \
+    --bind 'enter:accept-or-print-query' \
+    --bind "ctrl-x:execute-silent(tmux kill-session -t ={2})+reload(\"$SELF\" --list)" \
+    --bind "ctrl-r:execute(\"$SELF\" --rename {})+reload(\"$SELF\" --list)")
+  [[ -z $selected ]] && exit 0
+
+  item=${selected#*  }
+  case $selected in
+    "$SESSION_ICON"*) name=$item ;;
+    "$DIR_ICON"*)
+      dir=$(dir_of "$item")
+      name=$(session_name_for "$dir")
+      ;;
+    *) # typed query with no match: an existing path, or a new session in ~
+      if dir=$(realpath -e "${selected/#\~/$HOME}" 2>/dev/null); then
+        name=$(session_name_for "$dir")
+      else
+        dir=$HOME
+        name=$(tr ':,. ' '____' <<<"$selected")
+      fi
+      ;;
+  esac
 fi
 
-tmux new-session -ds "$selected_name" -c "$selected"
-switch_to
+if ! tmux has-session -t "=$name" 2>/dev/null; then
+  tmux new-session -ds "$name" -c "$dir"
+  # send before attaching: attach-session blocks until detach
+  tmux send-keys -t "=$name:" "ready-tmux" Enter
+fi
 
-sleep 0.1
-tmux send-keys -t "$selected_name" "ready-tmux" Enter
+if [[ -z $TMUX ]]; then
+  tmux attach-session -t "=$name"
+else
+  tmux switch-client -t "=$name"
+fi

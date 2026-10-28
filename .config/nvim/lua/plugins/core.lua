@@ -2,13 +2,13 @@ return {
   {
     'LazyVim/LazyVim',
     opts = {
-      colorscheme = 'catppuccin',
+      colorscheme = 'catppuccin-nvim', -- plain 'catppuccin' resolves to nvim 0.12's builtin catppuccin.vim (mocha)
     },
   },
   {
     'catppuccin/nvim',
     name = 'catppuccin',
-    lazy = false, -- nvim 0.12 ships its own 'catppuccin' colorscheme that would shadow the plugin
+    lazy = false,
     opts = { background = { light = 'latte', dark = 'frappe' } },
   },
   { 'mason-org/mason-lspconfig.nvim', enabled = false },
