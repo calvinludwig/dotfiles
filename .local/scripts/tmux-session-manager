@@ -8,7 +8,7 @@ DIRS=(
   "$HOME/code/work"
   "$HOME/code/github"
 )
-dirs=$(fd . "${DIRS[@]}" --type=dir --max-depth=1 --full-path --base-directory "$HOME" | sed "s|^$HOME/|  |")
+dirs=$(fd . "${DIRS[@]}" --type=dir --max-depth=1 --full-path --base-directory "$HOME" 2>/dev/null | sed "s|^$HOME/|  |")
 
 if [[ -n "${TMUX}" ]]; then
   current_session=$(tmux display-message -p '#S')
