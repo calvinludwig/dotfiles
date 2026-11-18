@@ -12,4 +12,9 @@ fish_add_path --global \
     $HOME/go/bin \
     $HOME/.local/go/bin \
     $HOME/.config/bin \
-    $HOME/.local/share/bob/nvim-bin
+    $HOME/.local/share/bob/nvim-bin \
+    $HOME/development/flutter/bin \
+    $HOME/.pub-cache/bin \
+    $HOME/Android/Sdk/cmdline-tools/latest/bin \
+    $HOME/Android/Sdk/platform-tools \
+    $HOME/Android/Sdk/emulator

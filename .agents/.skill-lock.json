@@ -914,6 +914,16 @@
       "skillFolderHash": "905ba718160a0b0cfc0a48a82e12b804194741e5",
       "installedAt": "2026-10-15T19:49:59.679Z",
       "updatedAt": "2026-10-15T19:49:59.679Z"
+    },
+    "postgresql-optimization": {
+      "source": "curiositech/some_claude_skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/curiositech/some_claude_skills.git",
+      "ref": "main",
+      "skillPath": ".claude/skills/postgresql-optimization/SKILL.md",
+      "skillFolderHash": "07d2871828792f0269010e945fec64f007425d3b",
+      "installedAt": "2026-11-07T19:09:28.914Z",
+      "updatedAt": "2026-11-07T19:09:28.914Z"
     }
   },
   "dismissed": {
@@ -930,6 +940,7 @@
     "kilo",
     "kimi-code-cli",
     "opencode",
+    "pi",
     "warp",
     "zed",
     "claude-code"
